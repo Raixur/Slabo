@@ -1,0 +1,244 @@
+fileFormatVersion: 2
+guid: 8d95e67360eb2c44786477c1643cfff8
+timeCreated: 1510330774
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Button0
+    100002: Button1
+    100004: Button2
+    100006: Button3
+    100008: Button4
+    100010: Button5
+    100012: Button6
+    100014: Button7
+    100016: Button8
+    100018: Button9
+    100020: ButtonC
+    100022: ButtonK
+    100024: PhoneBase
+    100026: PhoneHandle
+    100028: //RootNode
+    400000: Button0
+    400002: Button1
+    400004: Button2
+    400006: Button3
+    400008: Button4
+    400010: Button5
+    400012: Button6
+    400014: Button7
+    400016: Button8
+    400018: Button9
+    400020: ButtonC
+    400022: ButtonK
+    400024: PhoneBase
+    400026: PhoneHandle
+    400028: //RootNode
+    2300000: Button0
+    2300002: Button1
+    2300004: Button2
+    2300006: Button3
+    2300008: Button4
+    2300010: Button5
+    2300012: Button6
+    2300014: Button7
+    2300016: Button8
+    2300018: Button9
+    2300020: ButtonC
+    2300022: ButtonK
+    2300024: PhoneBase
+    2300026: PhoneHandle
+    3300000: Button0
+    3300002: Button1
+    3300004: Button2
+    3300006: Button3
+    3300008: Button4
+    3300010: Button5
+    3300012: Button6
+    3300014: Button7
+    3300016: Button8
+    3300018: Button9
+    3300020: ButtonC
+    3300022: ButtonK
+    3300024: PhoneBase
+    3300026: PhoneHandle
+    4300000: PhoneBase
+    4300002: Button1
+    4300004: Button2
+    4300006: Button3
+    4300008: Button4
+    4300010: Button5
+    4300012: Button6
+    4300014: Button7
+    4300016: Button8
+    4300018: Button9
+    4300020: ButtonK
+    4300022: Button0
+    4300024: ButtonC
+    4300026: PhoneHandle
+    7400000: Take 001
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 0
+    second: {fileID: 2100000, guid: b532d0c72fcec8642828acf105e8eea0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 1
+    second: {fileID: 2100000, guid: 6d55e8e9b680ecf47b910e6eafb07aa4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 2
+    second: {fileID: 2100000, guid: 6f43f6e7d95a6704fa7016889f7c7a3c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 3
+    second: {fileID: 2100000, guid: 07dcf09250541b94998209680dbeaab1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 4
+    second: {fileID: 2100000, guid: 1e49636ae4bb7a54ea972b04db64674e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 5
+    second: {fileID: 2100000, guid: e45d844c3380ba74d8d1543664045006, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 6
+    second: {fileID: 2100000, guid: 599fe60a49fd1b942af487ed5e7ae413, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 7
+    second: {fileID: 2100000, guid: f16edba86f3c29a49be3da5b30ff51cd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 8
+    second: {fileID: 2100000, guid: 26078a2d5f07ad246b3b5ed6187c299b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 9
+    second: {fileID: 2100000, guid: 372707931ba59f04aaaf89ed6ab1149f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: C
+    second: {fileID: 2100000, guid: 56ad129428a96d24d93775b8bd5b1e79, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Display
+    second: {fileID: 2100000, guid: 027884972b0f16642abc1a58bede69d9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Grid
+    second: {fileID: 2100000, guid: 03489b8defa87c04f8cd1b66e6ef7f5a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: K
+    second: {fileID: 2100000, guid: 4c52f88acc0d1984f94845ac224b0f52, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal Panel
+    second: {fileID: 2100000, guid: af320f4805e1e3c478c43d6bec9293f5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Phone Base
+    second: {fileID: 2100000, guid: 495e6c6fbc106b34586bc0b8e3678f3d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PhoneHandle
+    second: {fileID: 2100000, guid: 212f1ea3cd504234ebd38d8e188d44b1, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

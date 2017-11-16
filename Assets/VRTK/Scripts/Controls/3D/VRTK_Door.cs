@@ -398,7 +398,7 @@ namespace VRTK
         protected virtual void InitDoor()
         {
             GameObject actualDoor = GetDoor();
-            VRTK_SharedMethods.CreateColliders(actualDoor);
+            //VRTK_SharedMethods.CreateColliders(actualDoor);
 
             doorRigidbody = actualDoor.GetComponent<Rigidbody>();
             if (doorRigidbody == null)

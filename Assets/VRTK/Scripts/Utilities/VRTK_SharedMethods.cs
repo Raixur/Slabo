@@ -493,7 +493,7 @@ namespace VRTK
                 FieldInfo targetGroupFieldInfo = typeof(BuildTargetGroup).GetField(targetGroupName, BindingFlags.Public | BindingFlags.Static);
 
                 return targetGroupFieldInfo != null && targetGroupFieldInfo.GetCustomAttributes(typeof(ObsoleteAttribute), false).Length == 0;
-            }).ToArray();
+            }).Except(new []{BuildTargetGroup.Facebook, BuildTargetGroup.Switch}).ToArray();
         }
 #endif
     }
