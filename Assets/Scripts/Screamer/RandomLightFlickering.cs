@@ -27,7 +27,7 @@ public class RandomLightFlickering : MonoBehaviour
         while (true)
         {
             yield return new WaitForSeconds((float) rnd.NextDouble() * dTime + minTime);
-            lightFlickering.StartFlickering(rnd.Next(minFlick, maxFlick));
+            lightFlickering.FlickerByCount(rnd.Next(minFlick, maxFlick));
         }
     }
 }
