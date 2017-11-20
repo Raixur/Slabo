@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using VRTK;
+using TMPro;
 
 public class Phone : MonoBehaviour
 {
     private const int RequiredDigits = 4;
 
-    [SerializeField] private TextMesh display = null;
+    [SerializeField] private TextMeshPro display = null;
     [SerializeField] private List<VRTK_Button> buttons = null;
     [SerializeField] private VRTK_Button resetButton = null;
     [SerializeField] private VRTK_Button callButton = null;
@@ -17,7 +18,7 @@ public class Phone : MonoBehaviour
 
     public void Start()
     {
-        display.text = "";
+        display.SetText("");
         for (int i = 0; i < buttons.Count; i++)
         {
             var number = i;
@@ -41,7 +42,7 @@ public class Phone : MonoBehaviour
     public void ResetNumbers()
     {
         digits.Clear();
-        display.text = "";
+        display.SetText("");
     }
 
     public void StartCall()
@@ -51,7 +52,6 @@ public class Phone : MonoBehaviour
 
     public void UpdateDisplay()
     {
-        var displayText = string.Join("", digits.Select(d => d.ToString()).ToArray());
-        display.text = displayText;
+        display.SetText(string.Join("", digits.Select(d => d.ToString()).ToArray()));
     }
 }
