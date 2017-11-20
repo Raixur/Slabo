@@ -19,15 +19,24 @@ public class AudioPlaylist : MonoBehaviour
 
     private IEnumerator PlaySoundCoroutine()
     {
+        var index = rnd.Next(list.Length);
         while (true)
         {
-            var index = rnd.Next(list.Length);
             var clip = list[index];
 
             audioSource.clip = clip;
             audioSource.Play();
 
             yield return new WaitForSeconds(clip.length);
+
+            if (list.Length > 1)
+            {
+                var previousIndex = index;
+                do
+                {
+                    index = rnd.Next(list.Length);
+                } while (previousIndex == index);
+            }
         }
     }
 }
