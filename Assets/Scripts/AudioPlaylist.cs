@@ -39,4 +39,21 @@ public class AudioPlaylist : MonoBehaviour
             }
         }
     }
+
+    public void DecreaseVolume(float time, float volume)
+    {
+        StartCoroutine(DecreaseVolumeCoroutine(time, volume));
+    }
+
+    private IEnumerator DecreaseVolumeCoroutine(float time, float volume)
+    {
+        audioSource.volume = audioSource.volume - volume / 2;
+        yield return new WaitForSeconds(0.1f);
+        audioSource.volume = audioSource.volume - volume / 2;
+
+        yield return new WaitForSeconds(time - 0.2f);
+        audioSource.volume = audioSource.volume + volume / 2;
+        yield return new WaitForSeconds(0.1f);
+        audioSource.volume = audioSource.volume + volume / 2;
+    }
 }
