@@ -10,11 +10,12 @@ public class PropsSpawnerManager : MonoBehaviour
     private void Start ()
     {
         var rnd = new System.Random();
+        var phoneCode = CodeGenerator.Instance.PhoneNumber;
         var spawners = Resources.FindObjectsOfTypeAll<PropsSpawner>().ToList();
         for (var i = 0; i < CodeGenerator.RequiredPhoneNumberDigits; i++)
         {
             var index = rnd.Next(spawners.Count);
-            spawners[index].SetCode("");
+            spawners[index].SetCode(GenerateCode(i, CodeGenerator.RequiredPhoneNumberDigits, phoneCode[i]));
             spawners.RemoveAt(index);
         }
 	}
