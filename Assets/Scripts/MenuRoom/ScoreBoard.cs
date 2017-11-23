@@ -4,7 +4,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 using TMPro;
 using UnityEngine;
 
-public class Leaderboard : MonoBehaviour
+public class ScoreBoard : MonoBehaviour
 {
     public string fileName = "lb.bin";
     public string defaultScore = "NO ESCAPE\n";
