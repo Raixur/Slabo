@@ -7,7 +7,6 @@ using VRTK;
 public class Phone : MonoBehaviour
 {
     [SerializeField] private DigitInputPanel panel = null;
-    [SerializeField] private AudioPlaylist ambient = null;
     [SerializeField] private AudioSource source = null;
     [SerializeField] private List<AudioClip> audioNumbers = null;
     [SerializeField] private float delay = 1.5f;
@@ -35,7 +34,8 @@ public class Phone : MonoBehaviour
     // Rework audio interaction
     private IEnumerator NumberPlayCoroutine()
     {
-        ambient.DecreaseVolume(10f, 0.7f);
+        // TODO: decrease music volume
+
         var waitDelay = new WaitForSeconds(delay);
         foreach (var number in doorCode)
         {
