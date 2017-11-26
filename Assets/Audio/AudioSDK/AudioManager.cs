@@ -1,14 +1,16 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
+using AudioSDK;
+using JetBrains.Annotations;
 using UnityEngine;
-using VRTK;
 
 public class AudioManager : MonoBehaviour
 {
-    [SerializeField] private string playListName = null;
+    [SerializeField] private string ambiencePlayListName = "";
 
-	void Start ()
+    [UsedImplicitly]
+    private void Start ()
 	{
+        if(string.IsNullOrEmpty(ambiencePlayListName))
 	    StartCoroutine(StartPlayList());
 	}
 
@@ -18,6 +20,6 @@ public class AudioManager : MonoBehaviour
         {
             yield return null;
         }
-        AudioController.PlayMusicPlaylist(playListName);
+        AudioController.PlayMusicPlaylist(ambiencePlayListName);
     }
 }

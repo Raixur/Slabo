@@ -1687,7 +1687,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1827023331}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &74539307
 GameObject:
@@ -1718,7 +1718,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec84db540ad47b14c8db57172b1583a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playListName: MainScene
+  ambiencePlayListName: 
 --- !u!114 &74539309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1727,461 +1727,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 74539307}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 366085030, guid: 6c3fe97f7c7cf7840845cfee747751ac, type: 3}
+  m_Script: {fileID: 11500000, guid: 50fcf375d2ea2754589cd93a06c21fda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AudioObjectPrefab: {fileID: 1066860981386698, guid: 585d99979c8fe1b459299aa0fab1fd88,
-    type: 2}
-  Persistent: 0
-  UnloadAudioClipsOnDestroy: 0
   UsePooledAudioObjects: 0
-  PlayWithZeroVolume: 0
-  EqualPowerCrossfade: 0
-  musicCrossFadeTime: 0
-  ambienceSoundCrossFadeTime: 0
-  specifyCrossFadeInAndOutSeperately: 0
-  _musicCrossFadeTime_In: 0
-  _musicCrossFadeTime_Out: 0
-  _ambienceSoundCrossFadeTime_In: 0
-  _ambienceSoundCrossFadeTime_Out: 0
-  AudioCategories:
-  - Name: Ambience
-    _parentCategoryName: 
-    AudioObjectPrefab: {fileID: 0}
-    AudioItems:
-    - Name: GameplayTheme1
-      Loop: 0
-      loopSequenceCount: 0
-      loopSequenceOverlap: 0
-      loopSequenceRandomDelay: 0
-      loopSequenceRandomPitch: 0
-      loopSequenceRandomVolume: 0
-      DestroyOnLoad: 1
-      Volume: 1
-      SubItemPickMode: 2
-      MinTimeBetweenPlayCalls: 0.1
-      MaxInstanceCount: 0
-      Delay: 0
-      RandomVolume: 0
-      RandomPitch: 0
-      RandomDelay: 0
-      overrideAudioSourceSettings: 0
-      audioSource_MinDistance: 1
-      audioSource_MaxDistance: 500
-      spatialBlend: 0
-      subItems:
-      - SubItemType: 0
-        Probability: 1
-        DisableOtherSubitems: 0
-        ItemModeAudioID: 
-        Clip: {fileID: 8300000, guid: 0d554e37dd70bf1409d0b13d2dc12d18, type: 3}
-        Volume: 1
-        PitchShift: 0
-        Pan2D: 0
-        Delay: 0
-        RandomPitch: 0
-        RandomVolume: 0
-        RandomDelay: 0
-        ClipStopTime: 0
-        ClipStartTime: 0
-        FadeIn: 0
-        FadeOut: 0
-        RandomStartPosition: 0
-        individualSettings: []
-    - Name: GameplayTheme2
-      Loop: 0
-      loopSequenceCount: 0
-      loopSequenceOverlap: 0
-      loopSequenceRandomDelay: 0
-      loopSequenceRandomPitch: 0
-      loopSequenceRandomVolume: 0
-      DestroyOnLoad: 1
-      Volume: 1
-      SubItemPickMode: 2
-      MinTimeBetweenPlayCalls: 0.1
-      MaxInstanceCount: 0
-      Delay: 0
-      RandomVolume: 0
-      RandomPitch: 0
-      RandomDelay: 0
-      overrideAudioSourceSettings: 0
-      audioSource_MinDistance: 1
-      audioSource_MaxDistance: 500
-      spatialBlend: 0
-      subItems:
-      - SubItemType: 0
-        Probability: 1
-        DisableOtherSubitems: 0
-        ItemModeAudioID: 
-        Clip: {fileID: 8300000, guid: a3808f7881915f04b82a2fdb1c57db7d, type: 3}
-        Volume: 1
-        PitchShift: 0
-        Pan2D: 0
-        Delay: 0
-        RandomPitch: 0
-        RandomVolume: 0
-        RandomDelay: 0
-        ClipStopTime: 0
-        ClipStartTime: 0
-        FadeIn: 0
-        FadeOut: 0
-        RandomStartPosition: 0
-        individualSettings: []
-    - Name: GameplayTheme3
-      Loop: 0
-      loopSequenceCount: 0
-      loopSequenceOverlap: 0
-      loopSequenceRandomDelay: 0
-      loopSequenceRandomPitch: 0
-      loopSequenceRandomVolume: 0
-      DestroyOnLoad: 1
-      Volume: 1
-      SubItemPickMode: 2
-      MinTimeBetweenPlayCalls: 0.1
-      MaxInstanceCount: 0
-      Delay: 0
-      RandomVolume: 0
-      RandomPitch: 0
-      RandomDelay: 0
-      overrideAudioSourceSettings: 0
-      audioSource_MinDistance: 1
-      audioSource_MaxDistance: 500
-      spatialBlend: 0
-      subItems:
-      - SubItemType: 0
-        Probability: 1
-        DisableOtherSubitems: 0
-        ItemModeAudioID: 
-        Clip: {fileID: 8300000, guid: 04356dd7c02e74f4498304ece7820afa, type: 3}
-        Volume: 1
-        PitchShift: 0
-        Pan2D: 0
-        Delay: 0
-        RandomPitch: 0
-        RandomVolume: 0
-        RandomDelay: 0
-        ClipStopTime: 0
-        ClipStartTime: 0
-        FadeIn: 0
-        FadeOut: 0
-        RandomStartPosition: 0
-        individualSettings: []
-    - Name: GameplayTheme4
-      Loop: 0
-      loopSequenceCount: 0
-      loopSequenceOverlap: 0
-      loopSequenceRandomDelay: 0
-      loopSequenceRandomPitch: 0
-      loopSequenceRandomVolume: 0
-      DestroyOnLoad: 1
-      Volume: 1
-      SubItemPickMode: 2
-      MinTimeBetweenPlayCalls: 0.1
-      MaxInstanceCount: 0
-      Delay: 0
-      RandomVolume: 0
-      RandomPitch: 0
-      RandomDelay: 0
-      overrideAudioSourceSettings: 0
-      audioSource_MinDistance: 1
-      audioSource_MaxDistance: 500
-      spatialBlend: 0
-      subItems:
-      - SubItemType: 0
-        Probability: 1
-        DisableOtherSubitems: 0
-        ItemModeAudioID: 
-        Clip: {fileID: 8300000, guid: 1262eb2e4bcc7d946816826719c3141d, type: 3}
-        Volume: 1
-        PitchShift: 0
-        Pan2D: 0
-        Delay: 0
-        RandomPitch: 0
-        RandomVolume: 0
-        RandomDelay: 0
-        ClipStopTime: 0
-        ClipStartTime: 0
-        FadeIn: 0
-        FadeOut: 0
-        RandomStartPosition: 0
-        individualSettings: []
-    - Name: GameplayTheme5
-      Loop: 0
-      loopSequenceCount: 0
-      loopSequenceOverlap: 0
-      loopSequenceRandomDelay: 0
-      loopSequenceRandomPitch: 0
-      loopSequenceRandomVolume: 0
-      DestroyOnLoad: 1
-      Volume: 1
-      SubItemPickMode: 2
-      MinTimeBetweenPlayCalls: 0.1
-      MaxInstanceCount: 0
-      Delay: 0
-      RandomVolume: 0
-      RandomPitch: 0
-      RandomDelay: 0
-      overrideAudioSourceSettings: 0
-      audioSource_MinDistance: 1
-      audioSource_MaxDistance: 500
-      spatialBlend: 0
-      subItems:
-      - SubItemType: 0
-        Probability: 1
-        DisableOtherSubitems: 0
-        ItemModeAudioID: 
-        Clip: {fileID: 8300000, guid: 93f0a8b85d7f4064aae348ef571f3950, type: 3}
-        Volume: 1
-        PitchShift: 0
-        Pan2D: 0
-        Delay: 0
-        RandomPitch: 0
-        RandomVolume: 0
-        RandomDelay: 0
-        ClipStopTime: 0
-        ClipStartTime: 0
-        FadeIn: 0
-        FadeOut: 0
-        RandomStartPosition: 0
-        individualSettings: []
-    - Name: GameplayTheme6
-      Loop: 0
-      loopSequenceCount: 0
-      loopSequenceOverlap: 0
-      loopSequenceRandomDelay: 0
-      loopSequenceRandomPitch: 0
-      loopSequenceRandomVolume: 0
-      DestroyOnLoad: 1
-      Volume: 1
-      SubItemPickMode: 2
-      MinTimeBetweenPlayCalls: 0.1
-      MaxInstanceCount: 0
-      Delay: 0
-      RandomVolume: 0
-      RandomPitch: 0
-      RandomDelay: 0
-      overrideAudioSourceSettings: 0
-      audioSource_MinDistance: 1
-      audioSource_MaxDistance: 500
-      spatialBlend: 0
-      subItems:
-      - SubItemType: 0
-        Probability: 1
-        DisableOtherSubitems: 0
-        ItemModeAudioID: 
-        Clip: {fileID: 8300000, guid: 46070bd37534423459ab5bf4e39003f9, type: 3}
-        Volume: 1
-        PitchShift: 0
-        Pan2D: 0
-        Delay: 0
-        RandomPitch: 0
-        RandomVolume: 0
-        RandomDelay: 0
-        ClipStopTime: 0
-        ClipStartTime: 0
-        FadeIn: 0
-        FadeOut: 0
-        RandomStartPosition: 0
-        individualSettings: []
-    - Name: GameplayTheme7
-      Loop: 0
-      loopSequenceCount: 0
-      loopSequenceOverlap: 0
-      loopSequenceRandomDelay: 0
-      loopSequenceRandomPitch: 0
-      loopSequenceRandomVolume: 0
-      DestroyOnLoad: 1
-      Volume: 1
-      SubItemPickMode: 2
-      MinTimeBetweenPlayCalls: 0.1
-      MaxInstanceCount: 0
-      Delay: 0
-      RandomVolume: 0
-      RandomPitch: 0
-      RandomDelay: 0
-      overrideAudioSourceSettings: 0
-      audioSource_MinDistance: 1
-      audioSource_MaxDistance: 500
-      spatialBlend: 0
-      subItems:
-      - SubItemType: 0
-        Probability: 1
-        DisableOtherSubitems: 0
-        ItemModeAudioID: 
-        Clip: {fileID: 8300000, guid: 57523668b6501b741b92b8b40e890b9a, type: 3}
-        Volume: 1
-        PitchShift: 0
-        Pan2D: 0
-        Delay: 0
-        RandomPitch: 0
-        RandomVolume: 0
-        RandomDelay: 0
-        ClipStopTime: 0
-        ClipStartTime: 0
-        FadeIn: 0
-        FadeOut: 0
-        RandomStartPosition: 0
-        individualSettings: []
-    _volume: 1
-    audioMixerGroup: {fileID: 243238432626407692, guid: bc16d904333043b40afde4e7f46ad08b,
-      type: 2}
-  - Name: SFX
-    _parentCategoryName: 
-    AudioObjectPrefab: {fileID: 0}
-    AudioItems:
-    - Name: GunShot
-      Loop: 0
-      loopSequenceCount: 0
-      loopSequenceOverlap: 0
-      loopSequenceRandomDelay: 0
-      loopSequenceRandomPitch: 0
-      loopSequenceRandomVolume: 0
-      DestroyOnLoad: 1
-      Volume: 1
-      SubItemPickMode: 2
-      MinTimeBetweenPlayCalls: 0.1
-      MaxInstanceCount: 0
-      Delay: 0
-      RandomVolume: 0
-      RandomPitch: 0
-      RandomDelay: 0
-      overrideAudioSourceSettings: 0
-      audioSource_MinDistance: 1
-      audioSource_MaxDistance: 500
-      spatialBlend: 0
-      subItems: []
-    - Name: ValveOpen
-      Loop: 0
-      loopSequenceCount: 0
-      loopSequenceOverlap: 0
-      loopSequenceRandomDelay: 0
-      loopSequenceRandomPitch: 0
-      loopSequenceRandomVolume: 0
-      DestroyOnLoad: 1
-      Volume: 1
-      SubItemPickMode: 2
-      MinTimeBetweenPlayCalls: 0.1
-      MaxInstanceCount: 0
-      Delay: 0
-      RandomVolume: 0
-      RandomPitch: 0
-      RandomDelay: 0
-      overrideAudioSourceSettings: 0
-      audioSource_MinDistance: 1
-      audioSource_MaxDistance: 500
-      spatialBlend: 0
-      subItems: []
-    - Name: Steps
-      Loop: 0
-      loopSequenceCount: 0
-      loopSequenceOverlap: 0
-      loopSequenceRandomDelay: 0
-      loopSequenceRandomPitch: 0
-      loopSequenceRandomVolume: 0
-      DestroyOnLoad: 1
-      Volume: 1
-      SubItemPickMode: 2
-      MinTimeBetweenPlayCalls: 0.1
-      MaxInstanceCount: 0
-      Delay: 0
-      RandomVolume: 0
-      RandomPitch: 0
-      RandomDelay: 0
-      overrideAudioSourceSettings: 0
-      audioSource_MinDistance: 1
-      audioSource_MaxDistance: 500
-      spatialBlend: 0
-      subItems: []
-    - Name: FlashlightClicking
-      Loop: 0
-      loopSequenceCount: 0
-      loopSequenceOverlap: 0
-      loopSequenceRandomDelay: 0
-      loopSequenceRandomPitch: 0
-      loopSequenceRandomVolume: 0
-      DestroyOnLoad: 1
-      Volume: 1
-      SubItemPickMode: 2
-      MinTimeBetweenPlayCalls: 0.1
-      MaxInstanceCount: 0
-      Delay: 0
-      RandomVolume: 0
-      RandomPitch: 0
-      RandomDelay: 0
-      overrideAudioSourceSettings: 0
-      audioSource_MinDistance: 1
-      audioSource_MaxDistance: 500
-      spatialBlend: 0
-      subItems: []
-    - Name: LightSwitch
-      Loop: 0
-      loopSequenceCount: 0
-      loopSequenceOverlap: 0
-      loopSequenceRandomDelay: 0
-      loopSequenceRandomPitch: 0
-      loopSequenceRandomVolume: 0
-      DestroyOnLoad: 1
-      Volume: 1
-      SubItemPickMode: 2
-      MinTimeBetweenPlayCalls: 0.1
-      MaxInstanceCount: 0
-      Delay: 0
-      RandomVolume: 0
-      RandomPitch: 0
-      RandomDelay: 0
-      overrideAudioSourceSettings: 0
-      audioSource_MinDistance: 1
-      audioSource_MaxDistance: 500
-      spatialBlend: 0
-      subItems: []
-    - Name: ButtonClick
-      Loop: 0
-      loopSequenceCount: 0
-      loopSequenceOverlap: 0
-      loopSequenceRandomDelay: 0
-      loopSequenceRandomPitch: 0
-      loopSequenceRandomVolume: 0
-      DestroyOnLoad: 1
-      Volume: 1
-      SubItemPickMode: 2
-      MinTimeBetweenPlayCalls: 0.1
-      MaxInstanceCount: 0
-      Delay: 0
-      RandomVolume: 0
-      RandomPitch: 0
-      RandomDelay: 0
-      overrideAudioSourceSettings: 0
-      audioSource_MinDistance: 1
-      audioSource_MaxDistance: 500
-      spatialBlend: 0
-      subItems: []
-    - Name: Screamer
-      Loop: 0
-      loopSequenceCount: 0
-      loopSequenceOverlap: 0
-      loopSequenceRandomDelay: 0
-      loopSequenceRandomPitch: 0
-      loopSequenceRandomVolume: 0
-      DestroyOnLoad: 1
-      Volume: 1
-      SubItemPickMode: 2
-      MinTimeBetweenPlayCalls: 0.1
-      MaxInstanceCount: 0
-      Delay: 0
-      RandomVolume: 0
-      RandomPitch: 0
-      RandomDelay: 0
-      overrideAudioSourceSettings: 0
-      audioSource_MinDistance: 1
-      audioSource_MaxDistance: 500
-      spatialBlend: 0
-      subItems: []
-    _volume: 1
-    audioMixerGroup: {fileID: 243180685999959248, guid: bc16d904333043b40afde4e7f46ad08b,
-      type: 2}
-  musicPlaylists:
-  - name: MainScene
-    playlistItems:
+  MusicPlaylists:
+  - Name: MainScene
+    PlaylistItems:
     - GameplayTheme1
     - GameplayTheme2
     - GameplayTheme3
@@ -2189,22 +1741,753 @@ MonoBehaviour:
     - GameplayTheme5
     - GameplayTheme6
     - GameplayTheme7
-  - name: MenuScene
-    playlistItems: []
-  musicPlaylist: []
-  loopPlaylist: 1
-  shufflePlaylist: 1
-  crossfadePlaylist: 1
-  delayBetweenPlaylistTracks: 1
-  _isAdditionalAudioController: 0
-  _audioDisabled: 0
-  _volume: 1
-  _currentInspectorSelection:
-    currentCategoryIndex: 1
-    currentItemIndex: 6
-    currentSubitemIndex: 0
-    currentPlaylistEntryIndex: 6
-    currentPlaylistIndex: 0
+  - Name: Menu
+    PlaylistItems:
+    - MainMenuTheme
+  DelayBetweenPlaylistTracks: 1
+  volume: 1
+  CurrentInspectorSelection:
+    CurrentCategoryIndex: 1
+    CurrentItemIndex: 0
+    CurrentSubitemIndex: 0
+    CurrentPlaylistEntryIndex: 0
+    CurrentPlaylistIndex: 1
+  AudioObjectPrefab: {fileID: 1066860981386698, guid: 585d99979c8fe1b459299aa0fab1fd88,
+    type: 2}
+  Persistent: 0
+  UnloadAudioClipsOnDestroy: 0
+  PlayWithZeroVolume: 0
+  EqualPowerCrossfade: 0
+  MusicCrossFadeTime: 1
+  AmbienceSoundCrossFadeTime: 1
+  SpecifyCrossFadeInAndOutSeperately: 0
+  musicCrossFadeTimeIn: 0
+  musicCrossFadeTimeOut: 0
+  ambienceSoundCrossFadeTimeIn: 0
+  ambienceSoundCrossFadeTimeOut: 0
+  AudioCategories:
+  - volume: 1
+    parentCategoryName: 
+    Name: Ambient
+    AudioObjectPrefab: {fileID: 0}
+    AudioItems:
+    - DestroyOnLoad: 1
+      Volume: 1
+      SubItemPickMode: 2
+      MinTimeBetweenPlayCalls: 0.1
+      AudioSourceMinDistance: 1
+      AudioSourceMaxDistance: 500
+      Name: GameplayTheme6
+      Loop: 0
+      LoopSequenceCount: 0
+      LoopSequenceOverlap: 0
+      LoopSequenceRandomDelay: 0
+      LoopSequenceRandomPitch: 0
+      LoopSequenceRandomVolume: 0
+      MaxInstanceCount: 0
+      Delay: 0
+      RandomVolume: 0
+      RandomPitch: 0
+      RandomDelay: 0
+      OverrideAudioSourceSettings: 0
+      SpatialBlend: 0
+      SubItems:
+      - Probability: 1
+        Volume: 1
+        IndividualSettings: []
+        SubItemType: 0
+        DisableOtherSubitems: 0
+        ItemModeAudioID: 
+        Clip: {fileID: 8300000, guid: 46070bd37534423459ab5bf4e39003f9, type: 3}
+        PitchShift: 0
+        Pan2D: 0
+        Delay: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        RandomDelay: 0
+        ClipStopTime: 0
+        ClipStartTime: 0
+        FadeIn: 0
+        FadeOut: 0
+        RandomStartPosition: 0
+    - DestroyOnLoad: 1
+      Volume: 1
+      SubItemPickMode: 2
+      MinTimeBetweenPlayCalls: 0.1
+      AudioSourceMinDistance: 1
+      AudioSourceMaxDistance: 500
+      Name: GameplayTheme4
+      Loop: 0
+      LoopSequenceCount: 0
+      LoopSequenceOverlap: 0
+      LoopSequenceRandomDelay: 0
+      LoopSequenceRandomPitch: 0
+      LoopSequenceRandomVolume: 0
+      MaxInstanceCount: 0
+      Delay: 0
+      RandomVolume: 0
+      RandomPitch: 0
+      RandomDelay: 0
+      OverrideAudioSourceSettings: 0
+      SpatialBlend: 0
+      SubItems:
+      - Probability: 1
+        Volume: 1
+        IndividualSettings: []
+        SubItemType: 0
+        DisableOtherSubitems: 0
+        ItemModeAudioID: 
+        Clip: {fileID: 8300000, guid: 1262eb2e4bcc7d946816826719c3141d, type: 3}
+        PitchShift: 0
+        Pan2D: 0
+        Delay: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        RandomDelay: 0
+        ClipStopTime: 0
+        ClipStartTime: 0
+        FadeIn: 0
+        FadeOut: 0
+        RandomStartPosition: 0
+    - DestroyOnLoad: 1
+      Volume: 1
+      SubItemPickMode: 2
+      MinTimeBetweenPlayCalls: 0.1
+      AudioSourceMinDistance: 1
+      AudioSourceMaxDistance: 500
+      Name: GameplayTheme1
+      Loop: 0
+      LoopSequenceCount: 0
+      LoopSequenceOverlap: 0
+      LoopSequenceRandomDelay: 0
+      LoopSequenceRandomPitch: 0
+      LoopSequenceRandomVolume: 0
+      MaxInstanceCount: 0
+      Delay: 0
+      RandomVolume: 0
+      RandomPitch: 0
+      RandomDelay: 0
+      OverrideAudioSourceSettings: 0
+      SpatialBlend: 0
+      SubItems:
+      - Probability: 1
+        Volume: 1
+        IndividualSettings: []
+        SubItemType: 0
+        DisableOtherSubitems: 0
+        ItemModeAudioID: 
+        Clip: {fileID: 8300000, guid: 0d554e37dd70bf1409d0b13d2dc12d18, type: 3}
+        PitchShift: 0
+        Pan2D: 0
+        Delay: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        RandomDelay: 0
+        ClipStopTime: 0
+        ClipStartTime: 0
+        FadeIn: 0
+        FadeOut: 0
+        RandomStartPosition: 0
+    - DestroyOnLoad: 1
+      Volume: 1
+      SubItemPickMode: 2
+      MinTimeBetweenPlayCalls: 0.1
+      AudioSourceMinDistance: 1
+      AudioSourceMaxDistance: 500
+      Name: GameplayTheme7
+      Loop: 0
+      LoopSequenceCount: 0
+      LoopSequenceOverlap: 0
+      LoopSequenceRandomDelay: 0
+      LoopSequenceRandomPitch: 0
+      LoopSequenceRandomVolume: 0
+      MaxInstanceCount: 0
+      Delay: 0
+      RandomVolume: 0
+      RandomPitch: 0
+      RandomDelay: 0
+      OverrideAudioSourceSettings: 0
+      SpatialBlend: 0
+      SubItems:
+      - Probability: 1
+        Volume: 1
+        IndividualSettings: []
+        SubItemType: 0
+        DisableOtherSubitems: 0
+        ItemModeAudioID: 
+        Clip: {fileID: 8300000, guid: 57523668b6501b741b92b8b40e890b9a, type: 3}
+        PitchShift: 0
+        Pan2D: 0
+        Delay: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        RandomDelay: 0
+        ClipStopTime: 0
+        ClipStartTime: 0
+        FadeIn: 0
+        FadeOut: 0
+        RandomStartPosition: 0
+    - DestroyOnLoad: 1
+      Volume: 1
+      SubItemPickMode: 2
+      MinTimeBetweenPlayCalls: 0.1
+      AudioSourceMinDistance: 1
+      AudioSourceMaxDistance: 500
+      Name: GameplayTheme2
+      Loop: 0
+      LoopSequenceCount: 0
+      LoopSequenceOverlap: 0
+      LoopSequenceRandomDelay: 0
+      LoopSequenceRandomPitch: 0
+      LoopSequenceRandomVolume: 0
+      MaxInstanceCount: 0
+      Delay: 0
+      RandomVolume: 0
+      RandomPitch: 0
+      RandomDelay: 0
+      OverrideAudioSourceSettings: 0
+      SpatialBlend: 0
+      SubItems:
+      - Probability: 1
+        Volume: 1
+        IndividualSettings: []
+        SubItemType: 0
+        DisableOtherSubitems: 0
+        ItemModeAudioID: 
+        Clip: {fileID: 8300000, guid: a3808f7881915f04b82a2fdb1c57db7d, type: 3}
+        PitchShift: 0
+        Pan2D: 0
+        Delay: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        RandomDelay: 0
+        ClipStopTime: 0
+        ClipStartTime: 0
+        FadeIn: 0
+        FadeOut: 0
+        RandomStartPosition: 0
+    - DestroyOnLoad: 1
+      Volume: 1
+      SubItemPickMode: 2
+      MinTimeBetweenPlayCalls: 0.1
+      AudioSourceMinDistance: 1
+      AudioSourceMaxDistance: 500
+      Name: GameplayTheme3
+      Loop: 0
+      LoopSequenceCount: 0
+      LoopSequenceOverlap: 0
+      LoopSequenceRandomDelay: 0
+      LoopSequenceRandomPitch: 0
+      LoopSequenceRandomVolume: 0
+      MaxInstanceCount: 0
+      Delay: 0
+      RandomVolume: 0
+      RandomPitch: 0
+      RandomDelay: 0
+      OverrideAudioSourceSettings: 0
+      SpatialBlend: 0
+      SubItems:
+      - Probability: 1
+        Volume: 1
+        IndividualSettings: []
+        SubItemType: 0
+        DisableOtherSubitems: 0
+        ItemModeAudioID: 
+        Clip: {fileID: 8300000, guid: 04356dd7c02e74f4498304ece7820afa, type: 3}
+        PitchShift: 0
+        Pan2D: 0
+        Delay: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        RandomDelay: 0
+        ClipStopTime: 0
+        ClipStartTime: 0
+        FadeIn: 0
+        FadeOut: 0
+        RandomStartPosition: 0
+    - DestroyOnLoad: 1
+      Volume: 1
+      SubItemPickMode: 2
+      MinTimeBetweenPlayCalls: 0.1
+      AudioSourceMinDistance: 1
+      AudioSourceMaxDistance: 500
+      Name: GameplayTheme5
+      Loop: 0
+      LoopSequenceCount: 0
+      LoopSequenceOverlap: 0
+      LoopSequenceRandomDelay: 0
+      LoopSequenceRandomPitch: 0
+      LoopSequenceRandomVolume: 0
+      MaxInstanceCount: 0
+      Delay: 0
+      RandomVolume: 0
+      RandomPitch: 0
+      RandomDelay: 0
+      OverrideAudioSourceSettings: 0
+      SpatialBlend: 0
+      SubItems:
+      - Probability: 1
+        Volume: 1
+        IndividualSettings: []
+        SubItemType: 0
+        DisableOtherSubitems: 0
+        ItemModeAudioID: 
+        Clip: {fileID: 8300000, guid: 93f0a8b85d7f4064aae348ef571f3950, type: 3}
+        PitchShift: 0
+        Pan2D: 0
+        Delay: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        RandomDelay: 0
+        ClipStopTime: 0
+        ClipStartTime: 0
+        FadeIn: 0
+        FadeOut: 0
+        RandomStartPosition: 0
+    - DestroyOnLoad: 1
+      Volume: 1
+      SubItemPickMode: 2
+      MinTimeBetweenPlayCalls: 0.1
+      AudioSourceMinDistance: 1
+      AudioSourceMaxDistance: 500
+      Name: MainMenuTheme
+      Loop: 0
+      LoopSequenceCount: 0
+      LoopSequenceOverlap: 0
+      LoopSequenceRandomDelay: 0
+      LoopSequenceRandomPitch: 0
+      LoopSequenceRandomVolume: 0
+      MaxInstanceCount: 0
+      Delay: 0
+      RandomVolume: 0
+      RandomPitch: 0
+      RandomDelay: 0
+      OverrideAudioSourceSettings: 0
+      SpatialBlend: 0
+      SubItems:
+      - Probability: 1
+        Volume: 1
+        IndividualSettings: []
+        SubItemType: 0
+        DisableOtherSubitems: 0
+        ItemModeAudioID: 
+        Clip: {fileID: 8300000, guid: 79e3b78d44ee36e43b32101baef210b4, type: 3}
+        PitchShift: 0
+        Pan2D: 0
+        Delay: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        RandomDelay: 0
+        ClipStopTime: 0
+        ClipStartTime: 0
+        FadeIn: 0
+        FadeOut: 0
+        RandomStartPosition: 0
+    AudioMixerGroup: {fileID: 243238432626407692, guid: bc16d904333043b40afde4e7f46ad08b,
+      type: 2}
+  - volume: 1
+    parentCategoryName: 
+    Name: PhoneVoice
+    AudioObjectPrefab: {fileID: 1941388042560724, guid: 52ce23f3e4383f343884258333a2e9aa,
+      type: 2}
+    AudioItems:
+    - DestroyOnLoad: 1
+      Volume: 1
+      SubItemPickMode: 2
+      MinTimeBetweenPlayCalls: 0.1
+      AudioSourceMinDistance: 1
+      AudioSourceMaxDistance: 500
+      Name: 9
+      Loop: 0
+      LoopSequenceCount: 0
+      LoopSequenceOverlap: 0
+      LoopSequenceRandomDelay: 0
+      LoopSequenceRandomPitch: 0
+      LoopSequenceRandomVolume: 0
+      MaxInstanceCount: 0
+      Delay: 0
+      RandomVolume: 0
+      RandomPitch: 0
+      RandomDelay: 0
+      OverrideAudioSourceSettings: 0
+      SpatialBlend: 0
+      SubItems:
+      - Probability: 1
+        Volume: 1
+        IndividualSettings: []
+        SubItemType: 0
+        DisableOtherSubitems: 0
+        ItemModeAudioID: 
+        Clip: {fileID: 8300000, guid: f42f1b7044ed1a744ad9a66b10432c00, type: 3}
+        PitchShift: 0
+        Pan2D: 0
+        Delay: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        RandomDelay: 0
+        ClipStopTime: 0
+        ClipStartTime: 0
+        FadeIn: 0
+        FadeOut: 0
+        RandomStartPosition: 0
+    - DestroyOnLoad: 1
+      Volume: 1
+      SubItemPickMode: 2
+      MinTimeBetweenPlayCalls: 0.1
+      AudioSourceMinDistance: 1
+      AudioSourceMaxDistance: 500
+      Name: 8
+      Loop: 0
+      LoopSequenceCount: 0
+      LoopSequenceOverlap: 0
+      LoopSequenceRandomDelay: 0
+      LoopSequenceRandomPitch: 0
+      LoopSequenceRandomVolume: 0
+      MaxInstanceCount: 0
+      Delay: 0
+      RandomVolume: 0
+      RandomPitch: 0
+      RandomDelay: 0
+      OverrideAudioSourceSettings: 0
+      SpatialBlend: 0
+      SubItems:
+      - Probability: 1
+        Volume: 1
+        IndividualSettings: []
+        SubItemType: 0
+        DisableOtherSubitems: 0
+        ItemModeAudioID: 
+        Clip: {fileID: 8300000, guid: d6f5463c218890346a6555c0412aee94, type: 3}
+        PitchShift: 0
+        Pan2D: 0
+        Delay: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        RandomDelay: 0
+        ClipStopTime: 0
+        ClipStartTime: 0
+        FadeIn: 0
+        FadeOut: 0
+        RandomStartPosition: 0
+    - DestroyOnLoad: 1
+      Volume: 1
+      SubItemPickMode: 2
+      MinTimeBetweenPlayCalls: 0.1
+      AudioSourceMinDistance: 1
+      AudioSourceMaxDistance: 500
+      Name: 7
+      Loop: 0
+      LoopSequenceCount: 0
+      LoopSequenceOverlap: 0
+      LoopSequenceRandomDelay: 0
+      LoopSequenceRandomPitch: 0
+      LoopSequenceRandomVolume: 0
+      MaxInstanceCount: 0
+      Delay: 0
+      RandomVolume: 0
+      RandomPitch: 0
+      RandomDelay: 0
+      OverrideAudioSourceSettings: 0
+      SpatialBlend: 0
+      SubItems:
+      - Probability: 1
+        Volume: 1
+        IndividualSettings: []
+        SubItemType: 0
+        DisableOtherSubitems: 0
+        ItemModeAudioID: 
+        Clip: {fileID: 8300000, guid: aeb4018aa45c01b45b4a3dc23f36e38e, type: 3}
+        PitchShift: 0
+        Pan2D: 0
+        Delay: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        RandomDelay: 0
+        ClipStopTime: 0
+        ClipStartTime: 0
+        FadeIn: 0
+        FadeOut: 0
+        RandomStartPosition: 0
+    - DestroyOnLoad: 1
+      Volume: 1
+      SubItemPickMode: 2
+      MinTimeBetweenPlayCalls: 0.1
+      AudioSourceMinDistance: 1
+      AudioSourceMaxDistance: 500
+      Name: 6
+      Loop: 0
+      LoopSequenceCount: 0
+      LoopSequenceOverlap: 0
+      LoopSequenceRandomDelay: 0
+      LoopSequenceRandomPitch: 0
+      LoopSequenceRandomVolume: 0
+      MaxInstanceCount: 0
+      Delay: 0
+      RandomVolume: 0
+      RandomPitch: 0
+      RandomDelay: 0
+      OverrideAudioSourceSettings: 0
+      SpatialBlend: 0
+      SubItems:
+      - Probability: 1
+        Volume: 1
+        IndividualSettings: []
+        SubItemType: 0
+        DisableOtherSubitems: 0
+        ItemModeAudioID: 
+        Clip: {fileID: 8300000, guid: dc2f91111d3541a448e7e39e3e6bbe2d, type: 3}
+        PitchShift: 0
+        Pan2D: 0
+        Delay: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        RandomDelay: 0
+        ClipStopTime: 0
+        ClipStartTime: 0
+        FadeIn: 0
+        FadeOut: 0
+        RandomStartPosition: 0
+    - DestroyOnLoad: 1
+      Volume: 1
+      SubItemPickMode: 2
+      MinTimeBetweenPlayCalls: 0.1
+      AudioSourceMinDistance: 1
+      AudioSourceMaxDistance: 500
+      Name: 5
+      Loop: 0
+      LoopSequenceCount: 0
+      LoopSequenceOverlap: 0
+      LoopSequenceRandomDelay: 0
+      LoopSequenceRandomPitch: 0
+      LoopSequenceRandomVolume: 0
+      MaxInstanceCount: 0
+      Delay: 0
+      RandomVolume: 0
+      RandomPitch: 0
+      RandomDelay: 0
+      OverrideAudioSourceSettings: 0
+      SpatialBlend: 0
+      SubItems:
+      - Probability: 1
+        Volume: 1
+        IndividualSettings: []
+        SubItemType: 0
+        DisableOtherSubitems: 0
+        ItemModeAudioID: 
+        Clip: {fileID: 8300000, guid: 871cc2b159f5f694e92cda626377b229, type: 3}
+        PitchShift: 0
+        Pan2D: 0
+        Delay: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        RandomDelay: 0
+        ClipStopTime: 0
+        ClipStartTime: 0
+        FadeIn: 0
+        FadeOut: 0
+        RandomStartPosition: 0
+    - DestroyOnLoad: 1
+      Volume: 1
+      SubItemPickMode: 2
+      MinTimeBetweenPlayCalls: 0.1
+      AudioSourceMinDistance: 1
+      AudioSourceMaxDistance: 500
+      Name: 4
+      Loop: 0
+      LoopSequenceCount: 0
+      LoopSequenceOverlap: 0
+      LoopSequenceRandomDelay: 0
+      LoopSequenceRandomPitch: 0
+      LoopSequenceRandomVolume: 0
+      MaxInstanceCount: 0
+      Delay: 0
+      RandomVolume: 0
+      RandomPitch: 0
+      RandomDelay: 0
+      OverrideAudioSourceSettings: 0
+      SpatialBlend: 0
+      SubItems:
+      - Probability: 1
+        Volume: 1
+        IndividualSettings: []
+        SubItemType: 0
+        DisableOtherSubitems: 0
+        ItemModeAudioID: 
+        Clip: {fileID: 8300000, guid: 02ff149a2a2f8574c897f05cb1da913d, type: 3}
+        PitchShift: 0
+        Pan2D: 0
+        Delay: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        RandomDelay: 0
+        ClipStopTime: 0
+        ClipStartTime: 0
+        FadeIn: 0
+        FadeOut: 0
+        RandomStartPosition: 0
+    - DestroyOnLoad: 1
+      Volume: 1
+      SubItemPickMode: 2
+      MinTimeBetweenPlayCalls: 0.1
+      AudioSourceMinDistance: 1
+      AudioSourceMaxDistance: 500
+      Name: 3
+      Loop: 0
+      LoopSequenceCount: 0
+      LoopSequenceOverlap: 0
+      LoopSequenceRandomDelay: 0
+      LoopSequenceRandomPitch: 0
+      LoopSequenceRandomVolume: 0
+      MaxInstanceCount: 0
+      Delay: 0
+      RandomVolume: 0
+      RandomPitch: 0
+      RandomDelay: 0
+      OverrideAudioSourceSettings: 0
+      SpatialBlend: 0
+      SubItems:
+      - Probability: 1
+        Volume: 1
+        IndividualSettings: []
+        SubItemType: 0
+        DisableOtherSubitems: 0
+        ItemModeAudioID: 
+        Clip: {fileID: 8300000, guid: 9db5c489009ea194a98be683dbe15faf, type: 3}
+        PitchShift: 0
+        Pan2D: 0
+        Delay: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        RandomDelay: 0
+        ClipStopTime: 0
+        ClipStartTime: 0
+        FadeIn: 0
+        FadeOut: 0
+        RandomStartPosition: 0
+    - DestroyOnLoad: 1
+      Volume: 1
+      SubItemPickMode: 2
+      MinTimeBetweenPlayCalls: 0.1
+      AudioSourceMinDistance: 1
+      AudioSourceMaxDistance: 500
+      Name: 2
+      Loop: 0
+      LoopSequenceCount: 0
+      LoopSequenceOverlap: 0
+      LoopSequenceRandomDelay: 0
+      LoopSequenceRandomPitch: 0
+      LoopSequenceRandomVolume: 0
+      MaxInstanceCount: 0
+      Delay: 0
+      RandomVolume: 0
+      RandomPitch: 0
+      RandomDelay: 0
+      OverrideAudioSourceSettings: 0
+      SpatialBlend: 0
+      SubItems:
+      - Probability: 1
+        Volume: 1
+        IndividualSettings: []
+        SubItemType: 0
+        DisableOtherSubitems: 0
+        ItemModeAudioID: 
+        Clip: {fileID: 8300000, guid: bf0050804bf39dd45bf7d977c624f4e6, type: 3}
+        PitchShift: 0
+        Pan2D: 0
+        Delay: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        RandomDelay: 0
+        ClipStopTime: 0
+        ClipStartTime: 0
+        FadeIn: 0
+        FadeOut: 0
+        RandomStartPosition: 0
+    - DestroyOnLoad: 1
+      Volume: 1
+      SubItemPickMode: 2
+      MinTimeBetweenPlayCalls: 0.1
+      AudioSourceMinDistance: 1
+      AudioSourceMaxDistance: 500
+      Name: 0
+      Loop: 0
+      LoopSequenceCount: 0
+      LoopSequenceOverlap: 0
+      LoopSequenceRandomDelay: 0
+      LoopSequenceRandomPitch: 0
+      LoopSequenceRandomVolume: 0
+      MaxInstanceCount: 0
+      Delay: 0
+      RandomVolume: 0
+      RandomPitch: 0
+      RandomDelay: 0
+      OverrideAudioSourceSettings: 0
+      SpatialBlend: 0
+      SubItems:
+      - Probability: 1
+        Volume: 1
+        IndividualSettings: []
+        SubItemType: 0
+        DisableOtherSubitems: 0
+        ItemModeAudioID: 
+        Clip: {fileID: 8300000, guid: 787763e0981ce2643adc5b2993fa3729, type: 3}
+        PitchShift: 0
+        Pan2D: 0
+        Delay: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        RandomDelay: 0
+        ClipStopTime: 0
+        ClipStartTime: 0
+        FadeIn: 0
+        FadeOut: 0
+        RandomStartPosition: 0
+    - DestroyOnLoad: 1
+      Volume: 1
+      SubItemPickMode: 2
+      MinTimeBetweenPlayCalls: 0.1
+      AudioSourceMinDistance: 1
+      AudioSourceMaxDistance: 500
+      Name: 1
+      Loop: 0
+      LoopSequenceCount: 0
+      LoopSequenceOverlap: 0
+      LoopSequenceRandomDelay: 0
+      LoopSequenceRandomPitch: 0
+      LoopSequenceRandomVolume: 0
+      MaxInstanceCount: 0
+      Delay: 0
+      RandomVolume: 0
+      RandomPitch: 0
+      RandomDelay: 0
+      OverrideAudioSourceSettings: 0
+      SpatialBlend: 0
+      SubItems:
+      - Probability: 1
+        Volume: 1
+        IndividualSettings: []
+        SubItemType: 0
+        DisableOtherSubitems: 0
+        ItemModeAudioID: 
+        Clip: {fileID: 8300000, guid: 4ef2e7c3728a01641910b3e2936ac5bd, type: 3}
+        PitchShift: 0
+        Pan2D: 0
+        Delay: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        RandomDelay: 0
+        ClipStopTime: 0
+        ClipStartTime: 0
+        FadeIn: 0
+        FadeOut: 0
+        RandomStartPosition: 0
+    AudioMixerGroup: {fileID: 243002082956074754, guid: bc16d904333043b40afde4e7f46ad08b,
+      type: 2}
+  LoopPlaylist: 1
+  ShufflePlaylist: 0
+  CrossfadePlaylist: 1
+  isAdditionalTestAudioController: 0
+  audioDisabled: 0
 --- !u!1001 &93101470
 Prefab:
   m_ObjectHideFlags: 0
@@ -5702,6 +5985,7 @@ MonoBehaviour:
   autoManageVRSettings: 1
   autoLoadSetup: 1
   setups:
+  - {fileID: 1117965956}
   - {fileID: 497889287}
 --- !u!4 &286585363
 Transform:
@@ -5716,7 +6000,7 @@ Transform:
   - {fileID: 1526991368}
   - {fileID: 840992084}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!1001 &294806411
 Prefab:
@@ -7569,6 +7853,34 @@ Transform:
   m_Father: {fileID: 1754160772}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 33.437, z: 0}
+--- !u!1 &445394462
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 445394463}
+  m_Layer: 0
+  m_Name: Spotlight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &445394463
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 445394462}
+  m_LocalRotation: {x: 0.00000008146034, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.002378025, y: 0, z: 0.04454218}
+  m_LocalScale: {x: 0.01666667, y: 0.016666686, z: 0.03214912}
+  m_Children: []
+  m_Father: {fileID: 1643060068}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &454472332
 GameObject:
   m_ObjectHideFlags: 0
@@ -7807,6 +8119,34 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!1 &495475781
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 495475782}
+  m_Layer: 0
+  m_Name: Spotlight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &495475782
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 495475781}
+  m_LocalRotation: {x: 0.00000008146034, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.002378025, y: 0, z: 0.04454218}
+  m_LocalScale: {x: 0.01666667, y: 0.016666686, z: 0.03214912}
+  m_Children: []
+  m_Father: {fileID: 1319888056}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &497889285
 GameObject:
   m_ObjectHideFlags: 0
@@ -7879,6 +8219,48 @@ MonoBehaviour:
     fallbackTypeName: VRTK.SDK_FallbackController
     typeName: VRTK.SDK_OculusController
     descriptionIndex: 0
+--- !u!1001 &501211270
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 610840268}
+    m_Modifications:
+    - target: {fileID: 4522592624172080, guid: 52ce23f3e4383f343884258333a2e9aa, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.0835
+      objectReference: {fileID: 0}
+    - target: {fileID: 4522592624172080, guid: 52ce23f3e4383f343884258333a2e9aa, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.3768
+      objectReference: {fileID: 0}
+    - target: {fileID: 4522592624172080, guid: 52ce23f3e4383f343884258333a2e9aa, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.0835
+      objectReference: {fileID: 0}
+    - target: {fileID: 4522592624172080, guid: 52ce23f3e4383f343884258333a2e9aa, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4522592624172080, guid: 52ce23f3e4383f343884258333a2e9aa, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4522592624172080, guid: 52ce23f3e4383f343884258333a2e9aa, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4522592624172080, guid: 52ce23f3e4383f343884258333a2e9aa, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4522592624172080, guid: 52ce23f3e4383f343884258333a2e9aa, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 52ce23f3e4383f343884258333a2e9aa, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &504800564
 GameObject:
   m_ObjectHideFlags: 0
@@ -9415,7 +9797,7 @@ Transform:
   m_Children:
   - {fileID: 540418893}
   m_Father: {fileID: 1827023331}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &635511068
 MonoBehaviour:
@@ -10484,279 +10866,16 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 773041395}
   m_Mesh: {fileID: 0}
---- !u!1 &786083135
+--- !u!1 &786083135 stripped
 GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 1543889451338640, guid: a1847106efd2d7047b54fee7e0b988fe,
+  m_PrefabParentObject: {fileID: 1941388042560724, guid: 52ce23f3e4383f343884258333a2e9aa,
     type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 786083136}
-  - component: {fileID: 786083144}
-  - component: {fileID: 786083143}
-  - component: {fileID: 786083142}
-  - component: {fileID: 786083141}
-  - component: {fileID: 786083140}
-  - component: {fileID: 786083139}
-  - component: {fileID: 786083138}
-  - component: {fileID: 786083137}
-  - component: {fileID: 786083145}
-  m_Layer: 0
-  m_Name: Phone
-  m_TagString: Phone
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &786083136
+  m_PrefabInternal: {fileID: 501211270}
+--- !u!4 &786083136 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 4958223550643360, guid: a1847106efd2d7047b54fee7e0b988fe,
+  m_PrefabParentObject: {fileID: 4522592624172080, guid: 52ce23f3e4383f343884258333a2e9aa,
     type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 786083135}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.0835, y: 0.3768, z: 0.0835}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 610840268}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
---- !u!114 &786083137
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114535645756581716, guid: a1847106efd2d7047b54fee7e0b988fe,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 786083135}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 817f15b2a0426974bb4e88ef34aa22b1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hideControllerOnTouch: 0
-  hideDelayOnTouch: 0
-  hideControllerOnGrab: 1
-  hideDelayOnGrab: 0
-  hideControllerOnUse: 0
-  hideDelayOnUse: 0
---- !u!114 &786083138
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114468534376855746, guid: a1847106efd2d7047b54fee7e0b988fe,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 786083135}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18055ba762aa3994f9c10208cd088bc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &786083139
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114256625102729214, guid: a1847106efd2d7047b54fee7e0b988fe,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 786083135}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8afa0b205791c9f4496bf2814aeac078, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  precisionGrab: 0
-  rightSnapHandle: {fileID: 0}
-  leftSnapHandle: {fileID: 0}
-  throwVelocityWithAttachDistance: 0
-  throwMultiplier: 1
-  onGrabCollisionDelay: 0
-  destroyImmediatelyOnThrow: 1
-  breakForce: 1500
---- !u!114 &786083140
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114996182041197336, guid: a1847106efd2d7047b54fee7e0b988fe,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 786083135}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3abaf4521bf2344ea21ed3020b98eb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  disableWhenIdle: 1
-  touchHighlightColor: {r: 1, g: 0.80689645, b: 0, a: 0}
-  allowedTouchControllers: 0
-  ignoredColliders: []
-  isGrabbable: 1
-  holdButtonToGrab: 1
-  stayGrabbedOnTeleport: 1
-  validDrop: 1
-  grabOverrideButton: 0
-  allowedGrabControllers: 0
-  grabAttachMechanicScript: {fileID: 786083139}
-  secondaryGrabActionScript: {fileID: 786083138}
-  isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
-  pointerActivatesUseAction: 0
-  useOverrideButton: 0
-  allowedUseControllers: 0
-  usingState: 0
---- !u!136 &786083141
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 136371117586865860, guid: a1847106efd2d7047b54fee7e0b988fe,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 786083135}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  m_Radius: 0.09
-  m_Height: 0.45
-  m_Direction: 2
-  m_Center: {x: 0.000000011175871, y: 0.0000000018626456, z: -0.00000015646224}
---- !u!54 &786083142
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 54382871130328184, guid: a1847106efd2d7047b54fee7e0b988fe,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 786083135}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!23 &786083143
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 23103756573308232, guid: a1847106efd2d7047b54fee7e0b988fe,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 786083135}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 2100000, guid: 57ac4301030718d498262e920a3f9c4b, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &786083144
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 33923044978567848, guid: a1847106efd2d7047b54fee7e0b988fe,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 786083135}
-  m_Mesh: {fileID: 4300000, guid: 231a3142e6326e1459d159094b7ffd9d, type: 3}
---- !u!82 &786083145
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 786083135}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 256
-  DopplerLevel: 1
-  MinDistance: 0.18
-  MaxDistance: 0.4
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - serializedVersion: 2
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 0
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 0
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 0
+  m_PrefabInternal: {fileID: 501211270}
 --- !u!1 &813506924
 GameObject:
   m_ObjectHideFlags: 0
@@ -11185,6 +11304,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FileName: lb.bin
+--- !u!1 &892129186
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 892129187}
+  m_Layer: 0
+  m_Name: HighlightContainer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &892129187
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 892129186}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1319888056}
+  - {fileID: 1643060068}
+  m_Father: {fileID: 1294246030}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &894474711
 Prefab:
   m_ObjectHideFlags: 0
@@ -11889,6 +12038,125 @@ Transform:
   m_Father: {fileID: 1717612367}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &958961724
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1117965955}
+    m_Modifications:
+    - target: {fileID: 4000011401111930, guid: be540b97364be0a4890e39e62ac89ed1, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011401111930, guid: be540b97364be0a4890e39e62ac89ed1, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011401111930, guid: be540b97364be0a4890e39e62ac89ed1, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011401111930, guid: be540b97364be0a4890e39e62ac89ed1, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011401111930, guid: be540b97364be0a4890e39e62ac89ed1, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011401111930, guid: be540b97364be0a4890e39e62ac89ed1, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011401111930, guid: be540b97364be0a4890e39e62ac89ed1, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011401111930, guid: be540b97364be0a4890e39e62ac89ed1, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224903114965417368, guid: be540b97364be0a4890e39e62ac89ed1,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -427.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224903114965417368, guid: be540b97364be0a4890e39e62ac89ed1,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -286.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224587334084441624, guid: be540b97364be0a4890e39e62ac89ed1,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224587334084441624, guid: be540b97364be0a4890e39e62ac89ed1,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224916294732003546, guid: be540b97364be0a4890e39e62ac89ed1,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.6799927
+      objectReference: {fileID: 0}
+    - target: {fileID: 224916294732003546, guid: be540b97364be0a4890e39e62ac89ed1,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011401111930, guid: be540b97364be0a4890e39e62ac89ed1, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011401111930, guid: be540b97364be0a4890e39e62ac89ed1, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013941130086, guid: be540b97364be0a4890e39e62ac89ed1, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: be540b97364be0a4890e39e62ac89ed1, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &958961725 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4000011401111930, guid: be540b97364be0a4890e39e62ac89ed1,
+    type: 2}
+  m_PrefabInternal: {fileID: 958961724}
+--- !u!1 &958961726 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1883185261795400, guid: be540b97364be0a4890e39e62ac89ed1,
+    type: 2}
+  m_PrefabInternal: {fileID: 958961724}
+--- !u!1 &958961727 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1391022766006510, guid: be540b97364be0a4890e39e62ac89ed1,
+    type: 2}
+  m_PrefabInternal: {fileID: 958961724}
+--- !u!1 &958961728 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1384746914293964, guid: be540b97364be0a4890e39e62ac89ed1,
+    type: 2}
+  m_PrefabInternal: {fileID: 958961724}
+--- !u!1 &958961729 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1538727058887424, guid: be540b97364be0a4890e39e62ac89ed1,
+    type: 2}
+  m_PrefabInternal: {fileID: 958961724}
+--- !u!1 &958961730 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1587602180963074, guid: be540b97364be0a4890e39e62ac89ed1,
+    type: 2}
+  m_PrefabInternal: {fileID: 958961724}
+--- !u!1 &958961731 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000013941130086, guid: be540b97364be0a4890e39e62ac89ed1,
+    type: 2}
+  m_PrefabInternal: {fileID: 958961724}
 --- !u!1001 &989891939
 Prefab:
   m_ObjectHideFlags: 0
@@ -12651,7 +12919,7 @@ Transform:
   m_Children:
   - {fileID: 1926088690}
   m_Father: {fileID: 1827023331}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1032157886
 MonoBehaviour:
@@ -14036,6 +14304,74 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1109018712}
   m_Mesh: {fileID: 0}
+--- !u!1 &1117965954
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1117965955}
+  - component: {fileID: 1117965956}
+  m_Layer: 0
+  m_Name: Simulator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1117965955
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1117965954}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 958961725}
+  m_Father: {fileID: 1526991368}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1117965956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1117965954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eeda6d41317f444b900e374895f14e95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoPopulateObjectReferences: 1
+  actualBoundaries: {fileID: 958961731}
+  actualHeadset: {fileID: 958961730}
+  actualLeftController: {fileID: 958961729}
+  actualRightController: {fileID: 958961727}
+  modelAliasLeftController: {fileID: 958961728}
+  modelAliasRightController: {fileID: 958961726}
+  cachedSystemSDKInfo:
+    baseTypeName: VRTK.SDK_BaseSystem
+    fallbackTypeName: VRTK.SDK_FallbackSystem
+    typeName: VRTK.SDK_SimSystem
+    descriptionIndex: 0
+  cachedBoundariesSDKInfo:
+    baseTypeName: VRTK.SDK_BaseBoundaries
+    fallbackTypeName: VRTK.SDK_FallbackBoundaries
+    typeName: VRTK.SDK_SimBoundaries
+    descriptionIndex: 0
+  cachedHeadsetSDKInfo:
+    baseTypeName: VRTK.SDK_BaseHeadset
+    fallbackTypeName: VRTK.SDK_FallbackHeadset
+    typeName: VRTK.SDK_SimHeadset
+    descriptionIndex: 0
+  cachedControllerSDKInfo:
+    baseTypeName: VRTK.SDK_BaseController
+    fallbackTypeName: VRTK.SDK_FallbackController
+    typeName: VRTK.SDK_SimController
+    descriptionIndex: 0
 --- !u!1001 &1139023217
 Prefab:
   m_ObjectHideFlags: 0
@@ -14698,79 +15034,6 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 0709da92f4ac27d479cda28d29e66adf, type: 3}
   m_PrefabInternal: {fileID: 1164501325}
---- !u!1 &1171154082
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1171154083}
-  - component: {fileID: 1171154085}
-  - component: {fileID: 1171154084}
-  m_Layer: 0
-  m_Name: EditorHighlightObject
-  m_TagString: Holster
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1171154083
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1171154082}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 3}
-  m_Children:
-  - {fileID: 1193979072}
-  m_Father: {fileID: 1579435528}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &1171154084
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1171154082}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 2100000, guid: 76008b803511a8e4c91d6f9bacc10161, type: 2}
-  - {fileID: 2100000, guid: 637360d62764e394f980909ae582f976, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &1171154085
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1171154082}
-  m_Mesh: {fileID: 4300000, guid: 85be6c1283929934593ea07d765ecb1e, type: 3}
 --- !u!1001 &1189344399
 Prefab:
   m_ObjectHideFlags: 0
@@ -14837,34 +15100,6 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 0709da92f4ac27d479cda28d29e66adf, type: 3}
   m_PrefabInternal: {fileID: 1189344399}
---- !u!1 &1193979071
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1193979072}
-  m_Layer: 0
-  m_Name: Spotlight
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1193979072
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1193979071}
-  m_LocalRotation: {x: 0.00000008146034, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.002378025, y: 0, z: 0.04454218}
-  m_LocalScale: {x: 0.01666667, y: 0.016666686, z: 0.03214912}
-  m_Children: []
-  m_Father: {fileID: 1171154083}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1196421421
 GameObject:
   m_ObjectHideFlags: 0
@@ -15361,96 +15596,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb7a6650b6cb46545967d3b380b7396c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1291404403
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1291404404}
-  - component: {fileID: 1291404407}
-  - component: {fileID: 1291404406}
-  - component: {fileID: 1291404405}
-  m_Layer: 0
-  m_Name: HighlightObject
-  m_TagString: Holster
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1291404404
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1291404403}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 3}
-  m_Children:
-  - {fileID: 1563675423}
-  m_Father: {fileID: 1579435528}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1291404405
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1291404403}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0d9d6b91d0094e44b2d07767c0e4cbe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  minFadeTime: 0.07
-  maxFadeTime: 0.17
-  minUnfadeTime: 0.1
-  maxUnfadeTime: 0.2
-  flickeringLight: {fileID: 0}
---- !u!23 &1291404406
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1291404403}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 2100000, guid: 70cc6af1e3cf4f14fa30fcf4bc188040, type: 2}
-  - {fileID: 2100000, guid: 637360d62764e394f980909ae582f976, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &1291404407
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1291404403}
-  m_Mesh: {fileID: 4300000, guid: 85be6c1283929934593ea07d765ecb1e, type: 3}
 --- !u!4 &1294246030 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000013912359922, guid: 5d323709f0cbd454196647d9d8f2dd84,
@@ -15485,6 +15630,96 @@ Transform:
   m_Father: {fileID: 26429635}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1319888055
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1319888056}
+  - component: {fileID: 1319888059}
+  - component: {fileID: 1319888058}
+  - component: {fileID: 1319888057}
+  m_Layer: 0
+  m_Name: HighlightObject
+  m_TagString: Holster
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1319888056
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1319888055}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_Children:
+  - {fileID: 495475782}
+  m_Father: {fileID: 892129187}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1319888057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1319888055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0d9d6b91d0094e44b2d07767c0e4cbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minFadeTime: 0.07
+  maxFadeTime: 0.17
+  minUnfadeTime: 0.1
+  maxUnfadeTime: 0.2
+  flickeringLight: {fileID: 0}
+--- !u!23 &1319888058
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1319888055}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 70cc6af1e3cf4f14fa30fcf4bc188040, type: 2}
+  - {fileID: 2100000, guid: 637360d62764e394f980909ae582f976, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1319888059
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1319888055}
+  m_Mesh: {fileID: 4300000, guid: 85be6c1283929934593ea07d765ecb1e, type: 3}
 --- !u!1 &1327513083
 GameObject:
   m_ObjectHideFlags: 0
@@ -16537,6 +16772,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 497889286}
+  - {fileID: 1117965955}
   m_Father: {fileID: 286585363}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -17043,34 +17279,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e53b07ad62d980a4da9fffff0b05fd2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1563675422
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1563675423}
-  m_Layer: 0
-  m_Name: Spotlight
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1563675423
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1563675422}
-  m_LocalRotation: {x: 0.00000008146034, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.002378025, y: 0, z: 0.04454218}
-  m_LocalScale: {x: 0.01666667, y: 0.016666686, z: 0.03214912}
-  m_Children: []
-  m_Father: {fileID: 1291404404}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1563916740
 GameObject:
   m_ObjectHideFlags: 0
@@ -17340,36 +17548,6 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: dc5c3f1e0d5854f4da3dfceabdf37a6d, type: 3}
   m_PrefabInternal: {fileID: 1570556011}
---- !u!1 &1579435527
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1579435528}
-  m_Layer: 0
-  m_Name: HighlightContainer
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1579435528
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1579435527}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1291404404}
-  - {fileID: 1171154083}
-  m_Father: {fileID: 1294246030}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1581873926
 GameObject:
   m_ObjectHideFlags: 0
@@ -17806,6 +17984,79 @@ Transform:
   m_Father: {fileID: 825199708}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 33.437, z: 0}
+--- !u!1 &1643060067
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1643060068}
+  - component: {fileID: 1643060070}
+  - component: {fileID: 1643060069}
+  m_Layer: 0
+  m_Name: EditorHighlightObject
+  m_TagString: Holster
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1643060068
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1643060067}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_Children:
+  - {fileID: 445394463}
+  m_Father: {fileID: 892129187}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &1643060069
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1643060067}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 76008b803511a8e4c91d6f9bacc10161, type: 2}
+  - {fileID: 2100000, guid: 637360d62764e394f980909ae582f976, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1643060070
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1643060067}
+  m_Mesh: {fileID: 4300000, guid: 85be6c1283929934593ea07d765ecb1e, type: 3}
 --- !u!1 &1652435914
 GameObject:
   m_ObjectHideFlags: 0
@@ -19974,11 +20225,11 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1327513084}
-  - {fileID: 74539306}
   - {fileID: 635511067}
   - {fileID: 1032157885}
+  - {fileID: 74539306}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1831595905
 GameObject:
@@ -22963,7 +23214,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panel: {fileID: 209447330}
-  source: {fileID: 786083145}
+  source: {fileID: 0}
   audioNumbers:
   - {fileID: 8300000, guid: 787763e0981ce2643adc5b2993fa3729, type: 3}
   - {fileID: 8300000, guid: 4ef2e7c3728a01641910b3e2936ac5bd, type: 3}
