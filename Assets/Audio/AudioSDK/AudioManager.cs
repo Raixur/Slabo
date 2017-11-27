@@ -5,13 +5,13 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
-    [SerializeField] private string ambiencePlayListName = "";
+    [SerializeField] private string musicPlayListName = "";
 
     [UsedImplicitly]
     private void Start ()
 	{
-        if(string.IsNullOrEmpty(ambiencePlayListName))
-	    StartCoroutine(StartPlayList());
+        if(!string.IsNullOrEmpty(musicPlayListName))
+	        StartCoroutine(StartPlayList());
 	}
 
     private IEnumerator StartPlayList()
@@ -20,6 +20,6 @@ public class AudioManager : MonoBehaviour
         {
             yield return null;
         }
-        AudioController.PlayMusicPlaylist(ambiencePlayListName);
+        AudioController.PlayMusicPlaylist(musicPlayListName);
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using AudioSDK;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using VRTK;
@@ -14,6 +15,9 @@ public class LevelSwitcher : MonoBehaviour
     [SerializeField] private float fadeTransiotion = 0.5f;
     [SerializeField] private Color fadeColor = Color.black;
 
+    [SerializeField] private AudioObject audioObject = null;
+    [SerializeField] private string controlChangeAudioId = "ValveOpen";
+
     private VRTK_HeadsetFade fade;
 
     public void Start()
@@ -24,11 +28,11 @@ public class LevelSwitcher : MonoBehaviour
 
     private void SwitchScene(object sender, Control3DEventArgs args)
     {
+        audioObject.PlayAfter(controlChangeAudioId);
         if (args.normalizedValue >= value)
         {
-            StartCoroutine(LoadSceneCoroutine());
+            //StartCoroutine(LoadSceneCoroutine());
         }
-            
     }
 
     private IEnumerator LoadSceneCoroutine()
