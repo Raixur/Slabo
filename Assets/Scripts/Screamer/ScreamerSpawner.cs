@@ -1,48 +1,133 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using JetBrains.Annotations;
 using UnityEngine;
 using VRTK;
 
+public class ScreamerEventArgs
+{
+    public Transform Camera { get; set; }
+    public Screamer Screamer { get; set; }
+}
+
+public delegate void ScreamerEventHandler(object sender, ScreamerEventArgs args);
+
+public class ScreamerQueue
+{
+    private readonly Queue<Screamer> screamers;
+
+    public ScreamerQueue(IEnumerable<Screamer> initializeList)
+    {
+        Screamer = null;
+        screamers = new Queue<Screamer>(initializeList);
+        if (screamers.Count == 0)
+            Debug.LogError("Screamer list is empty!");
+
+        SubscribeDespawnChain();
+    }
+
+    public Screamer Screamer { get; private set; }
+
+    private void ActivateNext(object sender, EventArgs args)
+    {
+        Screamer.DespawnEnd -= ActivateNext;
+        SubscribeDespawnChain();
+    }
+
+    private void SubscribeDespawnChain()
+    {
+        Screamer = screamers.Dequeue();
+        if (Screamer != null)
+            Screamer.DespawnEnd += ActivateNext;
+    }
+}
+
+
 public class ScreamerSpawner : MonoBehaviour
 {
-    private const float Angle = 10f;
-
     [SerializeField] private List<Screamer> screamers;
-    [SerializeField] private List<LightFlickering> affectedLight;
-    [SerializeField] private Transform pointingObject;
 
-    private Queue<Screamer> screamerQueue;
+    private ScreamerQueue screamerQueue;
+    private Transform cameraTransform;
+    private bool triggered;
 
-    private bool isActive;
+    public event ScreamerEventHandler Entered;
+    public event ScreamerEventHandler Left;
+    public event ScreamerEventHandler Faced;
+    public event ScreamerEventHandler Unfaced;
 
-    public void Start()
+    [UsedImplicitly]
+    private void Start()
     {
-        pointingObject = pointingObject ?? VRTK_SDK_Bridge.GetHeadsetCamera();
+        VRTK_SDKManager.instance.LoadedSetupChanged +=
+            (sender, args) => cameraTransform = VRTK_SDK_Bridge.GetHeadsetCamera();
 
-        foreach (var screamer in screamers)
+        screamerQueue = new ScreamerQueue(screamers);
+    }
+
+    [UsedImplicitly]
+    private void OnTriggerEnter(Collider other)
+    {
+        if (VRTK_PlayerObject.IsPlayerObject(other.gameObject))
+            OnEntered();
+    }
+
+    [UsedImplicitly]
+    private void OnTriggerExit(Collider other)
+    {
+        if (VRTK_PlayerObject.IsPlayerObject(other.gameObject))
+            OnLeft();
+    }
+
+    [UsedImplicitly]
+    private void OnTriggerStay(Collider other)
+    {
+        if (VRTK_PlayerObject.IsPlayerObject(other.gameObject))
         {
-            screamer.Spawn += (sender, args) =>
+            var isFacing = screamerQueue.Screamer.IsFaced(cameraTransform);
+            if (!triggered && isFacing)
             {
-                affectedLight.ForEach(l => l.FlickerByTime(args.Duration));
-                isActive = true;
-            };
-            screamer.Despawn += (sender, args) => isActive = false;
+                triggered = true;
+                OnFaced();
+            }
+            if (triggered && !isFacing)
+            {
+                triggered = false;
+                OnUnfaced();
+            }
         }
-
-        screamerQueue = new Queue<Screamer>(screamers);
     }
 
-    public void OnTriggerStay(Collider other)
+    protected virtual ScreamerEventArgs GetEventPayload()
     {
-        if (other.GetComponent<VRTK_PlayerObject>() != null && IsPointedOnScreamer() && !isActive)
+        return new ScreamerEventArgs
         {
-            var screamer = screamerQueue.Dequeue();
-            screamer.InitSpawn();
-        }
+            Camera = cameraTransform,
+            Screamer = screamerQueue.Screamer
+        };
     }
 
-    private bool IsPointedOnScreamer()
+    protected virtual void OnEntered()
     {
-        var destDir = screamerQueue.Peek().transform.position - pointingObject.transform.position; 
-        return Vector3.Angle(destDir, pointingObject.transform.forward) < Angle;
+        if (Entered != null)
+            Entered(this, GetEventPayload());
+    }
+
+    protected virtual void OnLeft()
+    {
+        if (Left != null)
+            Left(this, GetEventPayload());
+    }
+
+    protected virtual void OnFaced()
+    {
+        if (Faced != null)
+            Faced(this, GetEventPayload());
+    }
+
+    protected virtual void OnUnfaced()
+    {
+        if (Unfaced != null)
+            Unfaced(this, GetEventPayload());
     }
 }

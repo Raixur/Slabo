@@ -4,66 +4,79 @@ using UnityEngine;
 
 public class Screamer : MonoBehaviour
 {
-    [SerializeField] private bool SpawnEnabled = true;
-    [SerializeField] private bool DespawnEnabled = true;
-    [SerializeField] private GameObject character;
-    
-    [SerializeField] private bool isAnimated = false;
-    [SerializeField] private RuntimeAnimatorController animatorController = null;
-    [SerializeField] private string trigger = "OnSpawn";
-    private Animator animator;
+    [SerializeField] private float spawnDuration = 0f;
+    [SerializeField] private float actionDuration = 0f;
+    [SerializeField] private float despawnDuration = 0f;
+    [SerializeField] private float facingAngle = 40f;
 
-    [SerializeField] private float spawnDuration = 0.1f;
-    [SerializeField] private float lifetimeDuration = 0f;
-    [SerializeField] private float despawnDuration = 0.1f;
+    public event EventHandler SpawnStart;
+    public event EventHandler SpawnEnd;
 
-    public event EventHandler<SpawnEventArgs> Spawn;
-    public event EventHandler<SpawnEventArgs> Despawn;
+    public event EventHandler DespawnStart;
+    public event EventHandler DespawnEnd;
 
-    public void Start()
+    public bool IsFaced(Transform facingTransform)
     {
-        character = character ?? gameObject;
-
-        if (isAnimated)
-        {
-            animator = character.GetComponent<Animator>() ?? character.AddComponent<Animator>();
-            animator.runtimeAnimatorController = animatorController ?? new RuntimeAnimatorController();
-        }
+        return Vector3.Angle(facingTransform.forward, transform.position - facingTransform.position) < facingAngle;
     }
 
-    public void InitSpawn()
+    public void InitAction()
     {
-        StartCoroutine(LifetimeCoroutine());
+        StartCoroutine(InitActionCoroutine());
     }
 
-    public IEnumerator LifetimeCoroutine()
+    private IEnumerator InitActionCoroutine()
     {
-        OnSpawn();
+        OnSpawnStart();
+        Spawn();
         yield return new WaitForSeconds(spawnDuration);
+        OnSpawnEnd();
 
-        character.SetActive(true);
-        if (isAnimated)
-            animator.SetTrigger(trigger);
-        yield return new WaitForSeconds(lifetimeDuration);
+        Action();
+        yield return new WaitForSeconds(actionDuration);
 
-        OnDespawn();
-        character.SetActive(false);
+        OnDespawnStart();
+        Despawn();
+        yield return new WaitForSeconds(despawnDuration);
+        OnDespawnEnd();
     }
 
-    protected virtual void OnSpawn()
+    protected virtual void Action()
     {
-        if (SpawnEnabled && Spawn != null)
-            Spawn(this, new SpawnEventArgs { Duration = spawnDuration + 0.01f });
+
     }
 
-    protected virtual void OnDespawn()
+    protected virtual void Spawn()
     {
-        if (DespawnEnabled && Despawn != null)
-            Despawn(this, new SpawnEventArgs {Duration = despawnDuration});
+        
     }
-}
 
-public class SpawnEventArgs : EventArgs
-{
-    public float Duration { get; set; }
+    protected virtual void Despawn()
+    {
+        
+    }
+
+    protected virtual void OnSpawnStart()
+    {
+        if (SpawnStart != null)
+            SpawnStart(this, EventArgs.Empty);
+    }
+
+    protected virtual void OnSpawnEnd()
+    {
+        if (SpawnEnd != null)
+            SpawnEnd(this, EventArgs.Empty);
+    }
+
+    protected virtual void OnDespawnStart()
+    {
+        if (DespawnStart != null)
+            DespawnStart(this, EventArgs.Empty);
+    }
+
+    protected virtual void OnDespawnEnd()
+    {
+        if (DespawnEnd != null)
+            DespawnEnd(this, EventArgs.Empty);
+    }
 }
