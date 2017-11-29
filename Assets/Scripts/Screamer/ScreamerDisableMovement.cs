@@ -1,13 +1,11 @@
-﻿using JetBrains.Annotations;
+﻿using System;
+using JetBrains.Annotations;
 using UnityEngine;
 using VRTK;
 
 [RequireComponent(typeof(ScreamerSpawner))]
 public class ScreamerDisableMovement : MonoBehaviour
 {
-    [SerializeField] private bool enableOnFacing = false;
-    [SerializeField] private bool enableOnEnd = true;
-
     private VRTK_TouchpadControl[] movementControl;
 
     [UsedImplicitly]
@@ -16,16 +14,25 @@ public class ScreamerDisableMovement : MonoBehaviour
         movementControl = FindObjectsOfType<VRTK_TouchpadControl>();
 
         var spawner = GetComponent<ScreamerSpawner>();
-        spawner.Faced += (sender, args) => DisableMovement();
+        spawner.SpawnStart += OnFacing;
+        spawner.DespawnEnd += OnUnfacing;
+    }
 
-        if (enableOnFacing)
+    private void OnUnfacing(object sender, ScreamerEventArgs args)
+    {
+        var facingScreamer = args.Screamer as FacingScreamer;
+        if (facingScreamer != null)
         {
-            spawner.Unfaced += (sender, args) => EnableMovement();
+            EnableMovement();
         }
+    }
 
-        if (enableOnEnd)
+    private void OnFacing(object o, ScreamerEventArgs args)
+    {
+        var facingScreamer = args.Screamer as FacingScreamer;
+        if (facingScreamer != null)
         {
-            spawner.End += (sender, args) => EnableMovement();
+            DisableMovement();
         }
     }
 

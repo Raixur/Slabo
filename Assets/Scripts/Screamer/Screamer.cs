@@ -1,82 +1,55 @@
 ﻿using System;
-using System.Collections;
+using JetBrains.Annotations;
 using UnityEngine;
 
 public class Screamer : MonoBehaviour
 {
-    [SerializeField] private float spawnDuration = 0f;
-    [SerializeField] private float actionDuration = 0f;
-    [SerializeField] private float despawnDuration = 0f;
-    [SerializeField] private float facingAngle = 40f;
+    public float SpawnDuration = 0f;
+    public float ActionDuration = 0f;
+    public float DespawnDuration = 0f;
 
-    public event EventHandler SpawnStart;
-    public event EventHandler SpawnEnd;
+    [SerializeField] private ScreamerSpawner spawner;
+    public bool IsBlocking = true;
 
-    public event EventHandler DespawnStart;
-    public event EventHandler DespawnEnd;
+    protected bool IsInZone;
 
-    public bool IsFaced(Transform facingTransform)
+    public event EventHandler Trigger;
+
+    [UsedImplicitly]
+    protected virtual void Start()
     {
-        return Vector3.Angle(facingTransform.forward, transform.position - facingTransform.position) < facingAngle;
+        spawner.Entered += SpawnerOnEntered;
+        spawner.Left += SpawnerOnLeft;
     }
 
-    public void InitAction()
+    private void SpawnerOnLeft(object sender, ScreamerEventArgs args)
     {
-        StartCoroutine(InitActionCoroutine());
+        IsInZone = false;
     }
 
-    private IEnumerator InitActionCoroutine()
+    private void SpawnerOnEntered(object o, ScreamerEventArgs screamerEventArgs)
     {
-        OnSpawnStart();
-        Spawn();
-        yield return new WaitForSeconds(spawnDuration);
-        OnSpawnEnd();
-
-        Action();
-        yield return new WaitForSeconds(actionDuration);
-
-        OnDespawnStart();
-        Despawn();
-        yield return new WaitForSeconds(despawnDuration);
-        OnDespawnEnd();
+        IsInZone = true;
     }
 
-    protected virtual void Action()
-    {
-
-    }
-
-    protected virtual void Spawn()
+    public virtual void Spawn()
     {
         
     }
 
-    protected virtual void Despawn()
+    public virtual void Action()
     {
         
     }
 
-    protected virtual void OnSpawnStart()
+    public virtual void Despawn()
     {
-        if (SpawnStart != null)
-            SpawnStart(this, EventArgs.Empty);
+        
     }
 
-    protected virtual void OnSpawnEnd()
+    protected virtual void OnTrigger()
     {
-        if (SpawnEnd != null)
-            SpawnEnd(this, EventArgs.Empty);
-    }
-
-    protected virtual void OnDespawnStart()
-    {
-        if (DespawnStart != null)
-            DespawnStart(this, EventArgs.Empty);
-    }
-
-    protected virtual void OnDespawnEnd()
-    {
-        if (DespawnEnd != null)
-            DespawnEnd(this, EventArgs.Empty);
+        if (Trigger != null)
+            Trigger(this, EventArgs.Empty);
     }
 }

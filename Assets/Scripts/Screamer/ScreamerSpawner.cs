@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using JetBrains.Annotations;
 using UnityEngine;
@@ -6,63 +7,33 @@ using VRTK;
 
 public class ScreamerEventArgs
 {
-    public Transform Camera { get; set; }
     public Screamer Screamer { get; set; }
 }
 
 public delegate void ScreamerEventHandler(object sender, ScreamerEventArgs args);
-
-public class ScreamerQueue
-{
-    private readonly Queue<Screamer> screamers;
-
-    public ScreamerQueue(IEnumerable<Screamer> initializeList)
-    {
-        Screamer = null;
-        screamers = new Queue<Screamer>(initializeList);
-        if (screamers.Count == 0)
-            Debug.LogError("Screamer list is empty!");
-
-        SubscribeDespawnChain();
-    }
-
-    public Screamer Screamer { get; private set; }
-
-    private void ActivateNext(object sender, EventArgs args)
-    {
-        Screamer.DespawnEnd -= ActivateNext;
-        SubscribeDespawnChain();
-    }
-
-    private void SubscribeDespawnChain()
-    {
-        Screamer = screamers.Dequeue();
-        if (Screamer != null)
-            Screamer.DespawnEnd += ActivateNext;
-    }
-}
 
 
 public class ScreamerSpawner : MonoBehaviour
 {
     [SerializeField] private List<Screamer> screamers;
 
-    private ScreamerQueue screamerQueue;
-    private Transform cameraTransform;
-    private bool triggered;
+    private Queue<Screamer> screamerQueue;
+    private Screamer activeScreamer;
 
     public event ScreamerEventHandler Entered;
     public event ScreamerEventHandler Left;
-    public event ScreamerEventHandler Faced;
-    public event ScreamerEventHandler Unfaced;
+
+    public event ScreamerEventHandler SpawnStart;
+    public event ScreamerEventHandler SpawnEnd;
+    public event ScreamerEventHandler DespawnStart;
+    public event ScreamerEventHandler DespawnEnd;
 
     [UsedImplicitly]
     private void Start()
     {
-        VRTK_SDKManager.instance.LoadedSetupChanged +=
-            (sender, args) => cameraTransform = VRTK_SDK_Bridge.GetHeadsetCamera();
-
-        screamerQueue = new ScreamerQueue(screamers);
+        screamerQueue = new Queue<Screamer>(screamers);
+        activeScreamer = screamerQueue.Dequeue();
+        activeScreamer.Trigger += ActivateScreamer;
     }
 
     [UsedImplicitly]
@@ -79,55 +50,87 @@ public class ScreamerSpawner : MonoBehaviour
             OnLeft();
     }
 
-    [UsedImplicitly]
-    private void OnTriggerStay(Collider other)
+
+    public void ActivateScreamer(object screamer, EventArgs screamerEventArgs)
     {
-        if (VRTK_PlayerObject.IsPlayerObject(other.gameObject))
+        StartCoroutine(ActivateScreamerCoroutine((Screamer)screamer));
+    }
+
+    private IEnumerator ActivateScreamerCoroutine(Screamer screamer)
+    {
+        if (!screamer.IsBlocking)
+            SubscribeNext();
+
+        OnSpawnStart(screamer);
+        screamer.Spawn();
+        yield return new WaitForSeconds(screamer.SpawnDuration);
+        OnSpawnEnd(screamer);
+
+        screamer.Action();
+        yield return new WaitForSeconds(screamer.ActionDuration);
+
+        OnDespawnStart(screamer);
+        screamer.Despawn();
+        yield return new WaitForSeconds(screamer.DespawnDuration);
+        OnDespawnEnd(screamer);
+
+        if (screamer.IsBlocking)
+            SubscribeNext();
+    }
+
+    private void SubscribeNext()
+    {
+        activeScreamer.Trigger -= ActivateScreamer;
+        if (screamerQueue.Count != 0)
         {
-            var isFacing = screamerQueue.Screamer.IsFaced(cameraTransform);
-            if (!triggered && isFacing)
-            {
-                triggered = true;
-                OnFaced();
-            }
-            if (triggered && !isFacing)
-            {
-                triggered = false;
-                OnUnfaced();
-            }
+            activeScreamer = screamerQueue.Dequeue();
+            activeScreamer.Trigger += ActivateScreamer;
         }
     }
 
-    protected virtual ScreamerEventArgs GetEventPayload()
+    protected virtual ScreamerEventArgs GetEventPayload(Screamer screamer)
     {
         return new ScreamerEventArgs
         {
-            Camera = cameraTransform,
-            Screamer = screamerQueue.Screamer
+            Screamer = screamer
         };
     }
 
     protected virtual void OnEntered()
     {
+        Debug.Log("Entered");
         if (Entered != null)
-            Entered(this, GetEventPayload());
+            Entered(this, GetEventPayload(activeScreamer));
     }
 
     protected virtual void OnLeft()
     {
+        Debug.Log("Left");
         if (Left != null)
-            Left(this, GetEventPayload());
+            Left(this, GetEventPayload(activeScreamer));
     }
 
-    protected virtual void OnFaced()
+    protected virtual void OnSpawnStart(Screamer screamer)
     {
-        if (Faced != null)
-            Faced(this, GetEventPayload());
+        if (SpawnStart != null)
+            SpawnStart(this, GetEventPayload(screamer));
     }
 
-    protected virtual void OnUnfaced()
+    protected virtual void OnSpawnEnd(Screamer screamer)
     {
-        if (Unfaced != null)
-            Unfaced(this, GetEventPayload());
+        if (SpawnEnd != null)
+            SpawnEnd(this, GetEventPayload(screamer));
+    }
+
+    protected virtual void OnDespawnStart(Screamer screamer)
+    {
+        if (DespawnStart != null)
+            DespawnStart(this, GetEventPayload(screamer));
+    }
+
+    protected virtual void OnDespawnEnd(Screamer screamer)
+    {
+        if (DespawnEnd != null)
+            DespawnEnd(this, GetEventPayload(screamer));
     }
 }
