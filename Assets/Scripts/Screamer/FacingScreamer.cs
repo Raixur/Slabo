@@ -7,6 +7,9 @@ public class FacingScreamer : Screamer
     [SerializeField] private float facingAngle = 40f;
     [SerializeField] private GameObject model = null;
 
+    [SerializeField] private Animator animator = null;
+    [SerializeField] private string triggerName = "";
+
     private bool isTriggered;
     private Transform cameraTransform;
 
@@ -23,7 +26,6 @@ public class FacingScreamer : Screamer
     {
         if (IsInZone && !isTriggered && IsFaced(cameraTransform))
         {
-            Debug.Log("Facing screamer triggered");
             isTriggered = true;
             OnTrigger();            
         }
@@ -32,6 +34,10 @@ public class FacingScreamer : Screamer
     public override void Action()
     {
         model.SetActive(true);
+        if(animator != null && !string.IsNullOrEmpty(triggerName))
+        {
+            animator.SetTrigger(triggerName);
+        }
     }
 
     public override void Despawn()
@@ -43,8 +49,7 @@ public class FacingScreamer : Screamer
     {
         var facing = Vector3.Angle(facingTransform.forward, transform.position - facingTransform.position) <
                      facingAngle;
-
-        Debug.Log(facing);
+        
         return facing;
     }
 }

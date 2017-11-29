@@ -98,14 +98,12 @@ public class ScreamerSpawner : MonoBehaviour
 
     protected virtual void OnEntered()
     {
-        Debug.Log("Entered");
         if (Entered != null)
             Entered(this, GetEventPayload(activeScreamer));
     }
 
     protected virtual void OnLeft()
     {
-        Debug.Log("Left");
         if (Left != null)
             Left(this, GetEventPayload(activeScreamer));
     }
