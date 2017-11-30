@@ -3459,7 +3459,7 @@ MonoBehaviour:
   interactWithoutGrab: 1
   connectedTo: {fileID: 2115332582}
   direction: 3
-  activationDistance: 0
+  activationDistance: 0.01
   buttonStrength: 5
   events:
     OnPush:
@@ -4986,7 +4986,7 @@ MonoBehaviour:
   interactWithoutGrab: 1
   connectedTo: {fileID: 2115332582}
   direction: 3
-  activationDistance: 0
+  activationDistance: 0.01
   buttonStrength: 5
   events:
     OnPush:
@@ -5091,7 +5091,7 @@ MonoBehaviour:
   interactWithoutGrab: 1
   connectedTo: {fileID: 2115332582}
   direction: 3
-  activationDistance: 0
+  activationDistance: 0.01
   buttonStrength: 5
   events:
     OnPush:
@@ -5510,7 +5510,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 286585361}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 11.16, y: 0, z: -3.18}
+  m_LocalPosition: {x: -1, y: 0, z: -4.13}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1526991368}
@@ -5677,7 +5677,7 @@ MonoBehaviour:
   interactWithoutGrab: 1
   connectedTo: {fileID: 2115332582}
   direction: 3
-  activationDistance: 0
+  activationDistance: 0.01
   buttonStrength: 5
   events:
     OnPush:
@@ -8102,7 +8102,7 @@ MonoBehaviour:
   interactWithoutGrab: 1
   connectedTo: {fileID: 2115332582}
   direction: 3
-  activationDistance: 0
+  activationDistance: 0.01
   buttonStrength: 5
   events:
     OnPush:
@@ -8436,7 +8436,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 0}
   deviceForDirection: 0
-  disableOtherControlsOnActive: 1
+  disableOtherControlsOnActive: 0
   affectOnFalling: 0
   controlOverrideObject: {fileID: 0}
   primaryActivationButton: 9
@@ -8662,7 +8662,7 @@ MonoBehaviour:
   interactWithoutGrab: 1
   connectedTo: {fileID: 2115332582}
   direction: 3
-  activationDistance: 0
+  activationDistance: 0.01
   buttonStrength: 5
   events:
     OnPush:
@@ -9966,7 +9966,7 @@ MonoBehaviour:
   interactWithoutGrab: 1
   connectedTo: {fileID: 2115332582}
   direction: 3
-  activationDistance: 0
+  activationDistance: 0.01
   buttonStrength: 5
   events:
     OnPush:
@@ -11340,7 +11340,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 0}
   deviceForDirection: 0
-  disableOtherControlsOnActive: 1
+  disableOtherControlsOnActive: 0
   affectOnFalling: 0
   controlOverrideObject: {fileID: 0}
   primaryActivationButton: 9
@@ -11897,6 +11897,16 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1.1000005
       objectReference: {fileID: 0}
+    - target: {fileID: 59859241591140894, guid: 9a16e966b1c0b884db2f7b36eb3692ac,
+        type: 2}
+      propertyPath: m_ConnectedAnchor.y
+      value: -0.0025864132
+      objectReference: {fileID: 0}
+    - target: {fileID: 59975944167671740, guid: 9a16e966b1c0b884db2f7b36eb3692ac,
+        type: 2}
+      propertyPath: m_ConnectedAnchor.y
+      value: -0.0049048834
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114797880301704480, guid: 9a16e966b1c0b884db2f7b36eb3692ac, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 9a16e966b1c0b884db2f7b36eb3692ac, type: 2}
@@ -12039,6 +12049,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1095616130}
   - component: {fileID: 1095616131}
+  - component: {fileID: 1095616132}
   m_Layer: 0
   m_Name: RightEyeAnchor
   m_TagString: MainCamera
@@ -12096,6 +12107,18 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &1095616132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1095616129}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  profile: {fileID: 11400000, guid: 6d654e847c76fb24f970c2ed604e28ef, type: 2}
 --- !u!1 &1102968539
 GameObject:
   m_ObjectHideFlags: 0
@@ -12193,7 +12216,7 @@ MonoBehaviour:
   interactWithoutGrab: 1
   connectedTo: {fileID: 2115332582}
   direction: 3
-  activationDistance: 0
+  activationDistance: 0.01
   buttonStrength: 5
   events:
     OnPush:
@@ -14647,6 +14670,7 @@ GameObject:
   - component: {fileID: 1494729692}
   - component: {fileID: 1494729694}
   - component: {fileID: 1494729693}
+  - component: {fileID: 1494729695}
   m_Layer: 0
   m_Name: CenterEyeAnchor
   m_TagString: MainCamera
@@ -14712,6 +14736,18 @@ AudioListener:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1494729691}
   m_Enabled: 1
+--- !u!114 &1494729695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1494729691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  profile: {fileID: 11400000, guid: 6d654e847c76fb24f970c2ed604e28ef, type: 2}
 --- !u!1001 &1497275040
 Prefab:
   m_ObjectHideFlags: 0
@@ -16001,7 +16037,7 @@ MonoBehaviour:
   interactWithoutGrab: 1
   connectedTo: {fileID: 2115332582}
   direction: 3
-  activationDistance: 0
+  activationDistance: 0.01
   buttonStrength: 5
   events:
     OnPush:
@@ -18149,7 +18185,7 @@ MonoBehaviour:
   interactWithoutGrab: 1
   connectedTo: {fileID: 2115332582}
   direction: 3
-  activationDistance: 0
+  activationDistance: 0.01
   buttonStrength: 5
   events:
     OnPush:
@@ -19297,7 +19333,7 @@ MonoBehaviour:
   interactWithoutGrab: 1
   connectedTo: {fileID: 2115332582}
   direction: 3
-  activationDistance: 0
+  activationDistance: 0.01
   buttonStrength: 5
   events:
     OnPush:
@@ -19631,7 +19667,7 @@ MonoBehaviour:
   interactWithoutGrab: 1
   connectedTo: {fileID: 2115332582}
   direction: 3
-  activationDistance: 0
+  activationDistance: 0.01
   buttonStrength: 5
   events:
     OnPush:
