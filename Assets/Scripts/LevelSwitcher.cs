@@ -31,7 +31,7 @@ public class LevelSwitcher : MonoBehaviour
         audioObject.PlayAfter(controlChangeAudioId);
         if (args.normalizedValue >= value)
         {
-            //StartCoroutine(LoadSceneCoroutine());
+            StartCoroutine(LoadSceneCoroutine());
         }
     }
 
