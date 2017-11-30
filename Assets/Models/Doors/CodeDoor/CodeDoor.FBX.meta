@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 10183e9115df6c5499095329ceee2538
-timeCreated: 1511280146
+guid: 42098ca4db09f8942814ff8a033403d2
+timeCreated: 1512032202
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -97,8 +97,6 @@ ModelImporter:
     4300030: 1
     4300032: Backspace
     4300034: 0
-    7400000: Take 001
-    9500000: //RootNode
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -108,18 +106,18 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: CodeDoorButtons
-    second: {fileID: 2100000, guid: b4af612f4a6bc7a4384ad3d0baec6771, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
       name: CodeDoorScreen
-    second: {fileID: 2100000, guid: 5093060a8cc237b47a60b9abb50d3f75, type: 2}
+    second: {fileID: 2100000, guid: 027884972b0f16642abc1a58bede69d9, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: LockBolts
     second: {fileID: 2100000, guid: ddfe5f5cc96977940952812ef51ba6c5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #30'
+    second: {fileID: 2100000, guid: d831dcb8445ce7d4899fbbb97e280cab, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -198,7 +196,7 @@ ModelImporter:
     rootMotionBoneName: 
     rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
-    hasExtraRoot: 1
+    hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 0

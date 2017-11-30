@@ -6,6 +6,7 @@ public class CodeDoor : MonoBehaviour
 {
     [SerializeField] private DigitInputPanel panel = null;
     [SerializeField] private LockableDoor door = null;
+    [SerializeField] private LockBolts bolts = null;
 
     private string doorCode;
 
@@ -23,6 +24,7 @@ public class CodeDoor : MonoBehaviour
         {
             door.SetLock(false);
             panel.Display.InputFinished -= TryOpen;
+            bolts.ToggleLock();
         }
     }
 }

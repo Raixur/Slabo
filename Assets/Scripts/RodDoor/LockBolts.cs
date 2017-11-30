@@ -1,29 +1,22 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using JetBrains.Annotations;
 using UnityEngine;
 
+[RequireComponent(typeof(Animator))]
 public class LockBolts : MonoBehaviour
 {
-    private bool isLocked = true;
-    private bool isUnlocked = false;
+    [SerializeField] private bool isOpened;
+    private Animator animator;
 
-    [SerializeField] private Vector3 unlockPosition;
-    [SerializeField] private float unlockSpeed;
-
-    public void Update()
+    [UsedImplicitly]
+    private void Start()
     {
-        if(!isUnlocked && !isLocked)
-        {
-            var step = unlockSpeed * Time.deltaTime;
-            transform.position = Vector3.MoveTowards(transform.position, unlockPosition, step);
-
-            if (transform.position == unlockPosition)
-                isUnlocked = true;
-        }
+        animator = GetComponent<Animator>();
+        animator.SetBool("Open", isOpened);
     }
 
-    public void StartUnlocking()
+    public void ToggleLock()
     {
-        isLocked = false;
+        isOpened = !isOpened;
+        animator.SetBool("Open", isOpened);
     }
 }
