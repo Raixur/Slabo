@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 85be6c1283929934593ea07d765ecb1e
-timeCreated: 1510586130
+guid: a8af2046b08c826408c44bf4a308c2fc
+timeCreated: 1512141589
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -10,18 +10,22 @@ ModelImporter:
     2300000: //RootNode
     3300000: //RootNode
     4300000: FlashLight
-    9500000: //RootNode
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Base
-    second: {fileID: 2100000, guid: 70cc6af1e3cf4f14fa30fcf4bc188040, type: 2}
+      name: Glass
+    second: {fileID: 2100000, guid: 9d44f917b01e25d4dbdfa5d2adab8432, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Grip
+      name: Handle
     second: {fileID: 2100000, guid: 637360d62764e394f980909ae582f976, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MetalBase
+    second: {fileID: -1572878494, guid: 9fbefe3eb63d2cc45801e7df1b689e98, type: 3}
   materials:
     importMaterials: 1
     materialName: 0
