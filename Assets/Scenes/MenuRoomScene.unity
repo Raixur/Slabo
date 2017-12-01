@@ -726,7 +726,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 217558061}
-  m_LocalRotation: {x: 0.6386751, y: 0.3034701, z: 0.3034701, w: 0.6386751}
+  m_LocalRotation: {x: 0.63867515, y: 0.30347013, z: 0.30347013, w: 0.63867515}
   m_LocalPosition: {x: -8.21, y: 0.7, z: 0}
   m_LocalScale: {x: 4.1913147, y: 0.35326353, z: 0.3834252}
   m_Children: []
@@ -1299,8 +1299,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 2483027969
-  m_fontColor: {r: 0.003921569, g: 0, b: 0, a: 0.584}
+    rgba: 4278190111
+  m_fontColor: {r: 0.12156863, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_fontColorGradient:
     topLeft: {r: 1, g: 1, b: 1, a: 1}
@@ -2776,6 +2776,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1435284169}
   - component: {fileID: 1435284170}
+  - component: {fileID: 1435284171}
   m_Layer: 0
   m_Name: AudioController
   m_TagString: Untagged
@@ -2828,7 +2829,7 @@ MonoBehaviour:
     CurrentItemIndex: 1
     CurrentSubitemIndex: 2
     CurrentPlaylistEntryIndex: 0
-    CurrentPlaylistIndex: 0
+    CurrentPlaylistIndex: 1
   AudioObjectPrefab: {fileID: 1066860981386698, guid: 585d99979c8fe1b459299aa0fab1fd88,
     type: 2}
   Persistent: 0
@@ -3685,6 +3686,18 @@ MonoBehaviour:
   CrossfadePlaylist: 1
   isAdditionalTestAudioController: 0
   audioDisabled: 0
+--- !u!114 &1435284171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1435284168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec84db540ad47b14c8db57172b1583a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicPlayListName: Menu
 --- !u!1 &1519064131
 GameObject:
   m_ObjectHideFlags: 0
