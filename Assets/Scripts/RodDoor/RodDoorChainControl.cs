@@ -22,7 +22,7 @@ public class RodDoorChainControl : MonoBehaviour
             pullControl.ValueChanged += (sender, args) => forceDisplay.SetNormalizedRotation(args.normalizedValue);
 
         if(lockBolts != null)
-            pullControl.ActivationPulled += (sender, args) => lockBolts.gameObject.SetActive(false);
+            pullControl.ActivationPulled += (sender, args) => lockBolts.ToggleLock();
 
         if(door != null)
             pullControl.ActivationPulled += (sender, args) => door.SetLock(false);
