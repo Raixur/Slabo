@@ -6,12 +6,12 @@ using VRTK;
 public class FacingScreamer : Screamer
 {
     [SerializeField] private float facingAngle = 40f;
-    [SerializeField] private GameObject model = null;
 
     [SerializeField] private Animator animator = null;
     [SerializeField] private string triggerName = "";
 
     [SerializeField] private string audioId = "";
+    [SerializeField] private Transform audioTransform = null;
 
     private Transform cameraTransform;
     private bool hasAnimation;
@@ -40,7 +40,7 @@ public class FacingScreamer : Screamer
             animator.SetTrigger(triggerName);
 
         if(hasAudio)
-            AudioController.Play(audioId);
+            AudioController.Play(audioId, audioTransform);
     }
 
     private bool IsFaced(Transform facingTransform)

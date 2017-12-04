@@ -1,12 +1,12 @@
 ﻿using AudioSDK;
 using UnityEngine;
 
-public class AudioTrigger : MonoBehaviour, IZoneTriggerable
+public class AudioTrigger : ZoneTriggerable
 {
     [SerializeField] private string audioId;
     private bool isTriggered;
 
-    public void TriggerEnter()
+    public override void TriggerEnter()
     {
         if(!isTriggered)
         {
@@ -15,7 +15,7 @@ public class AudioTrigger : MonoBehaviour, IZoneTriggerable
         }
     }
 
-    public void TriggerExit()
+    public override void TriggerExit()
     {
     }
 }

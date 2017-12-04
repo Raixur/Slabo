@@ -4,19 +4,19 @@ using VRTK;
 
 public class TriggerZone : MonoBehaviour
 {
-    [SerializeField] private IZoneTriggerable screamer = null;
+    [SerializeField] private ZoneTriggerable triggerable = null;
 
     [UsedImplicitly]
     private void OnTriggerEnter(Collider other)
     {
         if (VRTK_PlayerObject.IsPlayerObject(other.gameObject))
-            screamer.TriggerEnter();
+            triggerable.TriggerEnter();
     }
 
     [UsedImplicitly]
     private void OnTriggerExit(Collider other)
     {
         if (VRTK_PlayerObject.IsPlayerObject(other.gameObject))
-            screamer.TriggerExit();
+            triggerable.TriggerExit();
     }
 }

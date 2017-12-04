@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Screamer : MonoBehaviour, IZoneTriggerable
+public class Screamer : ZoneTriggerable
 {
     [SerializeField] private VisualTransition visualTransition;
 
@@ -12,13 +12,13 @@ public class Screamer : MonoBehaviour, IZoneTriggerable
     protected bool IsInZone;
     protected bool IsTriggered;
 
-    public void TriggerEnter()
+    public override void TriggerEnter()
     {
         IsInZone = true; 
         HandleEnter();
     }
 
-    public void TriggerExit()
+    public override void TriggerExit()
     {
         IsInZone = false; 
         HandleExit();
