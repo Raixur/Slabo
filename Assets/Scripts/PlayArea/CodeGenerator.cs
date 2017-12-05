@@ -5,6 +5,9 @@
 
     public const int RequiredPhoneNumberDigits = 4;
     public const int RequiredDoorCodeDigits = 4;
+    
+    public const int RequiredLevers = 4;
+    public const int RequiredLeverDoors = 4;
 
     private CodeGenerator() {
 		var rnd = new System.Random();
@@ -40,4 +43,18 @@
     public int[] PhoneNumber { get; private set; }
 
     public int[] DoorCode { get; private set; }
+
+    public int[][] DoorCombinations
+    {
+        get
+        {
+            return new[]
+            {
+                new[] {0, 3},
+                new[] {0, 1},
+                new[] {1, 2, 3},
+                new[] {1}
+            };
+        }
+    }
 }

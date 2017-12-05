@@ -1,13 +1,13 @@
 fileFormatVersion: 2
 guid: 9fbefe3eb63d2cc45801e7df1b689e98
-timeCreated: 1512142222
+timeCreated: 1512487341
 licenseType: Free
 SubstanceImporter:
   externalObjects: {}
   serializedVersion: 5
   materialInstances:
   - serializedVersion: 16
-    name: BlackIronPainted
+    name: DarkIronGates
     prototypeName: Metal
     shaderName: 
     shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
@@ -33,7 +33,7 @@ SubstanceImporter:
         stringvalue: 
     - name: $randomseed
       value:
-        scalar[0]: 0
+        scalar[0]: 1174
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
@@ -49,7 +49,7 @@ SubstanceImporter:
         stringvalue: 
     - name: Metal_Roughness
       value:
-        scalar[0]: 0.065
+        scalar[0]: 0.2
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
@@ -65,15 +65,15 @@ SubstanceImporter:
         stringvalue: 
     - name: Metal_Color
       value:
-        scalar[0]: 0.13235295
-        scalar[1]: 0.026275955
-        scalar[2]: 0.026275955
+        scalar[0]: 0.08823532
+        scalar[1]: 0.06293254
+        scalar[2]: 0.06293254
         scalar[3]: 0
         texture: {instanceID: 0}
         stringvalue: 
     - name: Age
       value:
-        scalar[0]: 0.756
+        scalar[0]: 0.863
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
@@ -81,7 +81,7 @@ SubstanceImporter:
         stringvalue: 
     - name: AgeRandom
       value:
-        scalar[0]: 3.71
+        scalar[0]: 7.62
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
@@ -89,9 +89,9 @@ SubstanceImporter:
         stringvalue: 
     - name: Exposed_Metal_Color
       value:
-        scalar[0]: 0.35294116
-        scalar[1]: 0.35294116
-        scalar[2]: 0.35294116
+        scalar[0]: 0.64705884
+        scalar[1]: 0.64705884
+        scalar[2]: 0.64705884
         scalar[3]: 1
         texture: {instanceID: 0}
         stringvalue: 
@@ -105,7 +105,7 @@ SubstanceImporter:
         stringvalue: 
     - name: exposed_roughness
       value:
-        scalar[0]: 0.073
+        scalar[0]: 0
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
@@ -113,7 +113,7 @@ SubstanceImporter:
         stringvalue: 
     - name: Oxidation
       value:
-        scalar[0]: 0.237
+        scalar[0]: 0.101
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
@@ -121,7 +121,7 @@ SubstanceImporter:
         stringvalue: 
     - name: Rust_Chunks
       value:
-        scalar[0]: 1
+        scalar[0]: 0
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
@@ -137,7 +137,7 @@ SubstanceImporter:
         stringvalue: 
     - name: Dirt
       value:
-        scalar[0]: 0.178
+        scalar[0]: 0.11
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
@@ -145,7 +145,7 @@ SubstanceImporter:
         stringvalue: 
     - name: Scratches
       value:
-        scalar[0]: 0.01
+        scalar[0]: 5
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
@@ -458,7 +458,7 @@ SubstanceImporter:
     materialInformation:
       serializedVersion: 5
       offset: {x: 0, y: 0}
-      scale: {x: 5, y: 5}
+      scale: {x: 1, y: 1}
       generateMipmaps: 1
       generateAllOutputs: 0
       animationUpdateRate: 0
@@ -467,7 +467,7 @@ SubstanceImporter:
       texEnvs:
       - _BumpMap:
           texture: {instanceID: 0}
-          scale: {x: 5, y: 5}
+          scale: {x: 1, y: 1}
           offset: {x: 0, y: 0}
       - _DetailAlbedoMap:
           texture: {instanceID: 0}
@@ -487,11 +487,11 @@ SubstanceImporter:
           offset: {x: 0, y: 0}
       - _MainTex:
           texture: {instanceID: 0}
-          scale: {x: 5, y: 5}
+          scale: {x: 1, y: 1}
           offset: {x: 0, y: 0}
       - _MetallicGlossMap:
           texture: {instanceID: 0}
-          scale: {x: 5, y: 5}
+          scale: {x: 1, y: 1}
           offset: {x: 0, y: 0}
       - _OcclusionMap:
           texture: {instanceID: 0}
@@ -520,21 +520,21 @@ SubstanceImporter:
       - _UVSec: 0
       - _ZWrite: 1
       colors:
-      - _Color: {r: 1, g: 1, b: 1, a: 1}
+      - _Color: {r: 0.45588237, g: 0.45588237, b: 0.45588237, a: 1}
       - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
       - _EmissionColorUI: {r: 1, g: 1, b: 1, a: 1}
     textureParameters:
-    - name: BlackIronPainted_basecolor
+    - name: DarkIronGates_basecolor
       alphaSource: 6
       filterMode: 1
       aniso: 1
       wrapMode: 0
-    - name: BlackIronPainted_normal
+    - name: DarkIronGates_normal
       alphaSource: 0
       filterMode: 1
       aniso: 1
       wrapMode: 0
-    - name: BlackIronPainted_metallic
+    - name: DarkIronGates_metallic
       alphaSource: 7
       filterMode: 1
       aniso: 1
@@ -556,556 +556,6 @@ SubstanceImporter:
       textureHeight: 1024
       textureFormat: 0
       loadingBehavior: 2
-  - serializedVersion: 16
-    name: DarkIronRust
-    prototypeName: Metal
-    shaderName: 
-    shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-    shaderKeywords: _EMISSION _METALLICGLOSSMAP _NORMALMAP
-    renderQueue: -1
-    lightmapFlags: 1
-    inputs:
-    - name: $normalformat
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: $outputsize
-      value:
-        scalar[0]: 8
-        scalar[1]: 8
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: $randomseed
-      value:
-        scalar[0]: 6533
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: Metal_Type
-      value:
-        scalar[0]: 5
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: Metal_Roughness
-      value:
-        scalar[0]: 0.2
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: Metal_metalness
-      value:
-        scalar[0]: 0.9
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: Metal_Color
-      value:
-        scalar[0]: 0.623529
-        scalar[1]: 0.623529
-        scalar[2]: 0.623529
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: Age
-      value:
-        scalar[0]: 0.99
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: AgeRandom
-      value:
-        scalar[0]: 2.58
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: Exposed_Metal_Color
-      value:
-        scalar[0]: 0.6
-        scalar[1]: 0.627451
-        scalar[2]: 0.631373
-        scalar[3]: 1
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: exposed_metalness
-      value:
-        scalar[0]: 1
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: exposed_roughness
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: Oxidation
-      value:
-        scalar[0]: 0.755
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: Rust_Chunks
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: Rust_Holes
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: Dirt
-      value:
-        scalar[0]: 0.117
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: Scratches
-      value:
-        scalar[0]: 4.54
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: Custom_Opacity
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: Custom_Normal
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: normal1
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: normal2
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: normal3
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: Custom_Image_Toggle
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: Mask_Input
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: Normal_Map
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: Normal_Map_1
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: Normal_Map_2
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: imageswitch_1
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: Custom_Image_Position
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: Image_Rotation
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: Scaling_switch_1
-      value:
-        scalar[0]: 1
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: ImageSizeUni_1
-      value:
-        scalar[0]: 50
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: Custom_Image_Size
-      value:
-        scalar[0]: 50
-        scalar[1]: 50
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: 1st_Image_Input
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: 2nd_Image_Input
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: 3rd_Image_Input
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: 4th_Image_Input
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: imageswitch_5
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: Image_Position_2
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: Image_Rotation_2
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: scale_switch_2
-      value:
-        scalar[0]: 1
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: Uniform_2
-      value:
-        scalar[0]: 50
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: 2nd_Image_Size
-      value:
-        scalar[0]: 50
-        scalar[1]: 50
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: imageswitch_3
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: Position_3
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: Rotation_3
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: scale_switch_3
-      value:
-        scalar[0]: 1
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: uniform_3
-      value:
-        scalar[0]: 1
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: Image_Size_3
-      value:
-        scalar[0]: 50
-        scalar[1]: 50
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: imageswitch_4
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: Position4
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: Rotation4
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: scale_switch_4
-      value:
-        scalar[0]: 1
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: uniform_4
-      value:
-        scalar[0]: 50
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: Size_4
-      value:
-        scalar[0]: 50
-        scalar[1]: 50
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    materialInformation:
-      serializedVersion: 5
-      offset: {x: 0, y: 0}
-      scale: {x: 5, y: 5}
-      generateMipmaps: 1
-      generateAllOutputs: 0
-      animationUpdateRate: 0
-    materialProperties:
-      serializedVersion: 3
-      texEnvs:
-      - _BumpMap:
-          texture: {instanceID: 0}
-          scale: {x: 5, y: 5}
-          offset: {x: 0, y: 0}
-      - _DetailAlbedoMap:
-          texture: {instanceID: 0}
-          scale: {x: 1, y: 1}
-          offset: {x: 0, y: 0}
-      - _DetailMask:
-          texture: {instanceID: 0}
-          scale: {x: 1, y: 1}
-          offset: {x: 0, y: 0}
-      - _DetailNormalMap:
-          texture: {instanceID: 0}
-          scale: {x: 1, y: 1}
-          offset: {x: 0, y: 0}
-      - _EmissionMap:
-          texture: {instanceID: 0}
-          scale: {x: 5, y: 5}
-          offset: {x: 0, y: 0}
-      - _MainTex:
-          texture: {instanceID: 0}
-          scale: {x: 5, y: 5}
-          offset: {x: 0, y: 0}
-      - _MetallicGlossMap:
-          texture: {instanceID: 0}
-          scale: {x: 5, y: 5}
-          offset: {x: 0, y: 0}
-      - _OcclusionMap:
-          texture: {instanceID: 0}
-          scale: {x: 1, y: 1}
-          offset: {x: 0, y: 0}
-      - _ParallaxMap:
-          texture: {instanceID: 0}
-          scale: {x: 1, y: 1}
-          offset: {x: 0, y: 0}
-      floats:
-      - _BumpScale: 1
-      - _Cutoff: 0.5
-      - _DetailNormalMapScale: 1
-      - _DstBlend: 0
-      - _EmissionScaleUI: 0
-      - _GlossMapScale: 0.929
-      - _Glossiness: 0.5
-      - _GlossyReflections: 1
-      - _Metallic: 0
-      - _Mode: 0
-      - _OcclusionStrength: 1
-      - _Parallax: 0.02
-      - _SmoothnessTextureChannel: 0
-      - _SpecularHighlights: 1
-      - _SrcBlend: 1
-      - _UVSec: 0
-      - _ZWrite: 1
-      colors:
-      - _Color: {r: 0.2205882, g: 0.18490481, b: 0.18490481, a: 1}
-      - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-      - _EmissionColorUI: {r: 1, g: 1, b: 1, a: 1}
-    textureParameters:
-    - name: DarkIronRust_basecolor
-      alphaSource: 6
-      filterMode: 1
-      aniso: 1
-      wrapMode: 0
-    - name: DarkIronRust_normal
-      alphaSource: 0
-      filterMode: 1
-      aniso: 1
-      wrapMode: 0
-    - name: DarkIronRust_metallic
-      alphaSource: 7
-      filterMode: 1
-      aniso: 1
-      wrapMode: 0
-    textureAssignments:
-    - shaderProp: _MainTex
-      material: {instanceID: 0}
-      baseUID: 3301416686
-    - shaderProp: _BumpMap
-      material: {instanceID: 0}
-      baseUID: 3301416684
-    - shaderProp: _MetallicGlossMap
-      material: {instanceID: 0}
-      baseUID: 3301416680
-    buildTargetSettings:
-    - serializedVersion: 2
-      buildTarget: 
-      textureWidth: 1024
-      textureHeight: 1024
-      textureFormat: 0
-      loadingBehavior: 1
   - serializedVersion: 16
     name: FlashLightMetalMat
     prototypeName: Metal
@@ -1655,7 +1105,2207 @@ SubstanceImporter:
       textureFormat: 0
       loadingBehavior: 2
   - serializedVersion: 16
-    name: LightIronRust
+    name: LeverBaseMat
+    prototypeName: Metal
+    shaderName: 
+    shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+    shaderKeywords: _EMISSION _METALLICGLOSSMAP _NORMALMAP
+    renderQueue: -1
+    lightmapFlags: 1
+    inputs:
+    - name: $normalformat
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: $outputsize
+      value:
+        scalar[0]: 8
+        scalar[1]: 8
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: $randomseed
+      value:
+        scalar[0]: 1174
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Metal_Type
+      value:
+        scalar[0]: 1
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Metal_Roughness
+      value:
+        scalar[0]: 0.2
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Metal_metalness
+      value:
+        scalar[0]: 0.9
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Metal_Color
+      value:
+        scalar[0]: 0.6691177
+        scalar[1]: 0.6691177
+        scalar[2]: 0.6691177
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Age
+      value:
+        scalar[0]: 0.863
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: AgeRandom
+      value:
+        scalar[0]: 7.62
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Exposed_Metal_Color
+      value:
+        scalar[0]: 0.6
+        scalar[1]: 0.627451
+        scalar[2]: 0.631373
+        scalar[3]: 1
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: exposed_metalness
+      value:
+        scalar[0]: 1
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: exposed_roughness
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Oxidation
+      value:
+        scalar[0]: 0.048
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Rust_Chunks
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Rust_Holes
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Dirt
+      value:
+        scalar[0]: 0.355
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Scratches
+      value:
+        scalar[0]: 5
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Custom_Opacity
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Custom_Normal
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: normal1
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: normal2
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: normal3
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Custom_Image_Toggle
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Mask_Input
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Normal_Map
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Normal_Map_1
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Normal_Map_2
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: imageswitch_1
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Custom_Image_Position
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Image_Rotation
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Scaling_switch_1
+      value:
+        scalar[0]: 1
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: ImageSizeUni_1
+      value:
+        scalar[0]: 50
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Custom_Image_Size
+      value:
+        scalar[0]: 50
+        scalar[1]: 50
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: 1st_Image_Input
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: 2nd_Image_Input
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: 3rd_Image_Input
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: 4th_Image_Input
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: imageswitch_5
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Image_Position_2
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Image_Rotation_2
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: scale_switch_2
+      value:
+        scalar[0]: 1
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Uniform_2
+      value:
+        scalar[0]: 50
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: 2nd_Image_Size
+      value:
+        scalar[0]: 50
+        scalar[1]: 50
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: imageswitch_3
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Position_3
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Rotation_3
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: scale_switch_3
+      value:
+        scalar[0]: 1
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: uniform_3
+      value:
+        scalar[0]: 1
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Image_Size_3
+      value:
+        scalar[0]: 50
+        scalar[1]: 50
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: imageswitch_4
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Position4
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Rotation4
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: scale_switch_4
+      value:
+        scalar[0]: 1
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: uniform_4
+      value:
+        scalar[0]: 50
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Size_4
+      value:
+        scalar[0]: 50
+        scalar[1]: 50
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    materialInformation:
+      serializedVersion: 5
+      offset: {x: 0, y: 0}
+      scale: {x: 1, y: 1}
+      generateMipmaps: 1
+      generateAllOutputs: 0
+      animationUpdateRate: 0
+    materialProperties:
+      serializedVersion: 3
+      texEnvs:
+      - _BumpMap:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      - _DetailAlbedoMap:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      - _DetailMask:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      - _DetailNormalMap:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      - _EmissionMap:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      - _MainTex:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      - _MetallicGlossMap:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      - _OcclusionMap:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      - _ParallaxMap:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      floats:
+      - _BumpScale: 1
+      - _Cutoff: 0.5
+      - _DetailNormalMapScale: 1
+      - _DstBlend: 0
+      - _EmissionScaleUI: 0
+      - _GlossMapScale: 1
+      - _Glossiness: 0.5
+      - _GlossyReflections: 1
+      - _Metallic: 0
+      - _Mode: 0
+      - _OcclusionStrength: 1
+      - _Parallax: 0.02
+      - _SmoothnessTextureChannel: 0
+      - _SpecularHighlights: 1
+      - _SrcBlend: 1
+      - _UVSec: 0
+      - _ZWrite: 1
+      colors:
+      - _Color: {r: 0.52205884, g: 0.52205884, b: 0.52205884, a: 1}
+      - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+      - _EmissionColorUI: {r: 1, g: 1, b: 1, a: 1}
+    textureParameters:
+    - name: LeverBaseMat_basecolor
+      alphaSource: 6
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    - name: LeverBaseMat_normal
+      alphaSource: 0
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    - name: LeverBaseMat_metallic
+      alphaSource: 7
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    textureAssignments:
+    - shaderProp: _MainTex
+      material: {instanceID: 0}
+      baseUID: 3301416686
+    - shaderProp: _BumpMap
+      material: {instanceID: 0}
+      baseUID: 3301416684
+    - shaderProp: _MetallicGlossMap
+      material: {instanceID: 0}
+      baseUID: 3301416680
+    buildTargetSettings:
+    - serializedVersion: 2
+      buildTarget: 
+      textureWidth: 1024
+      textureHeight: 1024
+      textureFormat: 0
+      loadingBehavior: 2
+  - serializedVersion: 16
+    name: LeverHandleMat
+    prototypeName: Metal
+    shaderName: 
+    shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+    shaderKeywords: _EMISSION _METALLICGLOSSMAP _NORMALMAP
+    renderQueue: -1
+    lightmapFlags: 1
+    inputs:
+    - name: $normalformat
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: $outputsize
+      value:
+        scalar[0]: 8
+        scalar[1]: 8
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: $randomseed
+      value:
+        scalar[0]: 1174
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Metal_Type
+      value:
+        scalar[0]: 5
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Metal_Roughness
+      value:
+        scalar[0]: 0.2
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Metal_metalness
+      value:
+        scalar[0]: 0.9
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Metal_Color
+      value:
+        scalar[0]: 0.623529
+        scalar[1]: 0.623529
+        scalar[2]: 0.623529
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Age
+      value:
+        scalar[0]: 0.863
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: AgeRandom
+      value:
+        scalar[0]: 7.62
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Exposed_Metal_Color
+      value:
+        scalar[0]: 0.6
+        scalar[1]: 0.627451
+        scalar[2]: 0.631373
+        scalar[3]: 1
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: exposed_metalness
+      value:
+        scalar[0]: 1
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: exposed_roughness
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Oxidation
+      value:
+        scalar[0]: 0.048
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Rust_Chunks
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Rust_Holes
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Dirt
+      value:
+        scalar[0]: 0.355
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Scratches
+      value:
+        scalar[0]: 5
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Custom_Opacity
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Custom_Normal
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: normal1
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: normal2
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: normal3
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Custom_Image_Toggle
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Mask_Input
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Normal_Map
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Normal_Map_1
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Normal_Map_2
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: imageswitch_1
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Custom_Image_Position
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Image_Rotation
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Scaling_switch_1
+      value:
+        scalar[0]: 1
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: ImageSizeUni_1
+      value:
+        scalar[0]: 50
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Custom_Image_Size
+      value:
+        scalar[0]: 50
+        scalar[1]: 50
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: 1st_Image_Input
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: 2nd_Image_Input
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: 3rd_Image_Input
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: 4th_Image_Input
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: imageswitch_5
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Image_Position_2
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Image_Rotation_2
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: scale_switch_2
+      value:
+        scalar[0]: 1
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Uniform_2
+      value:
+        scalar[0]: 50
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: 2nd_Image_Size
+      value:
+        scalar[0]: 50
+        scalar[1]: 50
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: imageswitch_3
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Position_3
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Rotation_3
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: scale_switch_3
+      value:
+        scalar[0]: 1
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: uniform_3
+      value:
+        scalar[0]: 1
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Image_Size_3
+      value:
+        scalar[0]: 50
+        scalar[1]: 50
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: imageswitch_4
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Position4
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Rotation4
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: scale_switch_4
+      value:
+        scalar[0]: 1
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: uniform_4
+      value:
+        scalar[0]: 50
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Size_4
+      value:
+        scalar[0]: 50
+        scalar[1]: 50
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    materialInformation:
+      serializedVersion: 5
+      offset: {x: 0, y: 0}
+      scale: {x: 1, y: 1}
+      generateMipmaps: 1
+      generateAllOutputs: 0
+      animationUpdateRate: 0
+    materialProperties:
+      serializedVersion: 3
+      texEnvs:
+      - _BumpMap:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      - _DetailAlbedoMap:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      - _DetailMask:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      - _DetailNormalMap:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      - _EmissionMap:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      - _MainTex:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      - _MetallicGlossMap:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      - _OcclusionMap:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      - _ParallaxMap:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      floats:
+      - _BumpScale: 1
+      - _Cutoff: 0.5
+      - _DetailNormalMapScale: 1
+      - _DstBlend: 0
+      - _EmissionScaleUI: 0
+      - _GlossMapScale: 1
+      - _Glossiness: 0.5
+      - _GlossyReflections: 1
+      - _Metallic: 0
+      - _Mode: 0
+      - _OcclusionStrength: 1
+      - _Parallax: 0.02
+      - _SmoothnessTextureChannel: 0
+      - _SpecularHighlights: 1
+      - _SrcBlend: 1
+      - _UVSec: 0
+      - _ZWrite: 1
+      colors:
+      - _Color: {r: 0.20588237, g: 0.20588237, b: 0.20588237, a: 1}
+      - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+      - _EmissionColorUI: {r: 1, g: 1, b: 1, a: 1}
+    textureParameters:
+    - name: LeverHandleMat_basecolor
+      alphaSource: 6
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    - name: LeverHandleMat_normal
+      alphaSource: 0
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    - name: LeverHandleMat_metallic
+      alphaSource: 7
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    textureAssignments:
+    - shaderProp: _MainTex
+      material: {instanceID: 0}
+      baseUID: 3301416686
+    - shaderProp: _BumpMap
+      material: {instanceID: 0}
+      baseUID: 3301416684
+    - shaderProp: _MetallicGlossMap
+      material: {instanceID: 0}
+      baseUID: 3301416680
+    buildTargetSettings:
+    - serializedVersion: 2
+      buildTarget: 
+      textureWidth: 1024
+      textureHeight: 1024
+      textureFormat: 0
+      loadingBehavior: 2
+  - serializedVersion: 16
+    name: LightIronGates
+    prototypeName: Metal
+    shaderName: 
+    shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+    shaderKeywords: _EMISSION _METALLICGLOSSMAP _NORMALMAP
+    renderQueue: -1
+    lightmapFlags: 1
+    inputs:
+    - name: $normalformat
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: $outputsize
+      value:
+        scalar[0]: 8
+        scalar[1]: 8
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: $randomseed
+      value:
+        scalar[0]: 1174
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Metal_Type
+      value:
+        scalar[0]: 5
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Metal_Roughness
+      value:
+        scalar[0]: 0.2
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Metal_metalness
+      value:
+        scalar[0]: 0.9
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Metal_Color
+      value:
+        scalar[0]: 0.623529
+        scalar[1]: 0.623529
+        scalar[2]: 0.623529
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Age
+      value:
+        scalar[0]: 0.863
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: AgeRandom
+      value:
+        scalar[0]: 7.62
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Exposed_Metal_Color
+      value:
+        scalar[0]: 0.6
+        scalar[1]: 0.627451
+        scalar[2]: 0.631373
+        scalar[3]: 1
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: exposed_metalness
+      value:
+        scalar[0]: 1
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: exposed_roughness
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Oxidation
+      value:
+        scalar[0]: 0.048
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Rust_Chunks
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Rust_Holes
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Dirt
+      value:
+        scalar[0]: 0.355
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Scratches
+      value:
+        scalar[0]: 5
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Custom_Opacity
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Custom_Normal
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: normal1
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: normal2
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: normal3
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Custom_Image_Toggle
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Mask_Input
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Normal_Map
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Normal_Map_1
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Normal_Map_2
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: imageswitch_1
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Custom_Image_Position
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Image_Rotation
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Scaling_switch_1
+      value:
+        scalar[0]: 1
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: ImageSizeUni_1
+      value:
+        scalar[0]: 50
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Custom_Image_Size
+      value:
+        scalar[0]: 50
+        scalar[1]: 50
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: 1st_Image_Input
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: 2nd_Image_Input
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: 3rd_Image_Input
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: 4th_Image_Input
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: imageswitch_5
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Image_Position_2
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Image_Rotation_2
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: scale_switch_2
+      value:
+        scalar[0]: 1
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Uniform_2
+      value:
+        scalar[0]: 50
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: 2nd_Image_Size
+      value:
+        scalar[0]: 50
+        scalar[1]: 50
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: imageswitch_3
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Position_3
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Rotation_3
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: scale_switch_3
+      value:
+        scalar[0]: 1
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: uniform_3
+      value:
+        scalar[0]: 1
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Image_Size_3
+      value:
+        scalar[0]: 50
+        scalar[1]: 50
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: imageswitch_4
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Position4
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Rotation4
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: scale_switch_4
+      value:
+        scalar[0]: 1
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: uniform_4
+      value:
+        scalar[0]: 50
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Size_4
+      value:
+        scalar[0]: 50
+        scalar[1]: 50
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    materialInformation:
+      serializedVersion: 5
+      offset: {x: 0, y: 0}
+      scale: {x: 1, y: 1}
+      generateMipmaps: 1
+      generateAllOutputs: 0
+      animationUpdateRate: 0
+    materialProperties:
+      serializedVersion: 3
+      texEnvs:
+      - _BumpMap:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      - _DetailAlbedoMap:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      - _DetailMask:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      - _DetailNormalMap:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      - _EmissionMap:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      - _MainTex:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      - _MetallicGlossMap:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      - _OcclusionMap:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      - _ParallaxMap:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      floats:
+      - _BumpScale: 1
+      - _Cutoff: 0.5
+      - _DetailNormalMapScale: 1
+      - _DstBlend: 0
+      - _EmissionScaleUI: 0
+      - _GlossMapScale: 1
+      - _Glossiness: 0.5
+      - _GlossyReflections: 1
+      - _Metallic: 0
+      - _Mode: 0
+      - _OcclusionStrength: 1
+      - _Parallax: 0.02
+      - _SmoothnessTextureChannel: 0
+      - _SpecularHighlights: 1
+      - _SrcBlend: 1
+      - _UVSec: 0
+      - _ZWrite: 1
+      colors:
+      - _Color: {r: 0.20588237, g: 0.20588237, b: 0.20588237, a: 1}
+      - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+      - _EmissionColorUI: {r: 1, g: 1, b: 1, a: 1}
+    textureParameters:
+    - name: LightIronGates_basecolor
+      alphaSource: 6
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    - name: LightIronGates_normal
+      alphaSource: 0
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    - name: LightIronGates_metallic
+      alphaSource: 7
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    textureAssignments:
+    - shaderProp: _MainTex
+      material: {instanceID: 0}
+      baseUID: 3301416686
+    - shaderProp: _BumpMap
+      material: {instanceID: 0}
+      baseUID: 3301416684
+    - shaderProp: _MetallicGlossMap
+      material: {instanceID: 0}
+      baseUID: 3301416680
+    buildTargetSettings:
+    - serializedVersion: 2
+      buildTarget: 
+      textureWidth: 1024
+      textureHeight: 1024
+      textureFormat: 0
+      loadingBehavior: 2
+  - serializedVersion: 16
+    name: PhoneBase
+    prototypeName: Metal
+    shaderName: 
+    shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+    shaderKeywords: _EMISSION _METALLICGLOSSMAP _NORMALMAP
+    renderQueue: -1
+    lightmapFlags: 1
+    inputs:
+    - name: $normalformat
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: $outputsize
+      value:
+        scalar[0]: 8
+        scalar[1]: 8
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: $randomseed
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Metal_Type
+      value:
+        scalar[0]: 1
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Metal_Roughness
+      value:
+        scalar[0]: 0.065
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Metal_metalness
+      value:
+        scalar[0]: 0.9
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Metal_Color
+      value:
+        scalar[0]: 0.13235295
+        scalar[1]: 0.026275955
+        scalar[2]: 0.026275955
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Age
+      value:
+        scalar[0]: 0.756
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: AgeRandom
+      value:
+        scalar[0]: 3.71
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Exposed_Metal_Color
+      value:
+        scalar[0]: 0.35294116
+        scalar[1]: 0.35294116
+        scalar[2]: 0.35294116
+        scalar[3]: 1
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: exposed_metalness
+      value:
+        scalar[0]: 1
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: exposed_roughness
+      value:
+        scalar[0]: 0.073
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Oxidation
+      value:
+        scalar[0]: 0.237
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Rust_Chunks
+      value:
+        scalar[0]: 1
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Rust_Holes
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Dirt
+      value:
+        scalar[0]: 0.178
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Scratches
+      value:
+        scalar[0]: 0.01
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Custom_Opacity
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Custom_Normal
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: normal1
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: normal2
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: normal3
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Custom_Image_Toggle
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Mask_Input
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Normal_Map
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Normal_Map_1
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Normal_Map_2
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: imageswitch_1
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Custom_Image_Position
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Image_Rotation
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Scaling_switch_1
+      value:
+        scalar[0]: 1
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: ImageSizeUni_1
+      value:
+        scalar[0]: 50
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Custom_Image_Size
+      value:
+        scalar[0]: 50
+        scalar[1]: 50
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: 1st_Image_Input
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: 2nd_Image_Input
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: 3rd_Image_Input
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: 4th_Image_Input
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: imageswitch_5
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Image_Position_2
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Image_Rotation_2
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: scale_switch_2
+      value:
+        scalar[0]: 1
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Uniform_2
+      value:
+        scalar[0]: 50
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: 2nd_Image_Size
+      value:
+        scalar[0]: 50
+        scalar[1]: 50
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: imageswitch_3
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Position_3
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Rotation_3
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: scale_switch_3
+      value:
+        scalar[0]: 1
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: uniform_3
+      value:
+        scalar[0]: 1
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Image_Size_3
+      value:
+        scalar[0]: 50
+        scalar[1]: 50
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: imageswitch_4
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Position4
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Rotation4
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: scale_switch_4
+      value:
+        scalar[0]: 1
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: uniform_4
+      value:
+        scalar[0]: 50
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    - name: Size_4
+      value:
+        scalar[0]: 50
+        scalar[1]: 50
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+        stringvalue: 
+    materialInformation:
+      serializedVersion: 5
+      offset: {x: 0, y: 0}
+      scale: {x: 5, y: 5}
+      generateMipmaps: 1
+      generateAllOutputs: 0
+      animationUpdateRate: 0
+    materialProperties:
+      serializedVersion: 3
+      texEnvs:
+      - _BumpMap:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      - _DetailAlbedoMap:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      - _DetailMask:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      - _DetailNormalMap:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      - _EmissionMap:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      - _MainTex:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      - _MetallicGlossMap:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      - _OcclusionMap:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      - _ParallaxMap:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      floats:
+      - _BumpScale: 1
+      - _Cutoff: 0.5
+      - _DetailNormalMapScale: 1
+      - _DstBlend: 0
+      - _EmissionScaleUI: 0
+      - _GlossMapScale: 1
+      - _Glossiness: 0.5
+      - _GlossyReflections: 1
+      - _Metallic: 0
+      - _Mode: 0
+      - _OcclusionStrength: 1
+      - _Parallax: 0.02
+      - _SmoothnessTextureChannel: 0
+      - _SpecularHighlights: 1
+      - _SrcBlend: 1
+      - _UVSec: 0
+      - _ZWrite: 1
+      colors:
+      - _Color: {r: 1, g: 1, b: 1, a: 1}
+      - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+      - _EmissionColorUI: {r: 1, g: 1, b: 1, a: 1}
+    textureParameters:
+    - name: PhoneBase_basecolor
+      alphaSource: 6
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    - name: PhoneBase_normal
+      alphaSource: 0
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    - name: PhoneBase_metallic
+      alphaSource: 7
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    textureAssignments:
+    - shaderProp: _MainTex
+      material: {instanceID: 0}
+      baseUID: 3301416686
+    - shaderProp: _BumpMap
+      material: {instanceID: 0}
+      baseUID: 3301416684
+    - shaderProp: _MetallicGlossMap
+      material: {instanceID: 0}
+      baseUID: 3301416680
+    buildTargetSettings:
+    - serializedVersion: 2
+      buildTarget: 
+      textureWidth: 1024
+      textureHeight: 1024
+      textureFormat: 0
+      loadingBehavior: 2
+  - serializedVersion: 16
+    name: PhonePanel
     prototypeName: Metal
     shaderName: 
     shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
@@ -2172,17 +3822,17 @@ SubstanceImporter:
       - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
       - _EmissionColorUI: {r: 1, g: 1, b: 1, a: 1}
     textureParameters:
-    - name: LightIronRust_basecolor
+    - name: PhonePanel_basecolor
       alphaSource: 6
       filterMode: 1
       aniso: 1
       wrapMode: 0
-    - name: LightIronRust_normal
+    - name: PhonePanel_normal
       alphaSource: 0
       filterMode: 1
       aniso: 1
       wrapMode: 0
-    - name: LightIronRust_metallic
+    - name: PhonePanel_metallic
       alphaSource: 7
       filterMode: 1
       aniso: 1
@@ -2205,573 +3855,7 @@ SubstanceImporter:
       textureFormat: 0
       loadingBehavior: 2
   - serializedVersion: 16
-    name: Metal
-    prototypeName: Metal
-    shaderName: 
-    shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-    shaderKeywords: _DETAIL_MULX2 _EMISSION _METALLICGLOSSMAP _NORMALMAP
-    renderQueue: -1
-    lightmapFlags: 1
-    inputs:
-    - name: imageswitch_5
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: normal1
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: $normalformat
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: $outputsize
-      value:
-        scalar[0]: 8
-        scalar[1]: 8
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: $randomseed
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: Metal_Type
-      value:
-        scalar[0]: 5
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: Metal_Roughness
-      value:
-        scalar[0]: 0.15
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: Metal_metalness
-      value:
-        scalar[0]: 1
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: Metal_Color
-      value:
-        scalar[0]: 0.623529
-        scalar[1]: 0.623529
-        scalar[2]: 0.623529
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: Rust_Amount
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: Rust_Holes
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: Dirt
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: Scratches
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: switch
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: Custom_Opacity
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: Custom_Normal
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: normal2
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: normal3
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: Custom_Image_Toggle
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: Mask_Input
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: Normal_Map
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: Normal_Map_1
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: Normal_Map_2
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: imageswitch_1
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: Custom_Image_Position
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: Image_Rotation
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: Scaling_switch_1
-      value:
-        scalar[0]: 1
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: ImageSizeUni_1
-      value:
-        scalar[0]: 50
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: Custom_Image_Size
-      value:
-        scalar[0]: 50
-        scalar[1]: 50
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: 1st_Image_Input
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: 2nd_Image_Input
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: 3rd_Image_Input
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: 4th_Image_Input
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: Image_Position_2
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: Image_Rotation_2
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: scale_switch_2
-      value:
-        scalar[0]: 1
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: Uniform_2
-      value:
-        scalar[0]: 50
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: 2nd_Image_Size
-      value:
-        scalar[0]: 50
-        scalar[1]: 50
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: imageswitch_3
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: Position_3
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: Rotation_3
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: scale_switch_3
-      value:
-        scalar[0]: 1
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: uniform_3
-      value:
-        scalar[0]: 1
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: Image_Size_3
-      value:
-        scalar[0]: 50
-        scalar[1]: 50
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: imageswitch_4
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: Position4
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: Rotation4
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: scale_switch_4
-      value:
-        scalar[0]: 1
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: uniform_4
-      value:
-        scalar[0]: 50
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: Size_4
-      value:
-        scalar[0]: 50
-        scalar[1]: 50
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: Age
-      value:
-        scalar[0]: 0.894
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: AgeRandom
-      value:
-        scalar[0]: 2.73
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: Exposed_Metal_Color
-      value:
-        scalar[0]: 0.6
-        scalar[1]: 0.627451
-        scalar[2]: 0.631373
-        scalar[3]: 1
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: exposed_metalness
-      value:
-        scalar[0]: 1
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: exposed_roughness
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: Oxidation
-      value:
-        scalar[0]: 0.857
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: Rust_Chunks
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    materialInformation:
-      serializedVersion: 5
-      offset: {x: 0, y: 0}
-      scale: {x: 1, y: 1}
-      generateMipmaps: 1
-      generateAllOutputs: 0
-      animationUpdateRate: 0
-    materialProperties:
-      serializedVersion: 3
-      texEnvs:
-      - _BumpMap:
-          texture: {instanceID: 0}
-          scale: {x: 1, y: 1}
-          offset: {x: 0, y: 0}
-      - _DetailAlbedoMap:
-          texture: {instanceID: 0}
-          scale: {x: 1, y: 1}
-          offset: {x: 0, y: 0}
-      - _DetailMask:
-          texture: {instanceID: 0}
-          scale: {x: 1, y: 1}
-          offset: {x: 0, y: 0}
-      - _DetailNormalMap:
-          texture: {fileID: 2800000, guid: 5977b08bb9a6c264c83cb6d5d14abc6d, type: 3}
-          scale: {x: 1, y: 1}
-          offset: {x: 0, y: 0}
-      - _EmissionMap:
-          texture: {instanceID: 0}
-          scale: {x: 1, y: 1}
-          offset: {x: 0, y: 0}
-      - _MainTex:
-          texture: {instanceID: 0}
-          scale: {x: 1, y: 1}
-          offset: {x: 0, y: 0}
-      - _MetallicGlossMap:
-          texture: {instanceID: 0}
-          scale: {x: 1, y: 1}
-          offset: {x: 0, y: 0}
-      - _OcclusionMap:
-          texture: {instanceID: 0}
-          scale: {x: 1, y: 1}
-          offset: {x: 0, y: 0}
-      - _ParallaxMap:
-          texture: {instanceID: 0}
-          scale: {x: 1, y: 1}
-          offset: {x: 0, y: 0}
-      floats:
-      - _BumpScale: 0.25
-      - _Cutoff: 0.5
-      - _DetailNormalMapScale: 1
-      - _DstBlend: 0
-      - _EmissionScaleUI: 0
-      - _GlossMapScale: 1
-      - _Glossiness: 0.5
-      - _GlossyReflections: 1
-      - _Metallic: 0
-      - _Mode: 0
-      - _OcclusionStrength: 1
-      - _Parallax: 0.02
-      - _SmoothnessTextureChannel: 0
-      - _SpecularHighlights: 1
-      - _SrcBlend: 1
-      - _UVSec: 0
-      - _ZWrite: 1
-      colors:
-      - _Color: {r: 0.39705884, g: 0.39705884, b: 0.39705884, a: 1}
-      - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-      - _EmissionColorUI: {r: 1, g: 1, b: 1, a: 1}
-    textureParameters:
-    - name: Metal_basecolor
-      alphaSource: 6
-      filterMode: 1
-      aniso: 1
-      wrapMode: 0
-    - name: Metal_normal
-      alphaSource: 0
-      filterMode: 1
-      aniso: 1
-      wrapMode: 0
-    - name: Metal_metallic
-      alphaSource: 7
-      filterMode: 1
-      aniso: 1
-      wrapMode: 0
-    textureAssignments:
-    - shaderProp: _MainTex
-      material: {instanceID: 0}
-      baseUID: 3301416686
-    - shaderProp: _BumpMap
-      material: {instanceID: 0}
-      baseUID: 3301416684
-    - shaderProp: _MetallicGlossMap
-      material: {instanceID: 0}
-      baseUID: 3301416680
-    buildTargetSettings:
-    - serializedVersion: 2
-      buildTarget: 
-      textureWidth: 512
-      textureHeight: 512
-      textureFormat: 0
-      loadingBehavior: 1
-  - serializedVersion: 16
-    name: RedIronRust
+    name: Valve
     prototypeName: Metal
     shaderName: 
     shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
@@ -3231,7 +4315,7 @@ SubstanceImporter:
       texEnvs:
       - _BumpMap:
           texture: {instanceID: 0}
-          scale: {x: 5, y: 5}
+          scale: {x: 1, y: 1}
           offset: {x: 0, y: 0}
       - _DetailAlbedoMap:
           texture: {instanceID: 0}
@@ -3247,15 +4331,15 @@ SubstanceImporter:
           offset: {x: 0, y: 0}
       - _EmissionMap:
           texture: {instanceID: 0}
-          scale: {x: 5, y: 5}
+          scale: {x: 1, y: 1}
           offset: {x: 0, y: 0}
       - _MainTex:
           texture: {instanceID: 0}
-          scale: {x: 5, y: 5}
+          scale: {x: 1, y: 1}
           offset: {x: 0, y: 0}
       - _MetallicGlossMap:
           texture: {instanceID: 0}
-          scale: {x: 5, y: 5}
+          scale: {x: 1, y: 1}
           offset: {x: 0, y: 0}
       - _OcclusionMap:
           texture: {instanceID: 0}
@@ -3288,17 +4372,17 @@ SubstanceImporter:
       - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
       - _EmissionColorUI: {r: 1, g: 1, b: 1, a: 1}
     textureParameters:
-    - name: RedIronRust_basecolor
+    - name: Valve_basecolor
       alphaSource: 6
       filterMode: 1
       aniso: 1
       wrapMode: 0
-    - name: RedIronRust_normal
+    - name: Valve_normal
       alphaSource: 0
       filterMode: 1
       aniso: 1
       wrapMode: 0
-    - name: RedIronRust_metallic
+    - name: Valve_metallic
       alphaSource: 7
       filterMode: 1
       aniso: 1

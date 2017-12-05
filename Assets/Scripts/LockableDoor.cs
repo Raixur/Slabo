@@ -8,22 +8,22 @@ public class LockableDoor : MonoBehaviour
     [SerializeField]
     private Collider lockCollider;
 
-    public bool DefaultLock = true;
+    public bool IsLocked = true;
 
     public void OnValidate()
     {
-        SetLock(DefaultLock);
+        SetLock(IsLocked);
     }
 
     public void Awake()
     {
-        SetLock(DefaultLock);
+        SetLock(IsLocked);
     }
 
     public void SetLock(bool isLocked)
     {
+        IsLocked = isLocked;
         doorColliders.ForEach(c => c.enabled = !isLocked);
-
         if (lockCollider != null)
             lockCollider.enabled = isLocked;
     }

@@ -1,73 +1,33 @@
 fileFormatVersion: 2
-guid: 91d7fee43b7d57640a0e35219cbe6fe4
-timeCreated: 1510925773
+guid: bb2cab11ed109a14f8c96aec0bbe1472
+timeCreated: 1512482467
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: DoorLP
-    100002: DoorRim
+    100000: Base
+    100002: Handle
     100004: //RootNode
-    100006: Wheel
-    100008: WheelAnchor
-    100010: Window
-    100012: WindowRim
-    400000: DoorLP
-    400002: DoorRim
+    400000: Base
+    400002: Handle
     400004: //RootNode
-    400006: Wheel
-    400008: WheelAnchor
-    400010: Window
-    400012: WindowRim
-    2300000: DoorLP
-    2300002: DoorRim
-    2300004: Wheel
-    2300006: WheelAnchor
-    2300008: Window
-    2300010: WindowRim
-    3300000: DoorLP
-    3300002: DoorRim
-    3300004: Wheel
-    3300006: WheelAnchor
-    3300008: Window
-    3300010: WindowRim
-    4300000: DoorRim
-    4300002: DoorLP
-    4300004: Window
-    4300006: WindowRim
-    4300008: WheelAnchor
-    4300010: Wheel
+    2300000: Base
+    2300002: Handle
+    3300000: Base
+    3300002: Handle
+    4300000: Base
+    4300002: Handle
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: DoorMat
-    second: {fileID: 2100000, guid: 002a942c3983d4d42a25b068b8a42c8a, type: 2}
+      name: Base
+    second: {fileID: -1671222586, guid: 9fbefe3eb63d2cc45801e7df1b689e98, type: 3}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: DoorRimMat
-    second: {fileID: 2100000, guid: 4779d698ed1dceb4abf6f04975cc46b2, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: WheelAnchorMat
-    second: {fileID: 2100000, guid: 002a942c3983d4d42a25b068b8a42c8a, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: WheelMat
-    second: {fileID: 1351006658, guid: 9fbefe3eb63d2cc45801e7df1b689e98, type: 3}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: WindowMat
-    second: {fileID: 2100000, guid: 24d410d1d10fd494286ddef42731724e, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: WindowRimMat
-    second: {fileID: 2100000, guid: 4779d698ed1dceb4abf6f04975cc46b2, type: 2}
+      name: Handle
+    second: {fileID: -1192303193, guid: 9fbefe3eb63d2cc45801e7df1b689e98, type: 3}
   materials:
     importMaterials: 1
     materialName: 0
