@@ -39,12 +39,12 @@ GameObject:
   - component: {fileID: 23699116221448404}
   - component: {fileID: 54487310847364050}
   - component: {fileID: 136100409223588682}
-  - component: {fileID: 114885151638460778}
-  - component: {fileID: 114425102041981754}
-  - component: {fileID: 114215208695025742}
-  - component: {fileID: 114557864355881026}
-  - component: {fileID: 114302431602270478}
   - component: {fileID: 114225643770231684}
+  - component: {fileID: 114302431602270478}
+  - component: {fileID: 114557864355881026}
+  - component: {fileID: 114215208695025742}
+  - component: {fileID: 114425102041981754}
+  - component: {fileID: 114885151638460778}
   m_Layer: 0
   m_Name: FlashLight
   m_TagString: Holster
@@ -59,8 +59,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1603280498665058}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0071340753, y: 0, z: 0.013973465}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4697701916586274}
   m_Father: {fileID: 0}
@@ -73,8 +73,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1165092203252168}
   m_LocalRotation: {x: 0.00000008146034, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.002378025, y: 0, z: 0.04454218}
-  m_LocalScale: {x: 0.01666667, y: 0.016666686, z: 0.03214912}
+  m_LocalPosition: {x: 0, y: -0, z: 0.1481}
+  m_LocalScale: {x: 0.05000001, y: 0.050000057, z: 0.09644736}
   m_Children: []
   m_Father: {fileID: 4689648609004536}
   m_RootOrder: 0
@@ -93,7 +93,8 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 70cc6af1e3cf4f14fa30fcf4bc188040, type: 2}
+  - {fileID: -1572878494, guid: 9fbefe3eb63d2cc45801e7df1b689e98, type: 3}
+  - {fileID: 2100000, guid: 9d44f917b01e25d4dbdfa5d2adab8432, type: 2}
   - {fileID: 2100000, guid: 637360d62764e394f980909ae582f976, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -120,7 +121,7 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1603280498665058}
-  m_Mesh: {fileID: 4300000, guid: 85be6c1283929934593ea07d765ecb1e, type: 3}
+  m_Mesh: {fileID: 4300000, guid: a8af2046b08c826408c44bf4a308c2fc, type: 3}
 --- !u!54 &54487310847364050
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -145,9 +146,9 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 0
-  m_Color: {r: 0.97794116, g: 0.957212, b: 0.841317, a: 1}
-  m_Intensity: 1.3
-  m_Range: 3
+  m_Color: {r: 0.7205882, g: 0.69405943, b: 0.5457396, a: 0.484}
+  m_Intensity: 2
+  m_Range: 2
   m_SpotAngle: 50.5
   m_CookieSize: 10
   m_Shadows:
@@ -161,13 +162,13 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 1
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
   m_Lightmapping: 4
   m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 2
+  m_BounceIntensity: 0
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
@@ -209,10 +210,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0d9d6b91d0094e44b2d07767c0e4cbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minFadeTime: 0.07
-  maxFadeTime: 0.17
-  minUnfadeTime: 0.1
-  maxUnfadeTime: 0.2
+  minTime: 0.1
+  maxTime: 0.5
   flickeringLight: {fileID: 108640742687314576}
 --- !u!114 &114425102041981754
 MonoBehaviour:
@@ -260,7 +259,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disableWhenIdle: 1
-  touchHighlightColor: {r: 1, g: 0.5586207, b: 0, a: 0}
+  touchHighlightColor: {r: 1, g: 0.80689645, b: 0, a: 0}
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
@@ -285,9 +284,9 @@ CapsuleCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1603280498665058}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.02
-  m_Height: 0.1
+  m_Radius: 0.06
+  m_Height: 0.3
   m_Direction: 2
-  m_Center: {x: 0, y: 0, z: 0.0063784383}
+  m_Center: {x: -0.0000000027939677, y: 9.313226e-10, z: 0.034786284}
