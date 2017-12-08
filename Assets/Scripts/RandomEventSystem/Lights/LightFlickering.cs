@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using JetBrains.Annotations;
 using UnityEngine;
 using Random = System.Random;
 
@@ -11,17 +12,20 @@ public class LightFlickering : MonoBehaviour
 
     [SerializeField] private float minTime = 0.1f;
     [SerializeField] private float maxTime = 0.5f;
-    [SerializeField] private Light flickeringLight = null;
-    
+
+    private Light flickeringLight;
     private float deltaTime;
 
-    public float NextDuration {
+    public float NextDuration
+    {
         get { return (float) rnd.NextDouble() * deltaTime + minTime; }
     }
 
-    public void Start()
+    [UsedImplicitly]
+    private void Awake()
     {
         deltaTime = maxTime - minTime;
+        flickeringLight = GetComponentInChildren<Light>();
     }
 
     public float Flicker(int count)
@@ -34,14 +38,14 @@ public class LightFlickering : MonoBehaviour
     private IEnumerable<float> GetFlickeringIntervals(int count)
     {
         var flickeringCount = count * 2 - 1;
-        for(var i = 0; i < flickeringCount; i++)
+        for (var i = 0; i < flickeringCount; i++)
             yield return NextDuration;
         yield return Delay;
     }
 
     private IEnumerator FlickerCoroutine(IEnumerable<float> flickerIntervals)
     {
-        foreach(var interval in flickerIntervals)
+        foreach (var interval in flickerIntervals)
         {
             flickeringLight.enabled = !flickeringLight.enabled;
             yield return new WaitForSeconds(interval);

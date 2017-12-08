@@ -1,43 +1,31 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-namespace Assets.Scripts.Screamer.Transition
+public class BaseActivateTransition : VisualTransition
 {
-    public class BaseActivateTransition : VisualTransition
+    public override float Appear(Screamer screamer)
     {
-        [SerializeField] private GameObject transitionObject;
+        var transitionTime = HandleAppear();
+        StartCoroutine(SetVisibilityCoroutine(screamer, transitionTime, true));
 
-        public override float Appear()
-        {
-            var transitionTime = HandleAppear();
-            StartCoroutine(AppearCoroutine(transitionTime));
+        return transitionTime;
+    }
+    
+    public override float Disappear(Screamer screamer)
+    {
+        var transitionTime = HandleDisappear();
+        StartCoroutine(SetVisibilityCoroutine(screamer, transitionTime, false));
 
-            return transitionTime;
-        }
+        return transitionTime;
+    }
 
-        protected virtual float HandleAppear() { return 0f; }
+    protected virtual float HandleAppear() { return 0f; }
 
-        public override float Disappear()
-        {
-            var transitionTime = HandleDisappear();
-            StartCoroutine(DisappearCoroutine(transitionTime));
+    protected virtual float HandleDisappear() { return 0f; }
 
-            return transitionTime;
-        }
-
-        protected virtual float HandleDisappear() { return 0f; }
-
-
-        private IEnumerator AppearCoroutine(float time)
-        {
-            yield return new WaitForSeconds(time);
-            transitionObject.SetActive(true);
-        }
-
-        private IEnumerator DisappearCoroutine(float time)
-        {
-            yield return new WaitForSeconds(time);
-            transitionObject.SetActive(false);
-        }
+    private static IEnumerator SetVisibilityCoroutine(Screamer screamer, float time, bool visible)
+    {
+        yield return new WaitForSeconds(time);
+        screamer.SetVisibility(visible);
     }
 }

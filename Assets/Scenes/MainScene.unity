@@ -121,6 +121,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9803818}
   - component: {fileID: 9803819}
+  - component: {fileID: 9803820}
   m_Layer: 0
   m_Name: Screamer1
   m_TagString: Untagged
@@ -154,6 +155,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &9803820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 9803817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e29a505d2d9cd4429e80acf96a51bc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &12379973
 Prefab:
   m_ObjectHideFlags: 0
@@ -1136,6 +1148,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 38548834}
+  - component: {fileID: 38548835}
   m_Layer: 0
   m_Name: Zone1
   m_TagString: Untagged
@@ -1159,6 +1172,18 @@ Transform:
   m_Father: {fileID: 359273139}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &38548835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 38548833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 040c70983d50dc44a9d1d745f40a5957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  count: 1
 --- !u!1 &40348931
 GameObject:
   m_ObjectHideFlags: 0
@@ -3637,6 +3662,7 @@ GameObject:
   m_Component:
   - component: {fileID: 134321411}
   - component: {fileID: 134321412}
+  - component: {fileID: 134321413}
   m_Layer: 0
   m_Name: Screamer1
   m_TagString: Untagged
@@ -3670,6 +3696,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &134321413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 134321410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e29a505d2d9cd4429e80acf96a51bc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &134960183
 Prefab:
   m_ObjectHideFlags: 0
@@ -4438,6 +4475,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 152669992}
+  - component: {fileID: 152669993}
   m_Layer: 0
   m_Name: AudioTriggers
   m_TagString: Untagged
@@ -4474,6 +4512,18 @@ Transform:
   m_Father: {fileID: 2086270908}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &152669993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 152669991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 040c70983d50dc44a9d1d745f40a5957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  count: 10
 --- !u!1 &154498774
 GameObject:
   m_ObjectHideFlags: 0
@@ -6788,6 +6838,7 @@ GameObject:
   m_Component:
   - component: {fileID: 239881212}
   - component: {fileID: 239881213}
+  - component: {fileID: 239881214}
   m_Layer: 0
   m_Name: Screamer2
   m_TagString: Untagged
@@ -6821,6 +6872,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &239881214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 239881211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e29a505d2d9cd4429e80acf96a51bc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &249044896
 GameObject:
   m_ObjectHideFlags: 0
@@ -6830,6 +6892,7 @@ GameObject:
   m_Component:
   - component: {fileID: 249044897}
   - component: {fileID: 249044898}
+  - component: {fileID: 249044899}
   m_Layer: 0
   m_Name: FakeFX11
   m_TagString: Untagged
@@ -6862,6 +6925,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &249044899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 249044896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e29a505d2d9cd4429e80acf96a51bc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &249820405
 Prefab:
   m_ObjectHideFlags: 0
@@ -7023,6 +7097,7 @@ GameObject:
   m_Component:
   - component: {fileID: 253827332}
   - component: {fileID: 253827333}
+  - component: {fileID: 253827334}
   m_Layer: 0
   m_Name: FakeFX8
   m_TagString: Untagged
@@ -7055,6 +7130,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &253827334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 253827331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e29a505d2d9cd4429e80acf96a51bc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &258675850
 GameObject:
   m_ObjectHideFlags: 0
@@ -7109,8 +7195,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f3a512d8e1a67844b90374363d52108, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transitionObject: {fileID: 543313822}
-  affectedLight: {fileID: 2129012085}
   flickeringCount: 1
 --- !u!114 &258675854
 MonoBehaviour:
@@ -7123,15 +7207,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eb68180c9fef8b4b931e9c86371a4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  visualTransition: {fileID: 258675853}
+  isSpawned: 0
   lifetimeDuration: 3
-  lifetimeActions:
-  - {fileID: 258675852}
+  screamerPrefab: {fileID: 0}
   facingAngle: 40
-  animator: {fileID: 543313823}
-  triggerName: 
-  audioId: Breathing
-  audioTransform: {fileID: 543313821}
 --- !u!1 &260326064
 GameObject:
   m_ObjectHideFlags: 0
@@ -7590,6 +7669,7 @@ GameObject:
   m_Component:
   - component: {fileID: 273667520}
   - component: {fileID: 273667521}
+  - component: {fileID: 273667522}
   m_Layer: 0
   m_Name: Screamer3
   m_TagString: Untagged
@@ -7623,6 +7703,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &273667522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 273667519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e29a505d2d9cd4429e80acf96a51bc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &274431453
 GameObject:
   m_ObjectHideFlags: 0
@@ -7662,6 +7753,7 @@ GameObject:
   m_Component:
   - component: {fileID: 275601925}
   - component: {fileID: 275601926}
+  - component: {fileID: 275601927}
   m_Layer: 0
   m_Name: AudioTrigger5
   m_TagString: Untagged
@@ -7694,6 +7786,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &275601927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 275601924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e29a505d2d9cd4429e80acf96a51bc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &282249030
 GameObject:
   m_ObjectHideFlags: 0
@@ -7703,6 +7806,7 @@ GameObject:
   m_Component:
   - component: {fileID: 282249031}
   - component: {fileID: 282249032}
+  - component: {fileID: 282249033}
   m_Layer: 0
   m_Name: FakeFX10
   m_TagString: Untagged
@@ -7735,6 +7839,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &282249033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 282249030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e29a505d2d9cd4429e80acf96a51bc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &282801047
 GameObject:
   m_ObjectHideFlags: 0
@@ -9406,18 +9521,9 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.1999999, y: 0.099999994, z: 3}
   m_Center: {x: -0.59999996, y: 0.049999997, z: 1.5}
---- !u!1 &347212089 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 100002, guid: 6c51ed257312e3c45ac28217b4b8dd71, type: 3}
-  m_PrefabInternal: {fileID: 435213072}
 --- !u!4 &347212090 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 6c51ed257312e3c45ac28217b4b8dd71, type: 3}
-  m_PrefabInternal: {fileID: 435213072}
---- !u!95 &347212091 stripped
-Animator:
-  m_PrefabParentObject: {fileID: 9500000, guid: 6c51ed257312e3c45ac28217b4b8dd71,
-    type: 3}
   m_PrefabInternal: {fileID: 435213072}
 --- !u!1 &348342493
 GameObject:
@@ -9822,6 +9928,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 359273139}
+  - component: {fileID: 359273141}
+  - component: {fileID: 359273140}
   m_Layer: 0
   m_Name: Screamers
   m_TagString: Untagged
@@ -9850,6 +9958,29 @@ Transform:
   m_Father: {fileID: 2086270908}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &359273140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 359273138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f3a512d8e1a67844b90374363d52108, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flickeringCount: 1
+--- !u!114 &359273141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 359273138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ff254e3a2acca04489e65e1aca12e35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &361540749
 GameObject:
   m_ObjectHideFlags: 0
@@ -10008,8 +10139,6 @@ GameObject:
   m_Component:
   - component: {fileID: 382467161}
   - component: {fileID: 382467164}
-  - component: {fileID: 382467163}
-  - component: {fileID: 382467162}
   m_Layer: 0
   m_Name: Screamer
   m_TagString: Untagged
@@ -10026,36 +10155,10 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.0007327746, z: -0, w: 0.99999976}
   m_LocalPosition: {x: -0, y: 0.7, z: -1.59}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 592311202}
+  m_Children: []
   m_Father: {fileID: 1600450903}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -0.08400001, z: 0}
---- !u!114 &382467162
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 382467160}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ff254e3a2acca04489e65e1aca12e35, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &382467163
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 382467160}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f3a512d8e1a67844b90374363d52108, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  transitionObject: {fileID: 592311201}
-  affectedLight: {fileID: 2129012085}
-  flickeringCount: 1
 --- !u!114 &382467164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10067,15 +10170,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eb68180c9fef8b4b931e9c86371a4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  visualTransition: {fileID: 382467163}
+  isSpawned: 0
   lifetimeDuration: 3
-  lifetimeActions:
-  - {fileID: 382467162}
+  screamerPrefab: {fileID: 1631096026187552, guid: c3302f145d63fde46bc9856132b75007,
+    type: 2}
   facingAngle: 40
-  animator: {fileID: 592311203}
-  triggerName: 
-  audioId: Breathing
-  audioTransform: {fileID: 592311202}
 --- !u!1001 &387964366
 Prefab:
   m_ObjectHideFlags: 0
@@ -10643,6 +10742,7 @@ GameObject:
   m_Component:
   - component: {fileID: 404636921}
   - component: {fileID: 404636922}
+  - component: {fileID: 404636923}
   m_Layer: 0
   m_Name: AudioTrigger13
   m_TagString: Untagged
@@ -10675,6 +10775,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &404636923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 404636920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e29a505d2d9cd4429e80acf96a51bc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &408931749
 Prefab:
   m_ObjectHideFlags: 0
@@ -10813,19 +10924,6 @@ Transform:
   m_Father: {fileID: 1498281421}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &422192023 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 100002, guid: 6c51ed257312e3c45ac28217b4b8dd71, type: 3}
-  m_PrefabInternal: {fileID: 519496797}
---- !u!4 &422192024 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 400002, guid: 6c51ed257312e3c45ac28217b4b8dd71, type: 3}
-  m_PrefabInternal: {fileID: 519496797}
---- !u!95 &422192025 stripped
-Animator:
-  m_PrefabParentObject: {fileID: 9500000, guid: 6c51ed257312e3c45ac28217b4b8dd71,
-    type: 3}
-  m_PrefabInternal: {fileID: 519496797}
 --- !u!1 &428892444
 GameObject:
   m_ObjectHideFlags: 0
@@ -11742,18 +11840,9 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.2000005, y: 0.10000073, z: 3.0000007}
   m_Center: {x: -0.5999993, y: 0.050000604, z: 1.4999993}
---- !u!1 &467450137 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 100002, guid: 6c51ed257312e3c45ac28217b4b8dd71, type: 3}
-  m_PrefabInternal: {fileID: 2074637887}
 --- !u!4 &467450138 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 6c51ed257312e3c45ac28217b4b8dd71, type: 3}
-  m_PrefabInternal: {fileID: 2074637887}
---- !u!95 &467450139 stripped
-Animator:
-  m_PrefabParentObject: {fileID: 9500000, guid: 6c51ed257312e3c45ac28217b4b8dd71,
-    type: 3}
   m_PrefabInternal: {fileID: 2074637887}
 --- !u!1001 &476113535
 Prefab:
@@ -12315,18 +12404,9 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!1 &491112606 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 100002, guid: 6c51ed257312e3c45ac28217b4b8dd71, type: 3}
-  m_PrefabInternal: {fileID: 880342713}
 --- !u!4 &491112607 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 6c51ed257312e3c45ac28217b4b8dd71, type: 3}
-  m_PrefabInternal: {fileID: 880342713}
---- !u!95 &491112608 stripped
-Animator:
-  m_PrefabParentObject: {fileID: 9500000, guid: 6c51ed257312e3c45ac28217b4b8dd71,
-    type: 3}
   m_PrefabInternal: {fileID: 880342713}
 --- !u!1 &492356737
 GameObject:
@@ -12337,6 +12417,7 @@ GameObject:
   m_Component:
   - component: {fileID: 492356738}
   - component: {fileID: 492356739}
+  - component: {fileID: 492356740}
   m_Layer: 0
   m_Name: Screamer2
   m_TagString: Untagged
@@ -12370,6 +12451,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &492356740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 492356737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e29a505d2d9cd4429e80acf96a51bc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &492616365
 GameObject:
   m_ObjectHideFlags: 0
@@ -12542,18 +12634,9 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 493343135}
   m_Mesh: {fileID: 4300060, guid: 47d2ca28faae2984e842dd6b50557faf, type: 3}
---- !u!1 &493349691 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 100002, guid: 6c51ed257312e3c45ac28217b4b8dd71, type: 3}
-  m_PrefabInternal: {fileID: 1143666839}
 --- !u!4 &493349692 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 6c51ed257312e3c45ac28217b4b8dd71, type: 3}
-  m_PrefabInternal: {fileID: 1143666839}
---- !u!95 &493349693 stripped
-Animator:
-  m_PrefabParentObject: {fileID: 9500000, guid: 6c51ed257312e3c45ac28217b4b8dd71,
-    type: 3}
   m_PrefabInternal: {fileID: 1143666839}
 --- !u!1001 &494928283
 Prefab:
@@ -12639,6 +12722,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 495058705}
+  - component: {fileID: 495058706}
   m_Layer: 0
   m_Name: Zone5
   m_TagString: Untagged
@@ -12661,6 +12745,18 @@ Transform:
   m_Father: {fileID: 359273139}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &495058706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 495058704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 040c70983d50dc44a9d1d745f40a5957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  count: 1
 --- !u!1 &497889285
 GameObject:
   m_ObjectHideFlags: 0
@@ -12902,8 +12998,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f3a512d8e1a67844b90374363d52108, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transitionObject: {fileID: 1343178436}
-  affectedLight: {fileID: 2129012085}
   flickeringCount: 1
 --- !u!114 &501515619
 MonoBehaviour:
@@ -12916,15 +13010,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eb68180c9fef8b4b931e9c86371a4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  visualTransition: {fileID: 501515618}
+  isSpawned: 0
   lifetimeDuration: 3
-  lifetimeActions:
-  - {fileID: 501515617}
+  screamerPrefab: {fileID: 0}
   facingAngle: 40
-  animator: {fileID: 1343178438}
-  triggerName: 
-  audioId: Breathing
-  audioTransform: {fileID: 1343178437}
 --- !u!1001 &501529423
 Prefab:
   m_ObjectHideFlags: 0
@@ -13283,6 +13372,7 @@ GameObject:
   m_Component:
   - component: {fileID: 515413650}
   - component: {fileID: 515413651}
+  - component: {fileID: 515413652}
   m_Layer: 0
   m_Name: AudioTrigger1
   m_TagString: Untagged
@@ -13315,67 +13405,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 1, z: 0}
---- !u!1001 &519496797
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 775104606}
-    m_Modifications:
-    - target: {fileID: 400002, guid: 6c51ed257312e3c45ac28217b4b8dd71, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 6c51ed257312e3c45ac28217b4b8dd71, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 6c51ed257312e3c45ac28217b4b8dd71, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 6c51ed257312e3c45ac28217b4b8dd71, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 6c51ed257312e3c45ac28217b4b8dd71, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 6c51ed257312e3c45ac28217b4b8dd71, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 6c51ed257312e3c45ac28217b4b8dd71, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 6c51ed257312e3c45ac28217b4b8dd71, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 100002, guid: 6c51ed257312e3c45ac28217b4b8dd71, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9500000, guid: 6c51ed257312e3c45ac28217b4b8dd71, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 8bd6f6a11247a7b4180c03661c72545e, type: 2}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 6c51ed257312e3c45ac28217b4b8dd71, type: 3}
-  m_IsPrefabParent: 0
---- !u!4 &530861834 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4118711147191134, guid: 9d1bf217fe29a1b4890942da4a16f803,
-    type: 2}
-  m_PrefabInternal: {fileID: 1201664313}
---- !u!114 &530861837 stripped
+--- !u!114 &515413652
 MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114696191721874046, guid: 9d1bf217fe29a1b4890942da4a16f803,
-    type: 2}
-  m_PrefabInternal: {fileID: 1201664313}
-  m_Script: {fileID: 11500000, guid: 9eb68180c9fef8b4b931e9c86371a4db, type: 3}
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 515413649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e29a505d2d9cd4429e80acf96a51bc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &533462541
 Prefab:
   m_ObjectHideFlags: 0
@@ -13752,15 +13792,6 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 6c51ed257312e3c45ac28217b4b8dd71, type: 3}
   m_PrefabInternal: {fileID: 542724934}
---- !u!1 &542724936 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 100002, guid: 6c51ed257312e3c45ac28217b4b8dd71, type: 3}
-  m_PrefabInternal: {fileID: 542724934}
---- !u!95 &542724937 stripped
-Animator:
-  m_PrefabParentObject: {fileID: 9500000, guid: 6c51ed257312e3c45ac28217b4b8dd71,
-    type: 3}
-  m_PrefabInternal: {fileID: 542724934}
 --- !u!1001 &543247231
 Prefab:
   m_ObjectHideFlags: 0
@@ -13890,15 +13921,6 @@ Prefab:
 --- !u!4 &543313821 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 6c51ed257312e3c45ac28217b4b8dd71, type: 3}
-  m_PrefabInternal: {fileID: 543313820}
---- !u!1 &543313822 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 100002, guid: 6c51ed257312e3c45ac28217b4b8dd71, type: 3}
-  m_PrefabInternal: {fileID: 543313820}
---- !u!95 &543313823 stripped
-Animator:
-  m_PrefabParentObject: {fileID: 9500000, guid: 6c51ed257312e3c45ac28217b4b8dd71,
-    type: 3}
   m_PrefabInternal: {fileID: 543313820}
 --- !u!1001 &543418363
 Prefab:
@@ -14215,6 +14237,7 @@ GameObject:
   m_Component:
   - component: {fileID: 559704879}
   - component: {fileID: 559704880}
+  - component: {fileID: 559704881}
   m_Layer: 0
   m_Name: Screamer1
   m_TagString: Untagged
@@ -14248,6 +14271,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &559704881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 559704878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e29a505d2d9cd4429e80acf96a51bc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &559778384
 Prefab:
   m_ObjectHideFlags: 0
@@ -14584,6 +14618,97 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 574583105}
   m_Mesh: {fileID: 4300088, guid: 47d2ca28faae2984e842dd6b50557faf, type: 3}
+--- !u!1 &574681798
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 574681802}
+  - component: {fileID: 574681801}
+  m_Layer: 0
+  m_Name: FacingScreamer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &574681801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 574681798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9eb68180c9fef8b4b931e9c86371a4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isSpawned: 0
+  lifetimeDuration: 3
+  screamerPrefab: {fileID: 0}
+  facingAngle: 40
+--- !u!4 &574681802
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 574681798}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1434898400}
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!1001 &574992113
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 574681802}
+    m_Modifications:
+    - target: {fileID: 4140328648358760, guid: c3302f145d63fde46bc9856132b75007, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4140328648358760, guid: c3302f145d63fde46bc9856132b75007, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4140328648358760, guid: c3302f145d63fde46bc9856132b75007, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4140328648358760, guid: c3302f145d63fde46bc9856132b75007, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4140328648358760, guid: c3302f145d63fde46bc9856132b75007, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4140328648358760, guid: c3302f145d63fde46bc9856132b75007, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4140328648358760, guid: c3302f145d63fde46bc9856132b75007, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4140328648358760, guid: c3302f145d63fde46bc9856132b75007, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1631096026187552, guid: c3302f145d63fde46bc9856132b75007, type: 2}
+      propertyPath: m_Name
+      value: Enemy
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: c3302f145d63fde46bc9856132b75007, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &576464945
 Prefab:
   m_ObjectHideFlags: 0
@@ -14884,8 +15009,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f3a512d8e1a67844b90374363d52108, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transitionObject: {fileID: 612968058}
-  affectedLight: {fileID: 2129012085}
   flickeringCount: 1
 --- !u!114 &583405352
 MonoBehaviour:
@@ -14898,15 +15021,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eb68180c9fef8b4b931e9c86371a4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  visualTransition: {fileID: 583405351}
+  isSpawned: 0
   lifetimeDuration: 3
-  lifetimeActions:
-  - {fileID: 583405350}
+  screamerPrefab: {fileID: 0}
   facingAngle: 40
-  animator: {fileID: 612968060}
-  triggerName: 
-  audioId: Breathing
-  audioTransform: {fileID: 612968059}
 --- !u!1 &586372818
 GameObject:
   m_ObjectHideFlags: 0
@@ -14980,19 +15098,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 586372818}
   m_Mesh: {fileID: 4300018, guid: c6c2e7dd423fe224099349924428f226, type: 3}
---- !u!1 &592311201 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 100002, guid: 6c51ed257312e3c45ac28217b4b8dd71, type: 3}
-  m_PrefabInternal: {fileID: 1498731951}
---- !u!4 &592311202 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 400002, guid: 6c51ed257312e3c45ac28217b4b8dd71, type: 3}
-  m_PrefabInternal: {fileID: 1498731951}
---- !u!95 &592311203 stripped
-Animator:
-  m_PrefabParentObject: {fileID: 9500000, guid: 6c51ed257312e3c45ac28217b4b8dd71,
-    type: 3}
-  m_PrefabInternal: {fileID: 1498731951}
 --- !u!1 &593561804
 GameObject:
   m_ObjectHideFlags: 0
@@ -15623,18 +15728,9 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!1 &612968058 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 100002, guid: 6c51ed257312e3c45ac28217b4b8dd71, type: 3}
-  m_PrefabInternal: {fileID: 693979273}
 --- !u!4 &612968059 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 6c51ed257312e3c45ac28217b4b8dd71, type: 3}
-  m_PrefabInternal: {fileID: 693979273}
---- !u!95 &612968060 stripped
-Animator:
-  m_PrefabParentObject: {fileID: 9500000, guid: 6c51ed257312e3c45ac28217b4b8dd71,
-    type: 3}
   m_PrefabInternal: {fileID: 693979273}
 --- !u!1 &613727752
 GameObject:
@@ -17249,8 +17345,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 698652626}
-  - component: {fileID: 698652628}
   - component: {fileID: 698652627}
+  - component: {fileID: 698652628}
   m_Layer: 0
   m_Name: Screamer1
   m_TagString: Untagged
@@ -17268,7 +17364,7 @@ Transform:
   m_LocalPosition: {x: 9.52, y: 0, z: -2.41}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 530861834}
+  - {fileID: 1658676564}
   m_Father: {fileID: 38548834}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -17295,7 +17391,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e29a505d2d9cd4429e80acf96a51bc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerable: {fileID: 530861837}
 --- !u!1 &704424233
 GameObject:
   m_ObjectHideFlags: 0
@@ -17478,6 +17573,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 711268472}
+  - component: {fileID: 711268473}
   m_Layer: 0
   m_Name: Zone4
   m_TagString: Untagged
@@ -17499,6 +17595,18 @@ Transform:
   m_Father: {fileID: 359273139}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &711268473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 711268471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 040c70983d50dc44a9d1d745f40a5957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  count: 1
 --- !u!1001 &711603045
 Prefab:
   m_ObjectHideFlags: 0
@@ -17807,6 +17915,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 718122451}
+  - component: {fileID: 718122452}
   m_Layer: 0
   m_Name: FakeFX
   m_TagString: Untagged
@@ -17838,6 +17947,18 @@ Transform:
   m_Father: {fileID: 2086270908}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &718122452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 718122450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 040c70983d50dc44a9d1d745f40a5957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  count: 7
 --- !u!1001 &723958419
 Prefab:
   m_ObjectHideFlags: 0
@@ -18208,6 +18329,7 @@ GameObject:
   m_Component:
   - component: {fileID: 728942777}
   - component: {fileID: 728942778}
+  - component: {fileID: 728942779}
   m_Layer: 0
   m_Name: FakeFX5
   m_TagString: Untagged
@@ -18240,6 +18362,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &728942779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 728942776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e29a505d2d9cd4429e80acf96a51bc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &733090751
 GameObject:
   m_ObjectHideFlags: 0
@@ -18351,6 +18484,7 @@ GameObject:
   m_Component:
   - component: {fileID: 740046293}
   - component: {fileID: 740046294}
+  - component: {fileID: 740046295}
   m_Layer: 0
   m_Name: FakeFX4
   m_TagString: Untagged
@@ -18383,6 +18517,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &740046295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 740046292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e29a505d2d9cd4429e80acf96a51bc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &753347929
 GameObject:
   m_ObjectHideFlags: 0
@@ -19686,8 +19831,6 @@ GameObject:
   m_Component:
   - component: {fileID: 775104606}
   - component: {fileID: 775104609}
-  - component: {fileID: 775104608}
-  - component: {fileID: 775104607}
   m_Layer: 0
   m_Name: Screamer
   m_TagString: Untagged
@@ -19704,36 +19847,10 @@ Transform:
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 1.151, y: 0.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 422192024}
+  m_Children: []
   m_Father: {fileID: 911399301}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
---- !u!114 &775104607
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 775104605}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ff254e3a2acca04489e65e1aca12e35, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &775104608
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 775104605}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f3a512d8e1a67844b90374363d52108, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  transitionObject: {fileID: 422192023}
-  affectedLight: {fileID: 2129012085}
-  flickeringCount: 1
 --- !u!114 &775104609
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19745,15 +19862,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eb68180c9fef8b4b931e9c86371a4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  visualTransition: {fileID: 775104608}
+  isSpawned: 0
   lifetimeDuration: 3
-  lifetimeActions:
-  - {fileID: 775104607}
+  screamerPrefab: {fileID: 1631096026187552, guid: c3302f145d63fde46bc9856132b75007,
+    type: 2}
   facingAngle: 40
-  animator: {fileID: 422192025}
-  triggerName: 
-  audioId: Breathing
-  audioTransform: {fileID: 422192024}
 --- !u!1 &777237565
 GameObject:
   m_ObjectHideFlags: 0
@@ -19970,8 +20083,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f3a512d8e1a67844b90374363d52108, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transitionObject: {fileID: 347212089}
-  affectedLight: {fileID: 2129012085}
   flickeringCount: 1
 --- !u!114 &784042559
 MonoBehaviour:
@@ -19984,15 +20095,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eb68180c9fef8b4b931e9c86371a4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  visualTransition: {fileID: 784042558}
+  isSpawned: 0
   lifetimeDuration: 3
-  lifetimeActions:
-  - {fileID: 784042557}
+  screamerPrefab: {fileID: 0}
   facingAngle: 40
-  animator: {fileID: 347212091}
-  triggerName: 
-  audioId: Breathing
-  audioTransform: {fileID: 347212090}
 --- !u!1 &786083135 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1941388042560724, guid: 52ce23f3e4383f343884258333a2e9aa,
@@ -20104,6 +20210,7 @@ GameObject:
   m_Component:
   - component: {fileID: 808274207}
   - component: {fileID: 808274208}
+  - component: {fileID: 808274209}
   m_Layer: 0
   m_Name: AudioTrigger14
   m_TagString: Untagged
@@ -20136,6 +20243,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &808274209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 808274206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e29a505d2d9cd4429e80acf96a51bc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &813506924
 GameObject:
   m_ObjectHideFlags: 0
@@ -20235,6 +20353,7 @@ GameObject:
   m_Component:
   - component: {fileID: 828802858}
   - component: {fileID: 828802859}
+  - component: {fileID: 828802860}
   m_Layer: 0
   m_Name: AudioTrigger10
   m_TagString: Untagged
@@ -20267,6 +20386,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &828802860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 828802857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e29a505d2d9cd4429e80acf96a51bc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &838717765
 GameObject:
   m_ObjectHideFlags: 0
@@ -20907,6 +21037,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 873639086}
+  - component: {fileID: 873639087}
   m_Layer: 0
   m_Name: Zone3
   m_TagString: Untagged
@@ -20929,6 +21060,18 @@ Transform:
   m_Father: {fileID: 359273139}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &873639087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 873639085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 040c70983d50dc44a9d1d745f40a5957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  count: 1
 --- !u!1 &876801492
 GameObject:
   m_ObjectHideFlags: 0
@@ -20983,8 +21126,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f3a512d8e1a67844b90374363d52108, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transitionObject: {fileID: 2140631048}
-  affectedLight: {fileID: 2129012085}
   flickeringCount: 1
 --- !u!114 &876801496
 MonoBehaviour:
@@ -20997,15 +21138,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eb68180c9fef8b4b931e9c86371a4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  visualTransition: {fileID: 876801495}
+  isSpawned: 0
   lifetimeDuration: 3
-  lifetimeActions:
-  - {fileID: 876801494}
+  screamerPrefab: {fileID: 0}
   facingAngle: 40
-  animator: {fileID: 2140631050}
-  triggerName: 
-  audioId: Breathing
-  audioTransform: {fileID: 2140631049}
 --- !u!1001 &880342713
 Prefab:
   m_ObjectHideFlags: 0
@@ -21276,6 +21412,7 @@ GameObject:
   m_Component:
   - component: {fileID: 890520654}
   - component: {fileID: 890520655}
+  - component: {fileID: 890520656}
   m_Layer: 0
   m_Name: AudioTrigger4
   m_TagString: Untagged
@@ -21308,6 +21445,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &890520656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 890520653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e29a505d2d9cd4429e80acf96a51bc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &894474711
 Prefab:
   m_ObjectHideFlags: 0
@@ -21917,6 +22065,7 @@ GameObject:
   m_Component:
   - component: {fileID: 909556985}
   - component: {fileID: 909556986}
+  - component: {fileID: 909556987}
   m_Layer: 0
   m_Name: Screamer3
   m_TagString: Untagged
@@ -21950,6 +22099,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &909556987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 909556984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e29a505d2d9cd4429e80acf96a51bc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &910341961
 Prefab:
   m_ObjectHideFlags: 0
@@ -22043,6 +22203,7 @@ GameObject:
   m_Component:
   - component: {fileID: 911399301}
   - component: {fileID: 911399302}
+  - component: {fileID: 911399303}
   m_Layer: 0
   m_Name: Screamer2
   m_TagString: Untagged
@@ -22076,6 +22237,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &911399303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 911399300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e29a505d2d9cd4429e80acf96a51bc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &911702462
 GameObject:
   m_ObjectHideFlags: 0
@@ -22085,6 +22257,7 @@ GameObject:
   m_Component:
   - component: {fileID: 911702463}
   - component: {fileID: 911702464}
+  - component: {fileID: 911702465}
   m_Layer: 0
   m_Name: Screamer2
   m_TagString: Untagged
@@ -22118,6 +22291,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &911702465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 911702462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e29a505d2d9cd4429e80acf96a51bc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &911805764
 GameObject:
   m_ObjectHideFlags: 0
@@ -22674,8 +22858,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f3a512d8e1a67844b90374363d52108, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transitionObject: {fileID: 1028104723}
-  affectedLight: {fileID: 2129012085}
   flickeringCount: 1
 --- !u!114 &941571733
 MonoBehaviour:
@@ -22688,15 +22870,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eb68180c9fef8b4b931e9c86371a4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  visualTransition: {fileID: 941571732}
+  isSpawned: 0
   lifetimeDuration: 3
-  lifetimeActions:
-  - {fileID: 941571731}
+  screamerPrefab: {fileID: 0}
   facingAngle: 40
-  animator: {fileID: 1028104724}
-  triggerName: 
-  audioId: Breathing
-  audioTransform: {fileID: 1028104722}
 --- !u!1 &944264355
 GameObject:
   m_ObjectHideFlags: 0
@@ -22751,8 +22928,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f3a512d8e1a67844b90374363d52108, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transitionObject: {fileID: 1489023717}
-  affectedLight: {fileID: 2129012085}
   flickeringCount: 1
 --- !u!114 &944264359
 MonoBehaviour:
@@ -22765,15 +22940,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eb68180c9fef8b4b931e9c86371a4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  visualTransition: {fileID: 944264358}
+  isSpawned: 0
   lifetimeDuration: 3
-  lifetimeActions:
-  - {fileID: 944264357}
+  screamerPrefab: {fileID: 0}
   facingAngle: 40
-  animator: {fileID: 1489023718}
-  triggerName: 
-  audioId: Breathing
-  audioTransform: {fileID: 1489023716}
 --- !u!1 &947381763
 GameObject:
   m_ObjectHideFlags: 0
@@ -24021,6 +24191,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1012144894}
   - component: {fileID: 1012144895}
+  - component: {fileID: 1012144896}
   m_Layer: 0
   m_Name: FakeFX3
   m_TagString: Untagged
@@ -24053,6 +24224,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &1012144896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1012144893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e29a505d2d9cd4429e80acf96a51bc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1018059086
 GameObject:
   m_ObjectHideFlags: 0
@@ -24098,7 +24280,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minTime: 0.1
   maxTime: 0.5
-  flickeringLight: {fileID: 0}
 --- !u!23 &1018059089
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -24759,15 +24940,6 @@ Prefab:
 --- !u!4 &1028104722 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 6c51ed257312e3c45ac28217b4b8dd71, type: 3}
-  m_PrefabInternal: {fileID: 1028104721}
---- !u!1 &1028104723 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 100002, guid: 6c51ed257312e3c45ac28217b4b8dd71, type: 3}
-  m_PrefabInternal: {fileID: 1028104721}
---- !u!95 &1028104724 stripped
-Animator:
-  m_PrefabParentObject: {fileID: 9500000, guid: 6c51ed257312e3c45ac28217b4b8dd71,
-    type: 3}
   m_PrefabInternal: {fileID: 1028104721}
 --- !u!1 &1032157884
 GameObject:
@@ -26140,6 +26312,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1095381593}
   - component: {fileID: 1095381594}
+  - component: {fileID: 1095381595}
   m_Layer: 0
   m_Name: FakeFX7
   m_TagString: Untagged
@@ -26172,6 +26345,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &1095381595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1095381592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e29a505d2d9cd4429e80acf96a51bc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1095616129
 GameObject:
   m_ObjectHideFlags: 0
@@ -27791,6 +27975,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1180459013}
   - component: {fileID: 1180459014}
+  - component: {fileID: 1180459015}
   m_Layer: 0
   m_Name: AudioTrigger8
   m_TagString: Untagged
@@ -27823,6 +28008,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &1180459015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1180459012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e29a505d2d9cd4429e80acf96a51bc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1180611995
 Prefab:
   m_ObjectHideFlags: 0
@@ -28067,18 +28263,9 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1191892973}
   m_Mesh: {fileID: 4300014, guid: 42098ca4db09f8942814ff8a033403d2, type: 3}
---- !u!1 &1192949205 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 100002, guid: 6c51ed257312e3c45ac28217b4b8dd71, type: 3}
-  m_PrefabInternal: {fileID: 663051422}
 --- !u!4 &1192949206 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 6c51ed257312e3c45ac28217b4b8dd71, type: 3}
-  m_PrefabInternal: {fileID: 663051422}
---- !u!95 &1192949207 stripped
-Animator:
-  m_PrefabParentObject: {fileID: 9500000, guid: 6c51ed257312e3c45ac28217b4b8dd71,
-    type: 3}
   m_PrefabInternal: {fileID: 663051422}
 --- !u!1 &1193555392
 GameObject:
@@ -28089,6 +28276,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1193555393}
   - component: {fileID: 1193555394}
+  - component: {fileID: 1193555395}
   m_Layer: 0
   m_Name: FakeFX6
   m_TagString: Untagged
@@ -28121,6 +28309,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &1193555395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1193555392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e29a505d2d9cd4429e80acf96a51bc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1196421421
 GameObject:
   m_ObjectHideFlags: 0
@@ -28383,57 +28582,6 @@ MonoBehaviour:
   panel: {fileID: 1199108210}
   door: {fileID: 622003393}
   bolts: {fileID: 487499530}
---- !u!1001 &1201664313
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 698652626}
-    m_Modifications:
-    - target: {fileID: 4118711147191134, guid: 9d1bf217fe29a1b4890942da4a16f803, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -1.1700001
-      objectReference: {fileID: 0}
-    - target: {fileID: 4118711147191134, guid: 9d1bf217fe29a1b4890942da4a16f803, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 4118711147191134, guid: 9d1bf217fe29a1b4890942da4a16f803, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4118711147191134, guid: 9d1bf217fe29a1b4890942da4a16f803, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4118711147191134, guid: 9d1bf217fe29a1b4890942da4a16f803, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4118711147191134, guid: 9d1bf217fe29a1b4890942da4a16f803, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4118711147191134, guid: 9d1bf217fe29a1b4890942da4a16f803, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4118711147191134, guid: 9d1bf217fe29a1b4890942da4a16f803, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1076043858938970, guid: 9d1bf217fe29a1b4890942da4a16f803, type: 2}
-      propertyPath: m_Name
-      value: Screamer
-      objectReference: {fileID: 0}
-    - target: {fileID: 114569287015528110, guid: 9d1bf217fe29a1b4890942da4a16f803,
-        type: 2}
-      propertyPath: affectedLight
-      value: 
-      objectReference: {fileID: 2129012085}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 9d1bf217fe29a1b4890942da4a16f803, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1001 &1213823853
 Prefab:
   m_ObjectHideFlags: 0
@@ -28942,6 +29090,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1241831380}
   - component: {fileID: 1241831381}
+  - component: {fileID: 1241831382}
   m_Layer: 0
   m_Name: FakeFX9
   m_TagString: Untagged
@@ -28974,6 +29123,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &1241831382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1241831379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e29a505d2d9cd4429e80acf96a51bc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1242045789
 Prefab:
   m_ObjectHideFlags: 0
@@ -29513,8 +29673,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f3a512d8e1a67844b90374363d52108, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transitionObject: {fileID: 1577068041}
-  affectedLight: {fileID: 2129012085}
   flickeringCount: 1
 --- !u!114 &1266313465
 MonoBehaviour:
@@ -29527,15 +29685,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eb68180c9fef8b4b931e9c86371a4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  visualTransition: {fileID: 1266313464}
+  isSpawned: 0
   lifetimeDuration: 3
-  lifetimeActions:
-  - {fileID: 1266313463}
+  screamerPrefab: {fileID: 0}
   facingAngle: 40
-  animator: {fileID: 1577068043}
-  triggerName: 
-  audioId: Breathing
-  audioTransform: {fileID: 1577068042}
 --- !u!1001 &1283158709
 Prefab:
   m_ObjectHideFlags: 0
@@ -29788,6 +29941,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1295605732}
   - component: {fileID: 1295605733}
+  - component: {fileID: 1295605734}
   m_Layer: 0
   m_Name: AudioTrigger3
   m_TagString: Untagged
@@ -29820,6 +29974,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &1295605734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1295605731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e29a505d2d9cd4429e80acf96a51bc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1295801201
 GameObject:
   m_ObjectHideFlags: 0
@@ -30442,6 +30607,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1316283220}
   - component: {fileID: 1316283221}
+  - component: {fileID: 1316283222}
   m_Layer: 0
   m_Name: Screamer2
   m_TagString: Untagged
@@ -30475,6 +30641,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &1316283222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1316283219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e29a505d2d9cd4429e80acf96a51bc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1318815866
 GameObject:
   m_ObjectHideFlags: 0
@@ -30529,8 +30706,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f3a512d8e1a67844b90374363d52108, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transitionObject: {fileID: 2030046356}
-  affectedLight: {fileID: 2129012085}
   flickeringCount: 1
 --- !u!114 &1318815870
 MonoBehaviour:
@@ -30543,15 +30718,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eb68180c9fef8b4b931e9c86371a4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  visualTransition: {fileID: 1318815869}
+  isSpawned: 0
   lifetimeDuration: 3
-  lifetimeActions:
-  - {fileID: 1318815868}
+  screamerPrefab: {fileID: 0}
   facingAngle: 40
-  animator: {fileID: 2030046358}
-  triggerName: 
-  audioId: Breathing
-  audioTransform: {fileID: 2030046357}
 --- !u!1 &1320018975
 GameObject:
   m_ObjectHideFlags: 0
@@ -31012,18 +31182,9 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.1999999, y: 0.099999994, z: 3}
   m_Center: {x: -0.59999996, y: 0.049999997, z: 1.5}
---- !u!1 &1343178436 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 100002, guid: 6c51ed257312e3c45ac28217b4b8dd71, type: 3}
-  m_PrefabInternal: {fileID: 711603045}
 --- !u!4 &1343178437 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 6c51ed257312e3c45ac28217b4b8dd71, type: 3}
-  m_PrefabInternal: {fileID: 711603045}
---- !u!95 &1343178438 stripped
-Animator:
-  m_PrefabParentObject: {fileID: 9500000, guid: 6c51ed257312e3c45ac28217b4b8dd71,
-    type: 3}
   m_PrefabInternal: {fileID: 711603045}
 --- !u!1 &1343241565
 GameObject:
@@ -31079,8 +31240,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f3a512d8e1a67844b90374363d52108, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transitionObject: {fileID: 493349691}
-  affectedLight: {fileID: 2129012085}
   flickeringCount: 1
 --- !u!114 &1343241569
 MonoBehaviour:
@@ -31093,15 +31252,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eb68180c9fef8b4b931e9c86371a4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  visualTransition: {fileID: 1343241568}
+  isSpawned: 0
   lifetimeDuration: 3
-  lifetimeActions:
-  - {fileID: 1343241567}
+  screamerPrefab: {fileID: 0}
   facingAngle: 40
-  animator: {fileID: 493349693}
-  triggerName: 
-  audioId: Breathing
-  audioTransform: {fileID: 493349692}
 --- !u!1 &1352214150
 GameObject:
   m_ObjectHideFlags: 0
@@ -31111,6 +31265,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1352214151}
   - component: {fileID: 1352214152}
+  - component: {fileID: 1352214153}
   m_Layer: 0
   m_Name: AudioTrigger15
   m_TagString: Untagged
@@ -31143,6 +31298,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &1352214153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1352214150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e29a505d2d9cd4429e80acf96a51bc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1353102337
 Prefab:
   m_ObjectHideFlags: 0
@@ -31847,18 +32013,9 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1404019578}
   m_Mesh: {fileID: 4300122, guid: 47d2ca28faae2984e842dd6b50557faf, type: 3}
---- !u!1 &1416472685 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 100002, guid: 6c51ed257312e3c45ac28217b4b8dd71, type: 3}
-  m_PrefabInternal: {fileID: 654764727}
 --- !u!4 &1416472686 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 6c51ed257312e3c45ac28217b4b8dd71, type: 3}
-  m_PrefabInternal: {fileID: 654764727}
---- !u!95 &1416472687 stripped
-Animator:
-  m_PrefabParentObject: {fileID: 9500000, guid: 6c51ed257312e3c45ac28217b4b8dd71,
-    type: 3}
   m_PrefabInternal: {fileID: 654764727}
 --- !u!1 &1429365321
 GameObject:
@@ -32048,6 +32205,11 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1434168620}
   m_Mesh: {fileID: 4300054, guid: 47d2ca28faae2984e842dd6b50557faf, type: 3}
+--- !u!4 &1434898400 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4140328648358760, guid: c3302f145d63fde46bc9856132b75007,
+    type: 2}
+  m_PrefabInternal: {fileID: 574992113}
 --- !u!1001 &1443257006
 Prefab:
   m_ObjectHideFlags: 0
@@ -32585,8 +32747,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f3a512d8e1a67844b90374363d52108, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transitionObject: {fileID: 1416472685}
-  affectedLight: {fileID: 2129012085}
   flickeringCount: 1
 --- !u!114 &1464513375
 MonoBehaviour:
@@ -32599,15 +32759,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eb68180c9fef8b4b931e9c86371a4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  visualTransition: {fileID: 1464513374}
+  isSpawned: 0
   lifetimeDuration: 3
-  lifetimeActions:
-  - {fileID: 1464513373}
+  screamerPrefab: {fileID: 0}
   facingAngle: 40
-  animator: {fileID: 1416472687}
-  triggerName: 
-  audioId: Breathing
-  audioTransform: {fileID: 1416472686}
 --- !u!1001 &1469297575
 Prefab:
   m_ObjectHideFlags: 0
@@ -32907,15 +33062,6 @@ Prefab:
 --- !u!4 &1489023716 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 6c51ed257312e3c45ac28217b4b8dd71, type: 3}
-  m_PrefabInternal: {fileID: 1489023715}
---- !u!1 &1489023717 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 100002, guid: 6c51ed257312e3c45ac28217b4b8dd71, type: 3}
-  m_PrefabInternal: {fileID: 1489023715}
---- !u!95 &1489023718 stripped
-Animator:
-  m_PrefabParentObject: {fileID: 9500000, guid: 6c51ed257312e3c45ac28217b4b8dd71,
-    type: 3}
   m_PrefabInternal: {fileID: 1489023715}
 --- !u!1001 &1490632259
 Prefab:
@@ -33414,56 +33560,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1498731951
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 382467161}
-    m_Modifications:
-    - target: {fileID: 400002, guid: 6c51ed257312e3c45ac28217b4b8dd71, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 6c51ed257312e3c45ac28217b4b8dd71, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 6c51ed257312e3c45ac28217b4b8dd71, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 6c51ed257312e3c45ac28217b4b8dd71, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 6c51ed257312e3c45ac28217b4b8dd71, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 6c51ed257312e3c45ac28217b4b8dd71, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 6c51ed257312e3c45ac28217b4b8dd71, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 6c51ed257312e3c45ac28217b4b8dd71, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 100002, guid: 6c51ed257312e3c45ac28217b4b8dd71, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9500000, guid: 6c51ed257312e3c45ac28217b4b8dd71, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 8bd6f6a11247a7b4180c03661c72545e, type: 2}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 6c51ed257312e3c45ac28217b4b8dd71, type: 3}
-  m_IsPrefabParent: 0
 --- !u!1001 &1513368244
 Prefab:
   m_ObjectHideFlags: 0
@@ -33549,6 +33645,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1521024797}
   - component: {fileID: 1521024798}
+  - component: {fileID: 1521024799}
   m_Layer: 0
   m_Name: Screamer1
   m_TagString: Untagged
@@ -33582,6 +33679,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &1521024799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1521024796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e29a505d2d9cd4429e80acf96a51bc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1522053762
 GameObject:
   m_ObjectHideFlags: 0
@@ -33591,6 +33699,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1522053763}
   - component: {fileID: 1522053764}
+  - component: {fileID: 1522053765}
   m_Layer: 0
   m_Name: FakeFX2
   m_TagString: Untagged
@@ -33623,6 +33732,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &1522053765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1522053762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e29a505d2d9cd4429e80acf96a51bc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1523462503
 GameObject:
   m_ObjectHideFlags: 0
@@ -33747,6 +33867,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1526935565}
   - component: {fileID: 1526935566}
+  - component: {fileID: 1526935567}
   m_Layer: 0
   m_Name: Screamer2
   m_TagString: Untagged
@@ -33780,6 +33901,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &1526935567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1526935564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e29a505d2d9cd4429e80acf96a51bc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1526991367
 GameObject:
   m_ObjectHideFlags: 0
@@ -33897,6 +34029,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1538600058}
   - component: {fileID: 1538600059}
+  - component: {fileID: 1538600060}
   m_Layer: 0
   m_Name: AudioTrigger9
   m_TagString: Untagged
@@ -33929,6 +34062,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &1538600060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1538600057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e29a505d2d9cd4429e80acf96a51bc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1542150414
 GameObject:
   m_ObjectHideFlags: 0
@@ -34551,8 +34695,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f3a512d8e1a67844b90374363d52108, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transitionObject: {fileID: 491112606}
-  affectedLight: {fileID: 2129012085}
   flickeringCount: 1
 --- !u!114 &1552709087
 MonoBehaviour:
@@ -34565,15 +34707,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eb68180c9fef8b4b931e9c86371a4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  visualTransition: {fileID: 1552709086}
+  isSpawned: 0
   lifetimeDuration: 3
-  lifetimeActions:
-  - {fileID: 1552709085}
+  screamerPrefab: {fileID: 0}
   facingAngle: 40
-  animator: {fileID: 491112608}
-  triggerName: 
-  audioId: Breathing
-  audioTransform: {fileID: 491112607}
 --- !u!1001 &1557731475
 Prefab:
   m_ObjectHideFlags: 0
@@ -34793,6 +34930,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1562016953}
+  - component: {fileID: 1562016954}
   m_Layer: 0
   m_Name: Zone2
   m_TagString: Untagged
@@ -34816,6 +34954,18 @@ Transform:
   m_Father: {fileID: 359273139}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1562016954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1562016952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 040c70983d50dc44a9d1d745f40a5957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  count: 1
 --- !u!1 &1563916740
 GameObject:
   m_ObjectHideFlags: 0
@@ -35173,18 +35323,9 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.2000005, y: 0.10000073, z: 3.0000007}
   m_Center: {x: -0.59999955, y: 0.050000604, z: 1.4999994}
---- !u!1 &1577068041 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 100002, guid: 6c51ed257312e3c45ac28217b4b8dd71, type: 3}
-  m_PrefabInternal: {fileID: 955408579}
 --- !u!4 &1577068042 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 6c51ed257312e3c45ac28217b4b8dd71, type: 3}
-  m_PrefabInternal: {fileID: 955408579}
---- !u!95 &1577068043 stripped
-Animator:
-  m_PrefabParentObject: {fileID: 9500000, guid: 6c51ed257312e3c45ac28217b4b8dd71,
-    type: 3}
   m_PrefabInternal: {fileID: 955408579}
 --- !u!1 &1577437390
 GameObject:
@@ -35194,6 +35335,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1577437391}
+  - component: {fileID: 1577437392}
   m_Layer: 0
   m_Name: Zone7
   m_TagString: Untagged
@@ -35216,6 +35358,18 @@ Transform:
   m_Father: {fileID: 359273139}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1577437392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1577437390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 040c70983d50dc44a9d1d745f40a5957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  count: 1
 --- !u!1001 &1579428469
 Prefab:
   m_ObjectHideFlags: 0
@@ -35493,6 +35647,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1600450903}
   - component: {fileID: 1600450904}
+  - component: {fileID: 1600450905}
   m_Layer: 0
   m_Name: Screamer3
   m_TagString: Untagged
@@ -35526,6 +35681,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &1600450905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1600450902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e29a505d2d9cd4429e80acf96a51bc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1606830212
 GameObject:
   m_ObjectHideFlags: 0
@@ -36378,6 +36544,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1648981201}
   - component: {fileID: 1648981202}
+  - component: {fileID: 1648981203}
   m_Layer: 0
   m_Name: AudioTrigger6
   m_TagString: Untagged
@@ -36410,6 +36577,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &1648981203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1648981200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e29a505d2d9cd4429e80acf96a51bc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1652435914
 GameObject:
   m_ObjectHideFlags: 0
@@ -36607,6 +36785,51 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1652435914}
   m_Mesh: {fileID: 0}
+--- !u!1 &1658676563
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1658676564}
+  - component: {fileID: 1658676567}
+  m_Layer: 0
+  m_Name: Screamer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1658676564
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1658676563}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -1.15, y: 0.7, z: -0}
+  m_LocalScale: {x: 1.0000005, y: 1, z: 1.0000005}
+  m_Children: []
+  m_Father: {fileID: 698652626}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &1658676567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1658676563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9eb68180c9fef8b4b931e9c86371a4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isSpawned: 0
+  lifetimeDuration: 3
+  screamerPrefab: {fileID: 1631096026187552, guid: c3302f145d63fde46bc9856132b75007,
+    type: 2}
+  facingAngle: 40
 --- !u!1001 &1661639926
 Prefab:
   m_ObjectHideFlags: 0
@@ -37342,6 +37565,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1686068577}
   - component: {fileID: 1686068578}
+  - component: {fileID: 1686068579}
   m_Layer: 0
   m_Name: AudioTrigger2
   m_TagString: Untagged
@@ -37374,6 +37598,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &1686068579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1686068576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e29a505d2d9cd4429e80acf96a51bc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1692539032
 GameObject:
   m_ObjectHideFlags: 0
@@ -37658,8 +37893,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f3a512d8e1a67844b90374363d52108, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transitionObject: {fileID: 542724936}
-  affectedLight: {fileID: 2129012085}
   flickeringCount: 1
 --- !u!114 &1698870598
 MonoBehaviour:
@@ -37672,15 +37905,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eb68180c9fef8b4b931e9c86371a4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  visualTransition: {fileID: 1698870597}
+  isSpawned: 0
   lifetimeDuration: 3
-  lifetimeActions:
-  - {fileID: 1698870596}
+  screamerPrefab: {fileID: 0}
   facingAngle: 40
-  animator: {fileID: 542724937}
-  triggerName: 
-  audioId: Breathing
-  audioTransform: {fileID: 542724935}
 --- !u!1 &1699710946
 GameObject:
   m_ObjectHideFlags: 0
@@ -37717,6 +37945,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1716853300}
+  - component: {fileID: 1716853301}
   m_Layer: 0
   m_Name: Zone8
   m_TagString: Untagged
@@ -37739,6 +37968,18 @@ Transform:
   m_Father: {fileID: 359273139}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1716853301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1716853299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 040c70983d50dc44a9d1d745f40a5957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  count: 1
 --- !u!1 &1726534457
 GameObject:
   m_ObjectHideFlags: 0
@@ -37939,6 +38180,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1737746629}
   - component: {fileID: 1737746630}
+  - component: {fileID: 1737746631}
   m_Layer: 0
   m_Name: AudioTrigger7
   m_TagString: Untagged
@@ -37971,6 +38213,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &1737746631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1737746628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e29a505d2d9cd4429e80acf96a51bc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1739757157
 GameObject:
   m_ObjectHideFlags: 0
@@ -37980,6 +38233,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1739757158}
   - component: {fileID: 1739757159}
+  - component: {fileID: 1739757160}
   m_Layer: 0
   m_Name: FakeFX1
   m_TagString: Untagged
@@ -38012,6 +38266,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &1739757160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1739757157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e29a505d2d9cd4429e80acf96a51bc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1739776195
 GameObject:
   m_ObjectHideFlags: 0
@@ -38283,6 +38548,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1747240496}
   - component: {fileID: 1747240497}
+  - component: {fileID: 1747240498}
   m_Layer: 0
   m_Name: FadingScreamer1
   m_TagString: Untagged
@@ -38316,6 +38582,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &1747240498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1747240495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e29a505d2d9cd4429e80acf96a51bc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1748544839
 GameObject:
   m_ObjectHideFlags: 0
@@ -38805,6 +39082,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1755452175}
   - component: {fileID: 1755452176}
+  - component: {fileID: 1755452177}
   m_Layer: 0
   m_Name: Screamer2
   m_TagString: Untagged
@@ -38838,6 +39116,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &1755452177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1755452174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e29a505d2d9cd4429e80acf96a51bc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1758070408
 Prefab:
   m_ObjectHideFlags: 0
@@ -39390,8 +39679,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f3a512d8e1a67844b90374363d52108, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transitionObject: {fileID: 1192949205}
-  affectedLight: {fileID: 2129012085}
   flickeringCount: 1
 --- !u!114 &1769957949
 MonoBehaviour:
@@ -39404,15 +39691,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eb68180c9fef8b4b931e9c86371a4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  visualTransition: {fileID: 1769957948}
+  isSpawned: 0
   lifetimeDuration: 3
-  lifetimeActions:
-  - {fileID: 1769957947}
+  screamerPrefab: {fileID: 0}
   facingAngle: 40
-  animator: {fileID: 1192949207}
-  triggerName: 
-  audioId: Breathing
-  audioTransform: {fileID: 1192949206}
 --- !u!1001 &1783754127
 Prefab:
   m_ObjectHideFlags: 0
@@ -39777,6 +40059,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1809405686}
   - component: {fileID: 1809405687}
+  - component: {fileID: 1809405688}
   m_Layer: 0
   m_Name: AudioTrigger11
   m_TagString: Untagged
@@ -39809,6 +40092,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &1809405688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1809405685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e29a505d2d9cd4429e80acf96a51bc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1810285271
 Prefab:
   m_ObjectHideFlags: 0
@@ -40954,8 +41248,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f3a512d8e1a67844b90374363d52108, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transitionObject: {fileID: 467450137}
-  affectedLight: {fileID: 2129012085}
   flickeringCount: 1
 --- !u!114 &1860621016
 MonoBehaviour:
@@ -40968,15 +41260,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eb68180c9fef8b4b931e9c86371a4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  visualTransition: {fileID: 1860621015}
+  isSpawned: 0
   lifetimeDuration: 3
-  lifetimeActions:
-  - {fileID: 1860621014}
+  screamerPrefab: {fileID: 0}
   facingAngle: 40
-  animator: {fileID: 467450139}
-  triggerName: 
-  audioId: Breathing
-  audioTransform: {fileID: 467450138}
 --- !u!1 &1864380343
 GameObject:
   m_ObjectHideFlags: 0
@@ -41252,6 +41539,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1881563982}
+  - component: {fileID: 1881563983}
   m_Layer: 0
   m_Name: Zone6
   m_TagString: Untagged
@@ -41275,6 +41563,18 @@ Transform:
   m_Father: {fileID: 359273139}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1881563983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1881563981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 040c70983d50dc44a9d1d745f40a5957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  count: 1
 --- !u!1001 &1894856970
 Prefab:
   m_ObjectHideFlags: 0
@@ -41758,6 +42058,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1928196921}
   - component: {fileID: 1928196922}
+  - component: {fileID: 1928196923}
   m_Layer: 0
   m_Name: AudioTrigger12
   m_TagString: Untagged
@@ -41790,6 +42091,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &1928196923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1928196920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e29a505d2d9cd4429e80acf96a51bc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1928524719 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1287334044902700, guid: 9a16e966b1c0b884db2f7b36eb3692ac,
@@ -44151,18 +44463,9 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2025750746}
   m_Mesh: {fileID: 0}
---- !u!1 &2030046356 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 100002, guid: 6c51ed257312e3c45ac28217b4b8dd71, type: 3}
-  m_PrefabInternal: {fileID: 333810454}
 --- !u!4 &2030046357 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 6c51ed257312e3c45ac28217b4b8dd71, type: 3}
-  m_PrefabInternal: {fileID: 333810454}
---- !u!95 &2030046358 stripped
-Animator:
-  m_PrefabParentObject: {fileID: 9500000, guid: 6c51ed257312e3c45ac28217b4b8dd71,
-    type: 3}
   m_PrefabInternal: {fileID: 333810454}
 --- !u!1 &2039349861
 GameObject:
@@ -44883,6 +45186,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2051610742}
   - component: {fileID: 2051610743}
+  - component: {fileID: 2051610744}
   m_Layer: 0
   m_Name: Screamer1
   m_TagString: Untagged
@@ -44916,6 +45220,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &2051610744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2051610741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e29a505d2d9cd4429e80acf96a51bc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2056955581
 GameObject:
   m_ObjectHideFlags: 0
@@ -45333,6 +45648,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2085408857}
   - component: {fileID: 2085408858}
+  - component: {fileID: 2085408859}
   m_Layer: 0
   m_Name: Screamer1
   m_TagString: Untagged
@@ -45366,6 +45682,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &2085408859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2085408856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e29a505d2d9cd4429e80acf96a51bc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2086270907
 GameObject:
   m_ObjectHideFlags: 0
@@ -45915,6 +46242,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2096291183}
   - component: {fileID: 2096291184}
+  - component: {fileID: 2096291185}
   m_Layer: 0
   m_Name: AudioTrigger16
   m_TagString: Untagged
@@ -45947,6 +46275,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &2096291185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2096291182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e29a505d2d9cd4429e80acf96a51bc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2100616032
 GameObject:
   m_ObjectHideFlags: 0
@@ -46932,7 +47271,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minTime: 0.1
   maxTime: 0.5
-  flickeringLight: {fileID: 1215874586}
 --- !u!114 &2129012086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47347,18 +47685,9 @@ Transform:
   m_Father: {fileID: 622003394}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2140631048 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 100002, guid: 6c51ed257312e3c45ac28217b4b8dd71, type: 3}
-  m_PrefabInternal: {fileID: 207185799}
 --- !u!4 &2140631049 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 6c51ed257312e3c45ac28217b4b8dd71, type: 3}
-  m_PrefabInternal: {fileID: 207185799}
---- !u!95 &2140631050 stripped
-Animator:
-  m_PrefabParentObject: {fileID: 9500000, guid: 6c51ed257312e3c45ac28217b4b8dd71,
-    type: 3}
   m_PrefabInternal: {fileID: 207185799}
 --- !u!1 &2141997758
 GameObject:

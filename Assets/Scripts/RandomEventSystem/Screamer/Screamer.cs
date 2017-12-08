@@ -1,70 +1,40 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using AudioSDK;
+using JetBrains.Annotations;
 using UnityEngine;
 
-public class Screamer : ZoneTriggerable
+[RequireComponent(typeof(Animator))]
+public class Screamer : MonoBehaviour
 {
-    [SerializeField] private VisualTransition visualTransition;
+    [SerializeField] private string triggerName = "";
+    [SerializeField] private string audioId = "";
 
-    [SerializeField] private float lifetimeDuration = 0f;
-    [SerializeField] private List<ScreamerActionComponent> lifetimeActions;
+    private Animator animator;
+    private bool hasAnimation;
+    private bool hasAudio;
 
-    protected bool IsInZone;
-    protected bool IsTriggered;
-
-    public override void TriggerEnter()
+    [UsedImplicitly]
+    private void Awake()
     {
-        IsInZone = true; 
-        HandleEnter();
+        animator = GetComponent<Animator>();
+        hasAnimation = !string.IsNullOrEmpty(triggerName);
+        hasAudio = !string.IsNullOrEmpty(audioId);
     }
 
-    public override void TriggerExit()
+    public void SetVisibility(bool enable)
     {
-        IsInZone = false; 
-        HandleExit();
-    }
-
-    public void TriggerSpawn()
-    {
-        if (!IsTriggered)
+        var renderers = gameObject.GetComponentsInChildren<Renderer>();
+        foreach (var r in renderers)
         {
-            IsTriggered = true;
-            StartCoroutine(SpawnCoroutine());
+            r.enabled = enable;
         }
     }
 
-    public IEnumerator SpawnCoroutine()
+    public void Activate()
     {
-        var appearTransition = visualTransition.Appear();
-        yield return new WaitForSeconds(appearTransition);
+        if (hasAnimation)
+            animator.SetTrigger(triggerName);
 
-        Action();
-        yield return new WaitForSeconds(lifetimeDuration);
-
-        var disappearTransition = visualTransition.Disappear(); 
-        yield return new WaitForSeconds(disappearTransition);
-
-        enabled = false;
-    }
-
-    private void Action()
-    {
-        lifetimeActions.ForEach(a => a.TriggerAction(lifetimeDuration));
-        HandleAction();
-    }
-
-    protected virtual void HandleEnter()
-    {
-        
-    }
-
-    protected virtual void HandleExit()
-    {
-        
-    }
-
-    protected virtual void HandleAction()
-    {
-
+        if (hasAudio)
+            AudioController.Play(audioId, transform);
     }
 }
