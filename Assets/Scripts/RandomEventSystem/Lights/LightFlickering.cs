@@ -25,7 +25,7 @@ public class LightFlickering : MonoBehaviour
     private void Awake()
     {
         deltaTime = maxTime - minTime;
-        flickeringLight = GetComponentInChildren<Light>();
+        flickeringLight = GetComponentInChildren<Light>(false);
     }
 
     public float Flicker(int count)

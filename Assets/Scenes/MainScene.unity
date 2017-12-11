@@ -1954,7 +1954,7 @@ MonoBehaviour:
   volume: 1
   CurrentInspectorSelection:
     CurrentCategoryIndex: 3
-    CurrentItemIndex: 0
+    CurrentItemIndex: 1
     CurrentSubitemIndex: 0
     CurrentPlaylistEntryIndex: 0
     CurrentPlaylistIndex: 0
@@ -2854,7 +2854,93 @@ MonoBehaviour:
         FadeIn: 0
         FadeOut: 0
         RandomStartPosition: 0
+    - DestroyOnLoad: 1
+      Volume: 1
+      SubItemPickMode: 2
+      MinTimeBetweenPlayCalls: 0.1
+      AudioSourceMinDistance: 1
+      AudioSourceMaxDistance: 500
+      Name: Taser
+      Loop: 0
+      LoopSequenceCount: 0
+      LoopSequenceOverlap: 0
+      LoopSequenceRandomDelay: 0
+      LoopSequenceRandomPitch: 0
+      LoopSequenceRandomVolume: 0
+      MaxInstanceCount: 0
+      Delay: 0
+      RandomVolume: 0
+      RandomPitch: 0
+      RandomDelay: 0
+      OverrideAudioSourceSettings: 0
+      SpatialBlend: 0
+      SubItems:
+      - Probability: 1
+        Volume: 1
+        IndividualSettings: []
+        SubItemType: 0
+        DisableOtherSubitems: 0
+        ItemModeAudioID: 
+        Clip: {fileID: 8300000, guid: de8abad7824c4054a83656479dcf0cc9, type: 3}
+        PitchShift: 0
+        Pan2D: 0
+        Delay: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        RandomDelay: 0
+        ClipStopTime: 0
+        ClipStartTime: 0
+        FadeIn: 0
+        FadeOut: 0
+        RandomStartPosition: 0
     AudioMixerGroup: {fileID: 243002082956074754, guid: bc16d904333043b40afde4e7f46ad08b,
+      type: 2}
+  - volume: 1
+    parentCategoryName: 
+    Name: Crusher
+    AudioObjectPrefab: {fileID: 1667705774206572, guid: 66dd4c0968123d04093eeefe632a39e7,
+      type: 2}
+    AudioItems:
+    - DestroyOnLoad: 1
+      Volume: 1
+      SubItemPickMode: 2
+      MinTimeBetweenPlayCalls: 0.1
+      AudioSourceMinDistance: 1
+      AudioSourceMaxDistance: 500
+      Name: Engine
+      Loop: 1
+      LoopSequenceCount: 0
+      LoopSequenceOverlap: 0
+      LoopSequenceRandomDelay: 0
+      LoopSequenceRandomPitch: 0
+      LoopSequenceRandomVolume: 0
+      MaxInstanceCount: 0
+      Delay: 0
+      RandomVolume: 0
+      RandomPitch: 0
+      RandomDelay: 0
+      OverrideAudioSourceSettings: 0
+      SpatialBlend: 0
+      SubItems:
+      - Probability: 1
+        Volume: 1
+        IndividualSettings: []
+        SubItemType: 0
+        DisableOtherSubitems: 0
+        ItemModeAudioID: 
+        Clip: {fileID: 8300000, guid: 4ab8e5a8a9cb5174d988ca63ba72c481, type: 3}
+        PitchShift: 0
+        Pan2D: 0
+        Delay: 0
+        RandomPitch: 0
+        RandomVolume: 0
+        RandomDelay: 0
+        ClipStopTime: 0
+        ClipStartTime: 0
+        FadeIn: 0
+        FadeOut: 0
+        RandomStartPosition: 0
+    AudioMixerGroup: {fileID: 243180685999959248, guid: bc16d904333043b40afde4e7f46ad08b,
       type: 2}
   LoopPlaylist: 1
   ShufflePlaylist: 0
@@ -7956,15 +8042,15 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 286585361}
-  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 15.85, y: 0, z: -2.22}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: -6.9, y: 0, z: 8.14}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1526991368}
   - {fileID: 840992084}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &291095674
 GameObject:
   m_ObjectHideFlags: 0
@@ -10060,6 +10146,7 @@ GameObject:
   m_Component:
   - component: {fileID: 382467161}
   - component: {fileID: 382467164}
+  - component: {fileID: 382467162}
   m_Layer: 0
   m_Name: Screamer
   m_TagString: Untagged
@@ -10080,6 +10167,17 @@ Transform:
   m_Father: {fileID: 1600450903}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -0.08400001, z: 0}
+--- !u!114 &382467162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 382467160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fcd9f3ec5098db4abdb11e992c4d79d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &382467164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10091,9 +10189,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eb68180c9fef8b4b931e9c86371a4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isSpawned: 1
-  lifetimeDuration: 3
-  screamerPrefab: {fileID: 1631096026187552, guid: c3302f145d63fde46bc9856132b75007,
+  isSpawned: 0
+  lifetimeDuration: 1.5
+  screamerPrefab: {fileID: 1140100657061740, guid: a472ac2d7b5a99940b3efe0899b7b42a,
     type: 2}
   facingAngle: 40
 --- !u!1001 &387964366
@@ -12826,7 +12924,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 501515615}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 0.6739998, y: 0.7, z: 1.1499999}
+  m_LocalPosition: {x: 0.548, y: 0.7, z: 1.063}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2085408857}
@@ -12844,8 +12942,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isSpawned: 0
-  lifetimeDuration: 3
-  screamerPrefab: {fileID: 1631096026187552, guid: c3302f145d63fde46bc9856132b75007,
+  lifetimeDuration: 1.5
+  screamerPrefab: {fileID: 1631096026187552, guid: 42a47c457c6e3794ebd2dfc1a7d8cba3,
     type: 2}
   facingAngle: 40
 --- !u!1001 &501529423
@@ -14599,6 +14697,7 @@ GameObject:
   m_Component:
   - component: {fileID: 583405349}
   - component: {fileID: 583405352}
+  - component: {fileID: 583405350}
   m_Layer: 0
   m_Name: Screamer
   m_TagString: Untagged
@@ -14619,6 +14718,17 @@ Transform:
   m_Father: {fileID: 492356738}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &583405350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 583405348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fcd9f3ec5098db4abdb11e992c4d79d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &583405352
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14631,8 +14741,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isSpawned: 0
-  lifetimeDuration: 3
-  screamerPrefab: {fileID: 1631096026187552, guid: c3302f145d63fde46bc9856132b75007,
+  lifetimeDuration: 1
+  screamerPrefab: {fileID: 1140100657061740, guid: a472ac2d7b5a99940b3efe0899b7b42a,
     type: 2}
   facingAngle: 40
 --- !u!1 &586372818
@@ -16793,6 +16903,24 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.2000005, y: 0.10000073, z: 3.0000007}
   m_Center: {x: -0.6000004, y: 0.050000604, z: 1.4999994}
+--- !u!1 &692408128 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1258207304612918, guid: 1e1361b067319174e8c82e0a6c3171f7,
+    type: 2}
+  m_PrefabInternal: {fileID: 48860739}
+--- !u!114 &692408131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 692408128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0d9d6b91d0094e44b2d07767c0e4cbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minTime: 0.1
+  maxTime: 0.5
 --- !u!1 &698652625
 GameObject:
   m_ObjectHideFlags: 0
@@ -17031,7 +17159,7 @@ GameObject:
   - component: {fileID: 711268472}
   - component: {fileID: 711268473}
   m_Layer: 0
-  m_Name: Zone4
+  m_Name: Zone4 [Add head rotation]
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19251,7 +19379,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 775104605}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 1.151, y: 0.7, z: 0}
+  m_LocalPosition: {x: 1.058, y: 0.7, z: 0.04}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 911399301}
@@ -19268,9 +19396,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eb68180c9fef8b4b931e9c86371a4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isSpawned: 1
-  lifetimeDuration: 3
-  screamerPrefab: {fileID: 1631096026187552, guid: c3302f145d63fde46bc9856132b75007,
+  isSpawned: 0
+  lifetimeDuration: 1.5
+  screamerPrefab: {fileID: 1631096026187552, guid: 42a47c457c6e3794ebd2dfc1a7d8cba3,
     type: 2}
   facingAngle: 40
 --- !u!1 &777237565
@@ -19444,6 +19572,7 @@ GameObject:
   m_Component:
   - component: {fileID: 784042556}
   - component: {fileID: 784042559}
+  - component: {fileID: 784042557}
   m_Layer: 0
   m_Name: Screamer
   m_TagString: Untagged
@@ -19464,6 +19593,17 @@ Transform:
   m_Father: {fileID: 9803818}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &784042557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 784042555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fcd9f3ec5098db4abdb11e992c4d79d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &784042559
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19476,8 +19616,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isSpawned: 0
-  lifetimeDuration: 3
-  screamerPrefab: {fileID: 1631096026187552, guid: c3302f145d63fde46bc9856132b75007,
+  lifetimeDuration: 1.5
+  screamerPrefab: {fileID: 1140100657061740, guid: a472ac2d7b5a99940b3efe0899b7b42a,
     type: 2}
   facingAngle: 40
 --- !u!1 &786083135 stripped
@@ -20453,7 +20593,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 040c70983d50dc44a9d1d745f40a5957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  count: 2
+  count: 1
 --- !u!1 &876801492
 GameObject:
   m_ObjectHideFlags: 0
@@ -20477,7 +20617,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 876801492}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0.295, y: 0.7, z: 1.18}
+  m_LocalPosition: {x: 0.024, y: 0.7, z: 1.329}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 909556985}
@@ -20495,7 +20635,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isSpawned: 0
-  lifetimeDuration: 3
+  lifetimeDuration: 2
   screamerPrefab: {fileID: 1661913769269272, guid: eea4c3f3ce17e88489d0b8714c3f66bc,
     type: 2}
   facingAngle: 40
@@ -20655,6 +20795,8 @@ MonoBehaviour:
   door: {fileID: 1739776198}
   lockBolts: {fileID: 392712715}
   requiredScore: 30
+  engineAudio: Engine
+  bodyPartCrushingAudio: 
 --- !u!65 &889246533
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22120,6 +22262,7 @@ GameObject:
   m_Component:
   - component: {fileID: 941571730}
   - component: {fileID: 941571733}
+  - component: {fileID: 941571731}
   m_Layer: 0
   m_Name: Screamer
   m_TagString: Untagged
@@ -22134,12 +22277,23 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 941571729}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.7, z: -1.06}
+  m_LocalPosition: {x: 0, y: 0.7, z: -1.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1521024797}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &941571731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 941571729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fcd9f3ec5098db4abdb11e992c4d79d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &941571733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22152,8 +22306,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isSpawned: 0
-  lifetimeDuration: 3
-  screamerPrefab: {fileID: 1631096026187552, guid: c3302f145d63fde46bc9856132b75007,
+  lifetimeDuration: 1.5
+  screamerPrefab: {fileID: 1140100657061740, guid: a472ac2d7b5a99940b3efe0899b7b42a,
     type: 2}
   facingAngle: 40
 --- !u!1 &944264355
@@ -22197,7 +22351,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isSpawned: 0
-  lifetimeDuration: 3
+  lifetimeDuration: 1.5
   screamerPrefab: {fileID: 1631096026187552, guid: c3302f145d63fde46bc9856132b75007,
     type: 2}
   facingAngle: 40
@@ -23452,7 +23606,6 @@ GameObject:
   - component: {fileID: 1018059087}
   - component: {fileID: 1018059090}
   - component: {fileID: 1018059089}
-  - component: {fileID: 1018059088}
   m_Layer: 0
   m_Name: HighlightObject
   m_TagString: Holster
@@ -23469,24 +23622,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1495178881}
+  m_Children: []
   m_Father: {fileID: 625453487}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1018059088
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1018059086}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0d9d6b91d0094e44b2d07767c0e4cbe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  minTime: 0.1
-  maxTime: 0.5
 --- !u!23 &1018059089
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -28791,7 +28930,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eb68180c9fef8b4b931e9c86371a4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isSpawned: 0
+  isSpawned: 1
   lifetimeDuration: 3
   screamerPrefab: {fileID: 1631096026187552, guid: c3302f145d63fde46bc9856132b75007,
     type: 2}
@@ -29801,7 +29940,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isSpawned: 0
-  lifetimeDuration: 3
+  lifetimeDuration: 1
   screamerPrefab: {fileID: 1631096026187552, guid: c3302f145d63fde46bc9856132b75007,
     type: 2}
   facingAngle: 40
@@ -30346,7 +30485,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1343241565}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 0, y: 0.7, z: 1.291}
+  m_LocalPosition: {x: 0.535, y: 0.7, z: 1.071}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1526935565}
@@ -30364,8 +30503,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isSpawned: 0
-  lifetimeDuration: 3
-  screamerPrefab: {fileID: 1631096026187552, guid: c3302f145d63fde46bc9856132b75007,
+  lifetimeDuration: 1.5
+  screamerPrefab: {fileID: 1631096026187552, guid: 42a47c457c6e3794ebd2dfc1a7d8cba3,
     type: 2}
   facingAngle: 40
 --- !u!1 &1352214150
@@ -31805,6 +31944,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1464513372}
   - component: {fileID: 1464513375}
+  - component: {fileID: 1464513373}
   m_Layer: 0
   m_Name: Screamer
   m_TagString: Untagged
@@ -31819,12 +31959,23 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1464513371}
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 1.954, y: 0.7, z: 0}
+  m_LocalPosition: {x: 1.901, y: 0.7, z: 0.089}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1316283220}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!114 &1464513373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1464513371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fcd9f3ec5098db4abdb11e992c4d79d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1464513375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31837,8 +31988,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isSpawned: 0
-  lifetimeDuration: 3
-  screamerPrefab: {fileID: 1631096026187552, guid: c3302f145d63fde46bc9856132b75007,
+  lifetimeDuration: 1.5
+  screamerPrefab: {fileID: 1140100657061740, guid: a472ac2d7b5a99940b3efe0899b7b42a,
     type: 2}
   facingAngle: 40
 --- !u!1001 &1469297575
@@ -32462,34 +32613,6 @@ Transform:
   m_Father: {fileID: 1498281421}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1495178880
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1495178881}
-  m_Layer: 0
-  m_Name: Spotlight
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1495178881
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1495178880}
-  m_LocalRotation: {x: 0.00000008146034, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0, z: 0.1481}
-  m_LocalScale: {x: 0.05000001, y: 0.050000057, z: 0.09644736}
-  m_Children: []
-  m_Father: {fileID: 1018059087}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1497275040
 Prefab:
   m_ObjectHideFlags: 0
@@ -32960,7 +33083,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1526991367}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 2.03}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 497889286}
@@ -33688,7 +33811,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1552709083}
   m_LocalRotation: {x: -0, y: 0.9963118, z: -0, w: -0.08580722}
-  m_LocalPosition: {x: -0.301, y: 0.7, z: 0.972}
+  m_LocalPosition: {x: 0.025, y: 0.7, z: 1.317}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2051610742}
@@ -33706,7 +33829,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isSpawned: 0
-  lifetimeDuration: 3
+  lifetimeDuration: 2
   screamerPrefab: {fileID: 1661913769269272, guid: eea4c3f3ce17e88489d0b8714c3f66bc,
     type: 2}
   facingAngle: 40
@@ -35821,9 +35944,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eb68180c9fef8b4b931e9c86371a4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isSpawned: 1
-  lifetimeDuration: 3
-  screamerPrefab: {fileID: 1631096026187552, guid: c3302f145d63fde46bc9856132b75007,
+  isSpawned: 0
+  lifetimeDuration: 1.5
+  screamerPrefab: {fileID: 1631096026187552, guid: 42a47c457c6e3794ebd2dfc1a7d8cba3,
     type: 2}
   facingAngle: 40
 --- !u!1001 &1661639926
@@ -36918,12 +37041,12 @@ GameObject:
   - component: {fileID: 1716853300}
   - component: {fileID: 1716853301}
   m_Layer: 0
-  m_Name: Zone8
+  m_Name: Zone8 [Add escape and kneeling animation]
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1716853300
 Transform:
   m_ObjectHideFlags: 0
@@ -38671,7 +38794,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isSpawned: 0
-  lifetimeDuration: 3
+  lifetimeDuration: 2
   screamerPrefab: {fileID: 1631096026187552, guid: c3302f145d63fde46bc9856132b75007,
     type: 2}
   facingAngle: 40
@@ -40197,7 +40320,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1860621012}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.7, z: -1.21}
+  m_LocalPosition: {x: 0.078, y: 0.7, z: -1.063}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 559704879}
@@ -40215,8 +40338,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isSpawned: 0
-  lifetimeDuration: 3
-  screamerPrefab: {fileID: 1631096026187552, guid: c3302f145d63fde46bc9856132b75007,
+  lifetimeDuration: 1.5
+  screamerPrefab: {fileID: 1631096026187552, guid: 42a47c457c6e3794ebd2dfc1a7d8cba3,
     type: 2}
   facingAngle: 40
 --- !u!1 &1864380343
@@ -44639,8 +44762,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.4, y: 2, z: 1}
-  m_Center: {x: 0, y: 1, z: 0}
+  m_Size: {x: 1.8, y: 2, z: 1}
+  m_Center: {x: 0.25, y: 1, z: 0}
 --- !u!114 &2085408859
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,5 +1,7 @@
-﻿using JetBrains.Annotations;
+﻿using AudioSDK;
+using JetBrains.Annotations;
 using UnityEngine;
+using VRTK;
 
 public class Crusher : MonoBehaviour
 {
@@ -7,7 +9,15 @@ public class Crusher : MonoBehaviour
     [SerializeField] private LockBolts lockBolts;
     [SerializeField] private float requiredScore;
 
+    [SerializeField] private string engineAudio = "";
+    [SerializeField] private string bodyPartCrushingAudio = "";
+
     private float currentScore = 0f;
+
+    private void Awake()
+    {
+        VRTK_SDKManager.instance.LoadedSetupChanged += (sender, args) => AudioController.Play(engineAudio, transform);
+    }
 
     [UsedImplicitly]
     private void OnTriggerEnter(Collider other)
@@ -17,6 +27,7 @@ public class Crusher : MonoBehaviour
         {
             currentScore += bodyPart.Score;
             bodyPart.DestroyBodyPart();
+            PlayBodyPartCrushing();
             TryActivate();
         }
     }
@@ -29,5 +40,10 @@ public class Crusher : MonoBehaviour
             lockBolts.ToggleLock();
             GetComponent<Collider>().enabled = false;
         }
+    }
+
+    private void PlayBodyPartCrushing()
+    {
+        AudioController.Play(bodyPartCrushingAudio, transform);
     }
 }
