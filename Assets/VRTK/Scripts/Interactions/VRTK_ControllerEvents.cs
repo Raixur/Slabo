@@ -84,6 +84,103 @@ namespace VRTK
             StartMenuPress
         }
 
+        #region vrtk 3.3-alpha
+
+        /// <summary>
+        /// Axis Types
+        /// </summary>
+        public enum AxisType
+        {
+            /// <summary>
+            /// A digital axis with a binary result of 0f not pressed or 1f is pressed.
+            /// </summary>
+            Digital,
+            /// <summary>
+            /// An analog axis ranging from no squeeze at 0f to full squeeze at 1f.
+            /// </summary>
+            Axis,
+            /// <summary>
+            /// A cap sens axis ranging from not near at 0f to touching at 1f.
+            /// </summary>
+            SenseAxis
+        }
+
+        /// <summary>
+        /// The SubscribeToAxisAliasEvent method makes it easier to subscribe to axis changes on a given button for a given axis type.
+        /// </summary>
+        /// <param name="buttonType">The button to listen for axis changes on.</param>
+        /// <param name="axisType">The type of axis change to listen for.</param>
+        /// <param name="callbackMethod">The method to subscribe to the event.</param>
+        public virtual void SubscribeToAxisAliasEvent(SDK_BaseController.ButtonTypes buttonType, AxisType axisType, ControllerInteractionEventHandler callbackMethod)
+        {
+            AxisAliasEventSubscription(true, buttonType, axisType, callbackMethod);
+        }
+
+        /// <summary>
+        /// The UnsubscribeToAxisAliasEvent method makes it easier to unsubscribe from axis changes on a given button for a given axis type.
+        /// </summary>
+        /// <param name="buttonType">The button to unregister for axis changes on.</param>
+        /// <param name="axisType">The type of axis change to unregister on.</param>
+        /// <param name="callbackMethod">The method to unsubscribe from the event.</param>
+        public virtual void UnsubscribeToAxisAliasEvent(SDK_BaseController.ButtonTypes buttonType, AxisType axisType, ControllerInteractionEventHandler callbackMethod)
+        {
+            AxisAliasEventSubscription(false, buttonType, axisType, callbackMethod);
+        }
+
+        protected virtual void AxisAliasEventSubscription(bool subscribe, SDK_BaseController.ButtonTypes buttonType, AxisType axisType, ControllerInteractionEventHandler callbackMethod)
+        {
+            switch (buttonType)
+            {
+                case SDK_BaseController.ButtonTypes.Trigger:
+                    switch (axisType)
+                    {
+                        case AxisType.Axis:
+                            if (subscribe)
+                            {
+                                TriggerAxisChanged += callbackMethod;
+                            }
+                            else
+                            {
+                                TriggerAxisChanged -= callbackMethod;
+                            }
+                            break;
+                    }
+                    break;
+                case SDK_BaseController.ButtonTypes.Grip:
+                    switch (axisType)
+                    {
+                        case AxisType.Axis:
+                            if (subscribe)
+                            {
+                                GripAxisChanged += callbackMethod;
+                            }
+                            else
+                            {
+                                GripAxisChanged -= callbackMethod;
+                            }
+                            break;
+                    }
+                    break;
+                case SDK_BaseController.ButtonTypes.Touchpad:
+                    switch (axisType)
+                    {
+                        case AxisType.Axis:
+                            if (subscribe)
+                            {
+                                TouchpadAxisChanged += callbackMethod;
+                            }
+                            else
+                            {
+                                TouchpadAxisChanged -= callbackMethod;
+                            }
+                            break;
+                    }
+                    break;
+            }
+        }
+
+        #endregion
+
         [Header("Action Alias Buttons")]
 
         [Tooltip("**OBSOLETE [use VRTK_Pointer.activationButton]** The button to use for the action of turning a laser pointer on / off.")]
@@ -490,6 +587,8 @@ namespace VRTK
         protected Vector2 gripAxis = Vector2.zero;
         protected float hairTriggerDelta;
         protected float hairGripDelta;
+
+        protected float triggerSenseAxis = 0f;
 
         public virtual void OnTriggerPressed(ControllerInteractionEventArgs e)
         {
