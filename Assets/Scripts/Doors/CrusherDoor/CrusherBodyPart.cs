@@ -9,12 +9,10 @@ public class CrusherBodyPart : MonoBehaviour
     public float Score;
 
     private VRTK_InteractableObject interactableObject;
-    private VRTK_InteractControllerAppearance appearance;
 
     public void Awake()
     {
         interactableObject = GetComponent<VRTK_InteractableObject>();
-        appearance = GetComponent<VRTK_InteractControllerAppearance>();
     }
 
     public void DestroyBodyPart()

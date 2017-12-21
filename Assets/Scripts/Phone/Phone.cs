@@ -24,19 +24,14 @@ public class Phone : MonoBehaviour
     {
         var codeGen = CodeGenerator.Instance;
         phoneNumber = codeGen.PhoneNumber.Aggregate("", (c, d) => c + d);
-        Debug.Log("Phone: " + phoneNumber);
-
-        //var numbersPlaylist = codeGen.PhoneNumber.Select(d => d.ToString()).ToArray();
-        //AudioController.AddPlaylist(NumbersPlaylistName, numbersPlaylist);
-
         doorCode = codeGen.DoorCode;
 ;
-        if(callButton != null) callButton.Pushed += (sender, args) => StartCall();
+        if(callButton != null)
+            callButton.Pushed += (sender, args) => StartCall();
     }
 
     public void StartCall()
     {
-        Debug.Log("Play");
         buttonAudio.PlayAfter(buttonClickAudio);
         if (panel.Value == phoneNumber)
             StartCoroutine(PlayNumberCoroutine());

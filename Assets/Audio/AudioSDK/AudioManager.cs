@@ -1,7 +1,7 @@
-﻿using System.Collections;
-using AudioSDK;
+﻿using AudioSDK;
 using JetBrains.Annotations;
 using UnityEngine;
+using VRTK;
 
 public class AudioManager : MonoBehaviour
 {
@@ -11,15 +11,6 @@ public class AudioManager : MonoBehaviour
     private void Start ()
 	{
         if(!string.IsNullOrEmpty(musicPlayListName))
-	        StartCoroutine(StartPlayList());
-	}
-
-    private IEnumerator StartPlayList()
-    {
-        while (FindObjectOfType<AudioListener>() == null)
-        {
-            yield return null;
-        }
-        AudioController.PlayMusicPlaylist(musicPlayListName);
+	        VRTK_SDKManager.instance.LoadedSetupChanged += (sender, args) => AudioController.PlayMusicPlaylist(musicPlayListName);
     }
 }
