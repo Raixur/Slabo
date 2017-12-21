@@ -48,7 +48,7 @@ AnimatorController:
   - serializedVersion: 5
     m_Name: Hand_Thumb
     m_StateMachine: {fileID: 1107043682337146342}
-    m_Mask: {fileID: 101100000, guid: b939f2ef2ab501f4eacf96a42f6a9e81, type: 2}
+    m_Mask: {fileID: 31900000, guid: f791dd827820de244a9eeeecffdbcb96, type: 2}
     m_Motions: []
     m_Behaviours: []
     m_BlendingMode: 0
@@ -60,7 +60,7 @@ AnimatorController:
   - serializedVersion: 5
     m_Name: Hand_Index
     m_StateMachine: {fileID: 1107507346146260802}
-    m_Mask: {fileID: 101100000, guid: 11f2f7641d50cd647935b6ba0f713926, type: 2}
+    m_Mask: {fileID: 31900000, guid: 2abb5bcade71ad54fbf8edfdfa940751, type: 2}
     m_Motions: []
     m_Behaviours: []
     m_BlendingMode: 0
@@ -72,7 +72,7 @@ AnimatorController:
   - serializedVersion: 5
     m_Name: Hand_Middle
     m_StateMachine: {fileID: 1107294904703689506}
-    m_Mask: {fileID: 101100000, guid: 0eb75f9326455e048bdcf857c17a300e, type: 2}
+    m_Mask: {fileID: 31900000, guid: 2aaaa41b5717de441a1a456a3c43d4ce, type: 2}
     m_Motions: []
     m_Behaviours: []
     m_BlendingMode: 0
@@ -84,7 +84,7 @@ AnimatorController:
   - serializedVersion: 5
     m_Name: Hand_Ring
     m_StateMachine: {fileID: 1107821411989009222}
-    m_Mask: {fileID: 101100000, guid: 8b084a249eccde145bf5cf70e3ea2b6d, type: 2}
+    m_Mask: {fileID: 31900000, guid: 8ca986a819f7a0e4da84a2627c058415, type: 2}
     m_Motions: []
     m_Behaviours: []
     m_BlendingMode: 0
@@ -96,7 +96,7 @@ AnimatorController:
   - serializedVersion: 5
     m_Name: Hand_Pinky
     m_StateMachine: {fileID: 1107789967682683542}
-    m_Mask: {fileID: 101100000, guid: 5444e6d924e762d47b6d213a49014f9f, type: 2}
+    m_Mask: {fileID: 31900000, guid: 6894681a352d50747b363539f7b7ac2a, type: 2}
     m_Motions: []
     m_Behaviours: []
     m_BlendingMode: 0
