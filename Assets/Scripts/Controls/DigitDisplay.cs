@@ -24,7 +24,7 @@ public class DigitDisplay : MonoBehaviour
     private void Start()
     {
         display = GetComponent<TextMeshPro>();
-        display.SetText("");
+        display.text = "";
 
 	    digits = new List<int>(requiredDigits);	
 	}
@@ -38,7 +38,7 @@ public class DigitDisplay : MonoBehaviour
         if (digits.Count < requiredDigits)
         {
             digits.Add(digit);
-            display.SetText(digits.Aggregate("", (c, d) => c + d));
+            display.text = digits.Aggregate("", (c, d) => c + d);
         }
         if (digits.Count == requiredDigits)
         {
@@ -49,7 +49,7 @@ public class DigitDisplay : MonoBehaviour
     public void ResetDisplay()
     {
         digits.Clear();
-        display.SetText("");
+        display.text = "";
     }
 
     protected virtual void OnInputFinished(DisplayPanelEventArgs args)
