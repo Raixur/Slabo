@@ -579,7 +579,7 @@ namespace VRTK
             Transform modelTransform = transform.Find("Model");
             if (modelTransform != null)
             {
-                modelTransform.localScale = new Vector3(modelTransform.localScale.x * -1f, modelTransform.localScale.y, modelTransform.localScale.z);
+                modelTransform.localScale = new Vector3(modelTransform.localScale.x, modelTransform.localScale.y * -1f, modelTransform.localScale.z);
             }
         }
 
