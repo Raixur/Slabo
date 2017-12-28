@@ -109,20 +109,6 @@
             component.StartMenuPressed += StartMenuPressed;
             component.StartMenuReleased += StartMenuReleased;
 
-#pragma warning disable 0618
-            component.AliasPointerOn += AliasPointerOn;
-            component.AliasPointerOff += AliasPointerOff;
-            component.AliasPointerSet += AliasPointerSet;
-            component.AliasGrabOn += AliasGrabOn;
-            component.AliasGrabOff += AliasGrabOff;
-            component.AliasUseOn += AliasUseOn;
-            component.AliasUseOff += AliasUseOff;
-            component.AliasUIClickOn += AliasUIClickOn;
-            component.AliasUIClickOff += AliasUIClickOff;
-            component.AliasMenuOn += AliasMenuOn;
-            component.AliasMenuOff += AliasMenuOff;
-#pragma warning restore 0618
-
             component.ControllerEnabled += ControllerEnabled;
             component.ControllerDisabled += ControllerDisabled;
             component.ControllerIndexChanged += ControllerIndexChanged;
@@ -171,20 +157,6 @@
 
             component.StartMenuPressed -= StartMenuPressed;
             component.StartMenuReleased -= StartMenuReleased;
-
-#pragma warning disable 0618
-            component.AliasPointerOn -= AliasPointerOn;
-            component.AliasPointerOff -= AliasPointerOff;
-            component.AliasPointerSet -= AliasPointerSet;
-            component.AliasGrabOn -= AliasGrabOn;
-            component.AliasGrabOff -= AliasGrabOff;
-            component.AliasUseOn -= AliasUseOn;
-            component.AliasUseOff -= AliasUseOff;
-            component.AliasUIClickOn -= AliasUIClickOn;
-            component.AliasUIClickOff -= AliasUIClickOff;
-            component.AliasMenuOn -= AliasMenuOn;
-            component.AliasMenuOff -= AliasMenuOff;
-#pragma warning restore 0618
 
             component.ControllerEnabled -= ControllerEnabled;
             component.ControllerDisabled -= ControllerDisabled;
@@ -357,61 +329,6 @@
         private void StartMenuReleased(object o, ControllerInteractionEventArgs e)
         {
             OnStartMenuReleased.Invoke(o, e);
-        }
-
-        private void AliasPointerOn(object o, ControllerInteractionEventArgs e)
-        {
-            OnAliasPointerOn.Invoke(o, e);
-        }
-
-        private void AliasPointerOff(object o, ControllerInteractionEventArgs e)
-        {
-            OnAliasPointerOff.Invoke(o, e);
-        }
-
-        private void AliasPointerSet(object o, ControllerInteractionEventArgs e)
-        {
-            OnAliasPointerSet.Invoke(o, e);
-        }
-
-        private void AliasGrabOn(object o, ControllerInteractionEventArgs e)
-        {
-            OnAliasGrabOn.Invoke(o, e);
-        }
-
-        private void AliasGrabOff(object o, ControllerInteractionEventArgs e)
-        {
-            OnAliasGrabOff.Invoke(o, e);
-        }
-
-        private void AliasUseOn(object o, ControllerInteractionEventArgs e)
-        {
-            OnAliasUseOn.Invoke(o, e);
-        }
-
-        private void AliasUseOff(object o, ControllerInteractionEventArgs e)
-        {
-            OnAliasUseOff.Invoke(o, e);
-        }
-
-        private void AliasUIClickOn(object o, ControllerInteractionEventArgs e)
-        {
-            OnAliasUIClickOn.Invoke(o, e);
-        }
-
-        private void AliasUIClickOff(object o, ControllerInteractionEventArgs e)
-        {
-            OnAliasUIClickOff.Invoke(o, e);
-        }
-
-        private void AliasMenuOn(object o, ControllerInteractionEventArgs e)
-        {
-            OnAliasMenuOn.Invoke(o, e);
-        }
-
-        private void AliasMenuOff(object o, ControllerInteractionEventArgs e)
-        {
-            OnAliasMenuOff.Invoke(o, e);
         }
 
         private void ControllerEnabled(object o, ControllerInteractionEventArgs e)
