@@ -7,8 +7,8 @@ public class IndexFingerTouch : VRTK_InteractTouch
     public void Start()
     {
         var controller = GetComponent<VRTK_ControllerEvents>();
-        controller.TriggerTouchEnd += EnableFinger;
-        controller.TriggerTouchStart += DisableFinger;
+        controller.TriggerPressed += DisableFinger;
+        controller.TriggerReleased += EnableFinger;
     }
 
     private void EnableFinger(object sender, ControllerInteractionEventArgs e)
