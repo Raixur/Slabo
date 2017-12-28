@@ -98,12 +98,6 @@ namespace VRTK
         public VRTK_ControllerEvents.ButtonAlias thumbButton = VRTK_ControllerEvents.ButtonAlias.TouchpadTouch;
         [Tooltip("The button alias to control the index finger if the index finger state is `Digital`.")]
         public VRTK_ControllerEvents.ButtonAlias indexButton = VRTK_ControllerEvents.ButtonAlias.TriggerPress;
-        [Tooltip("The button alias to control the middle finger if the middle finger state is `Digital`.")]
-        public VRTK_ControllerEvents.ButtonAlias middleButton = VRTK_ControllerEvents.ButtonAlias.Undefined;
-        [Tooltip("The button alias to control the ring finger if the ring finger state is `Digital`.")]
-        public VRTK_ControllerEvents.ButtonAlias ringButton = VRTK_ControllerEvents.ButtonAlias.Undefined;
-        [Tooltip("The button alias to control the pinky finger if the pinky finger state is `Digital`.")]
-        public VRTK_ControllerEvents.ButtonAlias pinkyButton = VRTK_ControllerEvents.ButtonAlias.Undefined;
         [Tooltip("The button alias to control the middle, ring and pinky finger if the three finger state is `Digital`.")]
         public VRTK_ControllerEvents.ButtonAlias threeFingerButton = VRTK_ControllerEvents.ButtonAlias.GripPress;
 
@@ -113,12 +107,6 @@ namespace VRTK
         public SDK_BaseController.ButtonTypes thumbAxisButton = SDK_BaseController.ButtonTypes.Touchpad;
         [Tooltip("The button type to listen for axis changes to control the index finger.")]
         public SDK_BaseController.ButtonTypes indexAxisButton = SDK_BaseController.ButtonTypes.Trigger;
-        [Tooltip("The button type to listen for axis changes to control the middle finger.")]
-        public SDK_BaseController.ButtonTypes middleAxisButton = SDK_BaseController.ButtonTypes.Grip;
-        [Tooltip("The button type to listen for axis changes to control the ring finger.")]
-        public SDK_BaseController.ButtonTypes ringAxisButton = SDK_BaseController.ButtonTypes.Grip;
-        [Tooltip("The button type to listen for axis changes to control the pinky finger.")]
-        public SDK_BaseController.ButtonTypes pinkyAxisButton = SDK_BaseController.ButtonTypes.Grip;
         [Tooltip("The button type to listen for axis changes to control the middle, ring and pinky finger.")]
         public SDK_BaseController.ButtonTypes threeFingerAxisButton = SDK_BaseController.ButtonTypes.Grip;
 
@@ -193,6 +181,7 @@ namespace VRTK
         #endregion Protected class variables
 
         #region MonoBehaviour methods
+
         protected virtual void OnEnable()
         {
             animator = GetComponent<Animator>();
@@ -233,22 +222,24 @@ namespace VRTK
         }
         #endregion MonoBehaviour methods
 
-        protected virtual void SubscribeButtonEvent(VRTK_ControllerEvents.ButtonAlias buttonType, ref VRTK_ControllerEvents.ButtonAlias saveType, ControllerInteractionEventHandler eventHandler)
+        protected virtual void SubscribeButtonEvent(VRTK_ControllerEvents.ButtonAlias buttonType, ref VRTK_ControllerEvents.ButtonAlias saveType, 
+            ControllerInteractionEventHandler setEventHandler, ControllerInteractionEventHandler resetEventHandler)
         {
             if (buttonType != VRTK_ControllerEvents.ButtonAlias.Undefined)
             {
                 saveType = buttonType;
-                controllerEvents.SubscribeToButtonAliasEvent(buttonType, true, eventHandler);
-                controllerEvents.SubscribeToButtonAliasEvent(buttonType, false, eventHandler);
+                controllerEvents.SubscribeToButtonAliasEvent(buttonType, true, setEventHandler);
+                controllerEvents.SubscribeToButtonAliasEvent(buttonType, false, resetEventHandler);
             }
         }
 
-        protected virtual void UnsubscribeButtonEvent(VRTK_ControllerEvents.ButtonAlias buttonType, ControllerInteractionEventHandler eventHandler)
+        protected virtual void UnsubscribeButtonEvent(VRTK_ControllerEvents.ButtonAlias buttonType, ControllerInteractionEventHandler setEventHandler, 
+            ControllerInteractionEventHandler resetEventHandler)
         {
             if (buttonType != VRTK_ControllerEvents.ButtonAlias.Undefined)
             {
-                controllerEvents.UnsubscribeToButtonAliasEvent(buttonType, true, eventHandler);
-                controllerEvents.UnsubscribeToButtonAliasEvent(buttonType, false, eventHandler);
+                controllerEvents.UnsubscribeToButtonAliasEvent(buttonType, true, setEventHandler);
+                controllerEvents.UnsubscribeToButtonAliasEvent(buttonType, false, resetEventHandler);
             }
         }
 
@@ -268,13 +259,22 @@ namespace VRTK
         {
             if (controllerEvents != null)
             {
-                SubscribeButtonEvent(thumbButton, ref savedThumbButtonState, DoThumbEvent);
-                SubscribeButtonEvent(indexButton, ref savedIndexButtonState, DoIndexEvent);
-                SubscribeButtonEvent(threeFingerButton, ref savedThreeFingerButtonState, DoThreeFingerEvent);
+                if (thumbState == VRTK_ControllerEvents.AxisType.Digital)
+                    SubscribeButtonEvent(thumbButton, ref savedThumbButtonState, SetThumbEvent, ResetThumbEvent);
+                else
+                    SubscribeButtonAxisEvent(thumbAxisButton, ref savedThumbAxisButtonState, thumbState,
+                        DoThumbAxisEvent);
 
-                SubscribeButtonAxisEvent(thumbAxisButton, ref savedThumbAxisButtonState, thumbState, DoThumbAxisEvent);
-                SubscribeButtonAxisEvent(indexAxisButton, ref savedIndexAxisButtonState, indexState, DoIndexAxisEvent);
-                SubscribeButtonAxisEvent(threeFingerAxisButton, ref savedThreeFingerAxisButtonState, threeFingerState, DoThreeFingerAxisEvent);
+                if (indexState == VRTK_ControllerEvents.AxisType.Digital)
+                    SubscribeButtonEvent(indexButton, ref savedIndexButtonState, SetIndexEvent, ResetIndexEvent);
+                else
+                    SubscribeButtonAxisEvent(indexAxisButton, ref savedIndexAxisButtonState, indexState,
+                        DoIndexAxisEvent);
+
+                if (threeFingerState == VRTK_ControllerEvents.AxisType.Digital)
+                    SubscribeButtonEvent(threeFingerButton, ref savedThreeFingerButtonState, SetThreeFingerEvent, ResetThreeFingerEvent);
+                else
+                    SubscribeButtonAxisEvent(threeFingerAxisButton, ref savedThreeFingerAxisButtonState, threeFingerState, DoThreeFingerAxisEvent);
             }
 
             if (interactTouch != null)
@@ -300,13 +300,20 @@ namespace VRTK
         {
             if (controllerEvents != null)
             {
-                UnsubscribeButtonEvent(savedThumbButtonState, DoThumbEvent);
-                UnsubscribeButtonEvent(savedIndexButtonState, DoIndexEvent);
-                UnsubscribeButtonEvent(savedThreeFingerButtonState, DoThreeFingerEvent);
+                if (thumbState == VRTK_ControllerEvents.AxisType.Digital)
+                    UnsubscribeButtonEvent(savedThumbButtonState, SetThumbEvent, ResetThumbEvent);
+                else
+                    UnsubscribeButtonAxisEvent(savedThumbAxisButtonState, thumbState, DoThumbAxisEvent);
 
-                UnsubscribeButtonAxisEvent(savedThumbAxisButtonState, thumbState, DoThumbAxisEvent);
-                UnsubscribeButtonAxisEvent(savedIndexAxisButtonState, indexState, DoIndexAxisEvent);
-                UnsubscribeButtonAxisEvent(savedThreeFingerAxisButtonState, threeFingerState, DoThreeFingerAxisEvent);
+                if (indexState == VRTK_ControllerEvents.AxisType.Digital)
+                    UnsubscribeButtonEvent(savedIndexButtonState, SetIndexEvent, ResetIndexEvent);
+                else
+                    UnsubscribeButtonAxisEvent(savedIndexAxisButtonState, indexState, DoIndexAxisEvent);
+
+                if (threeFingerState == VRTK_ControllerEvents.AxisType.Digital)
+                    UnsubscribeButtonEvent(savedThreeFingerButtonState, SetThreeFingerEvent, ResetThreeFingerEvent);
+                else
+                    UnsubscribeButtonAxisEvent(savedThreeFingerAxisButtonState, threeFingerState, DoThreeFingerAxisEvent);
             }
 
             if (interactTouch != null)
@@ -329,24 +336,45 @@ namespace VRTK
         }
         #endregion Subscription Managers
 
-        #region Event methods
+        #region Digital button events
 
-        protected virtual void DoThumbEvent(object sender, ControllerInteractionEventArgs e)
+        protected virtual void SetThumbEvent(object sender, ControllerInteractionEventArgs e)
         {
-            SetFingerEvent(0, e);
+            SetFingerEvent(0, 1);
         }
 
-        protected virtual void DoIndexEvent(object sender, ControllerInteractionEventArgs e)
+        protected virtual void ResetThumbEvent(object sender, ControllerInteractionEventArgs e)
         {
-            SetFingerEvent(1, e);
+            SetFingerEvent(0, 0);
         }
 
-        protected virtual void DoThreeFingerEvent(object sender, ControllerInteractionEventArgs e)
+        protected virtual void SetIndexEvent(object sender, ControllerInteractionEventArgs e)
         {
-            SetFingerEvent(2, e);
-            SetFingerEvent(3, e);
-            SetFingerEvent(4, e);
+            SetFingerEvent(1, 1);
         }
+
+        protected virtual void ResetIndexEvent(object sender, ControllerInteractionEventArgs e)
+        {
+            SetFingerEvent(1, 0);
+        }
+
+        protected virtual void SetThreeFingerEvent(object sender, ControllerInteractionEventArgs e)
+        {
+            SetFingerEvent(2, 1);
+            SetFingerEvent(3, 1);
+            SetFingerEvent(4, 1);
+        }
+
+        protected virtual void ResetThreeFingerEvent(object sender, ControllerInteractionEventArgs e)
+        {
+            SetFingerEvent(2, 0);
+            SetFingerEvent(3, 0);
+            SetFingerEvent(4, 0);
+        }
+
+        #endregion
+
+        #region Axis button events
 
         protected virtual void DoThumbAxisEvent(object sender, ControllerInteractionEventArgs e)
         {
@@ -365,12 +393,15 @@ namespace VRTK
             SetFingerAxisEvent(4, e);
         }
 
-        protected virtual void SetFingerEvent(int fingerIndex, ControllerInteractionEventArgs e)
+        #endregion
+
+
+        protected virtual void SetFingerEvent(int fingerIndex, float buttonPressure)
         {
             if (overrideAxisValues[fingerIndex] == OverrideState.NoOverride)
             {
                 fingerChangeStates[fingerIndex] = true;
-                fingerStates[fingerIndex] = e.buttonPressure > 0f;
+                fingerStates[fingerIndex] = buttonPressure > 0f;
             }
         }
 
@@ -526,7 +557,6 @@ namespace VRTK
             return (givenOverride == 0f ? 0.0001f : givenOverride);
         }
 
-        #endregion Event methods
 
         protected virtual void DetectController()
         {
@@ -549,9 +579,9 @@ namespace VRTK
                         case SDK_BaseController.ControllerType.SteamVR_OculusTouch:
                             thumbState = VRTK_ControllerEvents.AxisType.Digital;
                             indexState = VRTK_ControllerEvents.AxisType.Axis;
-                            middleState = VRTK_ControllerEvents.AxisType.Digital;
-                            ringState = VRTK_ControllerEvents.AxisType.Digital;
-                            pinkyState = VRTK_ControllerEvents.AxisType.Digital;
+                            middleState = VRTK_ControllerEvents.AxisType.Axis;
+                            ringState = VRTK_ControllerEvents.AxisType.Axis;
+                            pinkyState = VRTK_ControllerEvents.AxisType.Axis;
                             threeFingerState = VRTK_ControllerEvents.AxisType.Axis;
                             break;
                         default:
