@@ -4200,8 +4200,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 154498774}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.086888194, y: 0.50244284, z: 0.042137146}
-  m_LocalScale: {x: 0.6509681, y: 0.6509681, z: 1}
+  m_LocalPosition: {x: -0.086888194, y: 0.50244284, z: 0.044778}
+  m_LocalScale: {x: 0.6509681, y: 0.6509681, z: 1.1259899}
   m_Children: []
   m_Father: {fileID: 209447329}
   m_RootOrder: 2
@@ -4268,7 +4268,7 @@ MonoBehaviour:
       m_TypeName: VRTK.VRTK_Control+ValueChangedEvent, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
   interactWithoutGrab: 1
-  connectedTo: {fileID: 2115332582}
+  connectedTo: {fileID: 0}
   direction: 3
   activationDistance: 0.01
   buttonStrength: 5
@@ -6250,8 +6250,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 232546713}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.036878467, y: 0.40156662, z: 0.042137146}
-  m_LocalScale: {x: 0.6509681, y: 0.6509681, z: 1}
+  m_LocalPosition: {x: -0.036878467, y: 0.40156662, z: 0.044778}
+  m_LocalScale: {x: 0.6509681, y: 0.6509681, z: 1.1259899}
   m_Children: []
   m_Father: {fileID: 209447329}
   m_RootOrder: 7
@@ -6318,7 +6318,7 @@ MonoBehaviour:
       m_TypeName: VRTK.VRTK_Control+ValueChangedEvent, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
   interactWithoutGrab: 1
-  connectedTo: {fileID: 2115332582}
+  connectedTo: {fileID: 0}
   direction: 3
   activationDistance: 0.01
   buttonStrength: 5
@@ -6371,8 +6371,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 238401547}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.036878467, y: 0.45200467, z: 0.042137146}
-  m_LocalScale: {x: 0.6509681, y: 0.6509681, z: 1}
+  m_LocalPosition: {x: -0.036878467, y: 0.45200467, z: 0.044778}
+  m_LocalScale: {x: 0.6509681, y: 0.6509681, z: 1.1259899}
   m_Children: []
   m_Father: {fileID: 209447329}
   m_RootOrder: 4
@@ -6439,7 +6439,7 @@ MonoBehaviour:
       m_TypeName: VRTK.VRTK_Control+ValueChangedEvent, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
   interactWithoutGrab: 1
-  connectedTo: {fileID: 2115332582}
+  connectedTo: {fileID: 0}
   direction: 3
   activationDistance: 0.01
   buttonStrength: 5
@@ -7229,7 +7229,7 @@ MonoBehaviour:
       m_TypeName: VRTK.VRTK_Control+ValueChangedEvent, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
   interactWithoutGrab: 1
-  connectedTo: {fileID: 1199108208}
+  connectedTo: {fileID: 0}
   direction: 6
   activationDistance: 0.01
   buttonStrength: 5
@@ -7670,7 +7670,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 286585361}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 15.96, y: 0, z: -2.14}
+  m_LocalPosition: {x: 15.86, y: 0, z: -2.35}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1526991368}
@@ -7852,8 +7852,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 295685364}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.036878467, y: 0.50244284, z: 0.042137146}
-  m_LocalScale: {x: 0.6509681, y: 0.6509681, z: 1}
+  m_LocalPosition: {x: -0.036878467, y: 0.50244284, z: 0.044778}
+  m_LocalScale: {x: 0.6509681, y: 0.6509681, z: 1.1259899}
   m_Children: []
   m_Father: {fileID: 209447329}
   m_RootOrder: 1
@@ -7920,7 +7920,7 @@ MonoBehaviour:
       m_TypeName: VRTK.VRTK_Control+ValueChangedEvent, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
   interactWithoutGrab: 1
-  connectedTo: {fileID: 2115332582}
+  connectedTo: {fileID: 0}
   direction: 3
   activationDistance: 0.01
   buttonStrength: 5
@@ -14546,8 +14546,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 595150295}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.1368978, y: 0.45200467, z: 0.042137146}
-  m_LocalScale: {x: 0.6509681, y: 0.6509681, z: 1}
+  m_LocalPosition: {x: -0.1368978, y: 0.45200467, z: 0.044778}
+  m_LocalScale: {x: 0.6509681, y: 0.6509681, z: 1.1259899}
   m_Children: []
   m_Father: {fileID: 209447329}
   m_RootOrder: 6
@@ -14614,7 +14614,7 @@ MonoBehaviour:
       m_TypeName: VRTK.VRTK_Control+ValueChangedEvent, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
   interactWithoutGrab: 1
-  connectedTo: {fileID: 2115332582}
+  connectedTo: {fileID: 0}
   direction: 3
   activationDistance: 0.01
   buttonStrength: 5
@@ -15490,12 +15490,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eba3cd5456cd79e49948f5ceb58544b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointerToggleButton: 10
-  pointerSetButton: 10
-  grabToggleButton: 7
-  useToggleButton: 3
-  uiClickButton: 3
-  menuToggleButton: 14
   axisFidelity: 2
   triggerClickThreshold: 1
   triggerForceZeroThreshold: 0.01
@@ -15685,8 +15679,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 645427915}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.086888194, y: 0.40156662, z: 0.042137146}
-  m_LocalScale: {x: 0.6509681, y: 0.6509681, z: 1}
+  m_LocalPosition: {x: -0.086888194, y: 0.40156662, z: 0.044778}
+  m_LocalScale: {x: 0.6509681, y: 0.6509681, z: 1.1259899}
   m_Children: []
   m_Father: {fileID: 209447329}
   m_RootOrder: 8
@@ -15753,7 +15747,7 @@ MonoBehaviour:
       m_TypeName: VRTK.VRTK_Control+ValueChangedEvent, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
   interactWithoutGrab: 1
-  connectedTo: {fileID: 2115332582}
+  connectedTo: {fileID: 0}
   direction: 3
   activationDistance: 0.01
   buttonStrength: 5
@@ -17649,7 +17643,7 @@ MonoBehaviour:
       m_TypeName: VRTK.VRTK_Control+ValueChangedEvent, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
   interactWithoutGrab: 1
-  connectedTo: {fileID: 1199108208}
+  connectedTo: {fileID: 0}
   direction: 6
   activationDistance: 0.01
   buttonStrength: 5
@@ -19835,8 +19829,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 852089644}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.086888194, y: 0.35112858, z: 0.042137146}
-  m_LocalScale: {x: 0.6509681, y: 0.6509681, z: 1}
+  m_LocalPosition: {x: -0.086888194, y: 0.35112858, z: 0.044778}
+  m_LocalScale: {x: 0.6509681, y: 0.6509681, z: 1.1259899}
   m_Children: []
   m_Father: {fileID: 209447329}
   m_RootOrder: 0
@@ -19903,7 +19897,7 @@ MonoBehaviour:
       m_TypeName: VRTK.VRTK_Control+ValueChangedEvent, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
   interactWithoutGrab: 1
-  connectedTo: {fileID: 2115332582}
+  connectedTo: {fileID: 0}
   direction: 3
   activationDistance: 0.01
   buttonStrength: 5
@@ -20737,7 +20731,7 @@ MonoBehaviour:
       m_TypeName: VRTK.VRTK_Control+ValueChangedEvent, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
   interactWithoutGrab: 1
-  connectedTo: {fileID: 1199108208}
+  connectedTo: {fileID: 0}
   direction: 6
   activationDistance: 0.01
   buttonStrength: 5
@@ -24207,12 +24201,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eba3cd5456cd79e49948f5ceb58544b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointerToggleButton: 10
-  pointerSetButton: 10
-  grabToggleButton: 7
-  useToggleButton: 3
-  uiClickButton: 3
-  menuToggleButton: 14
   axisFidelity: 2
   triggerClickThreshold: 1
   triggerForceZeroThreshold: 0.01
@@ -25712,8 +25700,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1102968539}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.1368978, y: 0.35112858, z: 0.042137146}
-  m_LocalScale: {x: 0.6509681, y: 0.6509681, z: 1}
+  m_LocalPosition: {x: -0.1368978, y: 0.35112858, z: 0.044778}
+  m_LocalScale: {x: 0.6509681, y: 0.6509681, z: 1.1259899}
   m_Children: []
   m_Father: {fileID: 209447329}
   m_RootOrder: 10
@@ -25780,7 +25768,7 @@ MonoBehaviour:
       m_TypeName: VRTK.VRTK_Control+ValueChangedEvent, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
   interactWithoutGrab: 1
-  connectedTo: {fileID: 2115332582}
+  connectedTo: {fileID: 0}
   direction: 3
   activationDistance: 0.01
   buttonStrength: 5
@@ -27455,7 +27443,7 @@ MonoBehaviour:
       m_TypeName: VRTK.VRTK_Control+ValueChangedEvent, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
   interactWithoutGrab: 1
-  connectedTo: {fileID: 1199108208}
+  connectedTo: {fileID: 0}
   direction: 6
   activationDistance: 0.01
   buttonStrength: 5
@@ -29602,7 +29590,7 @@ MonoBehaviour:
       m_TypeName: VRTK.VRTK_Control+ValueChangedEvent, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
   interactWithoutGrab: 1
-  connectedTo: {fileID: 1199108208}
+  connectedTo: {fileID: 0}
   direction: 6
   activationDistance: 0.01
   buttonStrength: 5
@@ -31283,7 +31271,7 @@ MonoBehaviour:
       m_TypeName: VRTK.VRTK_Control+ValueChangedEvent, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
   interactWithoutGrab: 1
-  connectedTo: {fileID: 1199108208}
+  connectedTo: {fileID: 0}
   direction: 6
   activationDistance: 0.01
   buttonStrength: 5
@@ -33095,7 +33083,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1526991367}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0.03}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1980250073}
@@ -34004,7 +33992,7 @@ MonoBehaviour:
       m_TypeName: VRTK.VRTK_Control+ValueChangedEvent, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
   interactWithoutGrab: 1
-  connectedTo: {fileID: 1199108208}
+  connectedTo: {fileID: 0}
   direction: 6
   activationDistance: 0.01
   buttonStrength: 5
@@ -34990,8 +34978,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1611383037}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.1368978, y: 0.50244284, z: 0.042137146}
-  m_LocalScale: {x: 0.6509681, y: 0.6509681, z: 1}
+  m_LocalPosition: {x: -0.1368978, y: 0.50244284, z: 0.044778}
+  m_LocalScale: {x: 0.6509681, y: 0.6509681, z: 1.1259899}
   m_Children: []
   m_Father: {fileID: 209447329}
   m_RootOrder: 3
@@ -35058,7 +35046,7 @@ MonoBehaviour:
       m_TypeName: VRTK.VRTK_Control+ValueChangedEvent, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
   interactWithoutGrab: 1
-  connectedTo: {fileID: 2115332582}
+  connectedTo: {fileID: 0}
   direction: 3
   activationDistance: 0.01
   buttonStrength: 5
@@ -35667,7 +35655,7 @@ MonoBehaviour:
       m_TypeName: VRTK.VRTK_Control+ValueChangedEvent, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
   interactWithoutGrab: 1
-  connectedTo: {fileID: 1199108208}
+  connectedTo: {fileID: 0}
   direction: 6
   activationDistance: 0.01
   buttonStrength: 5
@@ -39070,8 +39058,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1807643037}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.086888194, y: 0.45200467, z: 0.042137146}
-  m_LocalScale: {x: 0.6509681, y: 0.6509681, z: 1}
+  m_LocalPosition: {x: -0.086888194, y: 0.45200467, z: 0.044778}
+  m_LocalScale: {x: 0.6509681, y: 0.6509681, z: 1.1259899}
   m_Children: []
   m_Father: {fileID: 209447329}
   m_RootOrder: 5
@@ -39138,7 +39126,7 @@ MonoBehaviour:
       m_TypeName: VRTK.VRTK_Control+ValueChangedEvent, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
   interactWithoutGrab: 1
-  connectedTo: {fileID: 2115332582}
+  connectedTo: {fileID: 0}
   direction: 3
   activationDistance: 0.01
   buttonStrength: 5
@@ -41401,7 +41389,7 @@ MonoBehaviour:
       m_TypeName: VRTK.VRTK_Control+ValueChangedEvent, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
   interactWithoutGrab: 1
-  connectedTo: {fileID: 1199108208}
+  connectedTo: {fileID: 0}
   direction: 6
   activationDistance: 0.01
   buttonStrength: 5
@@ -41776,8 +41764,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1945599754}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.1368978, y: 0.40156662, z: 0.042137146}
-  m_LocalScale: {x: 0.6509681, y: 0.6509681, z: 1}
+  m_LocalPosition: {x: -0.1368978, y: 0.40156662, z: 0.044778}
+  m_LocalScale: {x: 0.6509681, y: 0.6509681, z: 1.1259899}
   m_Children: []
   m_Father: {fileID: 209447329}
   m_RootOrder: 9
@@ -41844,7 +41832,7 @@ MonoBehaviour:
       m_TypeName: VRTK.VRTK_Control+ValueChangedEvent, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
   interactWithoutGrab: 1
-  connectedTo: {fileID: 2115332582}
+  connectedTo: {fileID: 0}
   direction: 3
   activationDistance: 0.01
   buttonStrength: 5
@@ -42543,7 +42531,7 @@ MonoBehaviour:
       m_TypeName: VRTK.VRTK_Control+ValueChangedEvent, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
   interactWithoutGrab: 1
-  connectedTo: {fileID: 2115332582}
+  connectedTo: {fileID: 0}
   direction: 3
   activationDistance: 0.01
   buttonStrength: 5
@@ -42604,8 +42592,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1980473493}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.036878467, y: 0.35112858, z: 0.042137146}
-  m_LocalScale: {x: 0.6509681, y: 0.6509681, z: 1}
+  m_LocalPosition: {x: -0.036878467, y: 0.35112858, z: 0.044778}
+  m_LocalScale: {x: 0.6509681, y: 0.6509681, z: 1.1259899}
   m_Children: []
   m_Father: {fileID: 209447329}
   m_RootOrder: 11
@@ -43997,7 +43985,7 @@ MonoBehaviour:
       m_TypeName: VRTK.VRTK_Control+ValueChangedEvent, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
   interactWithoutGrab: 1
-  connectedTo: {fileID: 1199108208}
+  connectedTo: {fileID: 0}
   direction: 6
   activationDistance: 0.01
   buttonStrength: 5
@@ -46790,7 +46778,7 @@ MonoBehaviour:
       m_TypeName: VRTK.VRTK_Control+ValueChangedEvent, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
   interactWithoutGrab: 1
-  connectedTo: {fileID: 1199108208}
+  connectedTo: {fileID: 0}
   direction: 6
   activationDistance: 0.01
   buttonStrength: 5
