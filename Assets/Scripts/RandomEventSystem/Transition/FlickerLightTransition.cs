@@ -11,7 +11,7 @@ public class FlickerLightTransition : BaseActivateTransition
     [UsedImplicitly]
     private void Awake()
     {
-        affectedLights = new List<LightFlickering>(Resources.FindObjectsOfTypeAll<LightFlickering>().Where(l => l.gameObject.activeSelf));
+        affectedLights = new List<LightFlickering>(Resources.FindObjectsOfTypeAll<LightFlickering>().Where(l => l.gameObject.activeInHierarchy));
     }
 
     protected override float HandleAppear() { return StartFlickering(); }
