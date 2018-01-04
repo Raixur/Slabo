@@ -1242,7 +1242,7 @@ Transform:
   m_Children:
   - {fileID: 1525341880}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &48860739
 Prefab:
@@ -1790,6 +1790,11 @@ Prefab:
       value: 
       objectReference: {fileID: 1351006658, guid: 9fbefe3eb63d2cc45801e7df1b689e98,
         type: 3}
+    - target: {fileID: 114301046600159452, guid: 0b9f2bf8d62fd18498e3cbba3712277e,
+        type: 2}
+      propertyPath: controlChangeAudioId
+      value: ValveTurn
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0b9f2bf8d62fd18498e3cbba3712277e, type: 2}
   m_IsPrefabParent: 0
@@ -1893,12 +1898,12 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 74539307}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1827023331}
-  m_RootOrder: 1
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &74539307
 GameObject:
@@ -1958,8 +1963,8 @@ MonoBehaviour:
   DelayBetweenPlaylistTracks: 1
   volume: 1
   CurrentInspectorSelection:
-    CurrentCategoryIndex: 1
-    CurrentItemIndex: 8
+    CurrentCategoryIndex: 2
+    CurrentItemIndex: 1
     CurrentSubitemIndex: 0
     CurrentPlaylistEntryIndex: 0
     CurrentPlaylistIndex: 0
@@ -2975,7 +2980,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 75821779}
   m_LocalRotation: {x: -0, y: 0.7071068, z: 0.7071068, w: 0}
-  m_LocalPosition: {x: -0.356, y: 1.599, z: 1.68}
+  m_LocalPosition: {x: -0.356, y: 1.781, z: 1.68}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 873478627}
@@ -3444,7 +3449,7 @@ Transform:
   - {fileID: 1741648923}
   - {fileID: 1053606661}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &108599803
 Prefab:
@@ -7204,9 +7209,9 @@ Transform:
   m_PrefabParentObject: {fileID: 400004, guid: 42098ca4db09f8942814ff8a033403d2, type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 264625818}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0.044, y: 1.2959305, z: 0.110127345}
-  m_LocalScale: {x: 1.4049258, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.013199899, y: 0, z: -0.060159087}
+  m_LocalScale: {x: 1.4049387, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1726534458}
   m_RootOrder: 8
@@ -7229,10 +7234,10 @@ MonoBehaviour:
       m_TypeName: VRTK.VRTK_Control+ValueChangedEvent, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
   interactWithoutGrab: 1
-  connectedTo: {fileID: 0}
+  connectedTo: {fileID: 1726534457}
   direction: 6
   activationDistance: 0.01
-  buttonStrength: 5
+  buttonStrength: 1
   events:
     OnPush:
       m_PersistentCalls:
@@ -7670,12 +7675,12 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 286585361}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 15.86, y: 0, z: -2.35}
+  m_LocalPosition: {x: -14.51, y: 0, z: -1.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1526991368}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!1 &291095674
 GameObject:
@@ -14489,7 +14494,7 @@ Transform:
   - {fileID: 666933376}
   - {fileID: 873478627}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &594211140
 GameObject:
@@ -15085,7 +15090,7 @@ Transform:
   - {fileID: 786083136}
   - {fileID: 2020259239}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &613727752
 GameObject:
@@ -15428,7 +15433,7 @@ Transform:
   m_Children:
   - {fileID: 813105351}
   m_Father: {fileID: 1827023331}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &635511068
 MonoBehaviour:
@@ -17618,9 +17623,9 @@ Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 42098ca4db09f8942814ff8a033403d2, type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 733090751}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0.044, y: 1.2509155, z: 0.062981024}
-  m_LocalScale: {x: 1.4049258, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.013199907, y: 0.047143906, z: -0.105173945}
+  m_LocalScale: {x: 1.4049387, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1726534458}
   m_RootOrder: 0
@@ -17643,10 +17648,10 @@ MonoBehaviour:
       m_TypeName: VRTK.VRTK_Control+ValueChangedEvent, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
   interactWithoutGrab: 1
-  connectedTo: {fileID: 0}
+  connectedTo: {fileID: 1726534457}
   direction: 6
   activationDistance: 0.01
-  buttonStrength: 5
+  buttonStrength: 1
   events:
     OnPush:
       m_PersistentCalls:
@@ -20706,9 +20711,9 @@ Transform:
   m_PrefabParentObject: {fileID: 400014, guid: 42098ca4db09f8942814ff8a033403d2, type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 894860449}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0.044, y: 1.3859603, z: 0.062981024}
-  m_LocalScale: {x: 1.4049258, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.013199907, y: 0.047143906, z: 0.029870868}
+  m_LocalScale: {x: 1.4049387, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1726534458}
   m_RootOrder: 3
@@ -20731,10 +20736,10 @@ MonoBehaviour:
       m_TypeName: VRTK.VRTK_Control+ValueChangedEvent, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
   interactWithoutGrab: 1
-  connectedTo: {fileID: 0}
+  connectedTo: {fileID: 1726534457}
   direction: 6
   activationDistance: 0.01
-  buttonStrength: 5
+  buttonStrength: 1
   events:
     OnPush:
       m_PersistentCalls:
@@ -24139,7 +24144,7 @@ Transform:
   m_Children:
   - {fileID: 26952360}
   m_Father: {fileID: 1827023331}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1032157886
 MonoBehaviour:
@@ -27418,9 +27423,9 @@ Transform:
   m_PrefabParentObject: {fileID: 400018, guid: 42098ca4db09f8942814ff8a033403d2, type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1191892973}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0.044, y: 1.3859603, z: 0.15727367}
-  m_LocalScale: {x: 1.4049258, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.013199899, y: -0.047151238, z: 0.029870868}
+  m_LocalScale: {x: 1.4049387, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1726534458}
   m_RootOrder: 1
@@ -27443,10 +27448,10 @@ MonoBehaviour:
       m_TypeName: VRTK.VRTK_Control+ValueChangedEvent, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
   interactWithoutGrab: 1
-  connectedTo: {fileID: 0}
+  connectedTo: {fileID: 1726534457}
   direction: 6
   activationDistance: 0.01
-  buttonStrength: 5
+  buttonStrength: 1
   events:
     OnPush:
       m_PersistentCalls:
@@ -27593,11 +27598,11 @@ GameObject:
   - component: {fileID: 1199108209}
   - component: {fileID: 1199108215}
   - component: {fileID: 1199108214}
-  - component: {fileID: 1199108213}
   - component: {fileID: 1199108212}
   - component: {fileID: 1199108211}
   - component: {fileID: 1199108210}
   - component: {fileID: 1199108216}
+  - component: {fileID: 1199108213}
   m_Layer: 0
   m_Name: Lock
   m_TagString: Untagged
@@ -29565,9 +29570,9 @@ Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 42098ca4db09f8942814ff8a033403d2, type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1311960490}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0.044, y: 1.2959305, z: 0.062981024}
-  m_LocalScale: {x: 1.4049258, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.013199907, y: 0.047143906, z: -0.060159087}
+  m_LocalScale: {x: 1.4049387, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1726534458}
   m_RootOrder: 9
@@ -29590,10 +29595,10 @@ MonoBehaviour:
       m_TypeName: VRTK.VRTK_Control+ValueChangedEvent, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
   interactWithoutGrab: 1
-  connectedTo: {fileID: 0}
+  connectedTo: {fileID: 1726534457}
   direction: 6
   activationDistance: 0.01
-  buttonStrength: 5
+  buttonStrength: 1
   events:
     OnPush:
       m_PersistentCalls:
@@ -31246,9 +31251,9 @@ Transform:
   m_PrefabParentObject: {fileID: 400020, guid: 42098ca4db09f8942814ff8a033403d2, type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1429365321}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0.044, y: 1.2509155, z: 0.1339518}
-  m_LocalScale: {x: 1.4049258, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.013199899, y: -0.02382937, z: -0.105173945}
+  m_LocalScale: {x: 1.4049387, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1726534458}
   m_RootOrder: 10
@@ -31271,10 +31276,10 @@ MonoBehaviour:
       m_TypeName: VRTK.VRTK_Control+ValueChangedEvent, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
   interactWithoutGrab: 1
-  connectedTo: {fileID: 0}
+  connectedTo: {fileID: 1726534457}
   direction: 6
   activationDistance: 0.01
-  buttonStrength: 5
+  buttonStrength: 1
   events:
     OnPush:
       m_PersistentCalls:
@@ -32663,7 +32668,7 @@ Transform:
   - {fileID: 886373813}
   - {fileID: 1495129984}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1503411001
 Prefab:
@@ -33967,9 +33972,9 @@ Transform:
   m_PrefabParentObject: {fileID: 400016, guid: 42098ca4db09f8942814ff8a033403d2, type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1560860305}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0.044, y: 1.3859603, z: 0.110127345}
-  m_LocalScale: {x: 1.4049258, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.013199899, y: 0, z: 0.029870868}
+  m_LocalScale: {x: 1.4049387, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1726534458}
   m_RootOrder: 2
@@ -33992,10 +33997,10 @@ MonoBehaviour:
       m_TypeName: VRTK.VRTK_Control+ValueChangedEvent, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
   interactWithoutGrab: 1
-  connectedTo: {fileID: 0}
+  connectedTo: {fileID: 1726534457}
   direction: 6
   activationDistance: 0.01
-  buttonStrength: 5
+  buttonStrength: 1
   events:
     OnPush:
       m_PersistentCalls:
@@ -35630,9 +35635,9 @@ Transform:
   m_PrefabParentObject: {fileID: 400010, guid: 42098ca4db09f8942814ff8a033403d2, type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1645507676}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0.044, y: 1.3409454, z: 0.110127345}
-  m_LocalScale: {x: 1.4049258, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.013199899, y: 0, z: -0.015144229}
+  m_LocalScale: {x: 1.4049387, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1726534458}
   m_RootOrder: 5
@@ -35655,10 +35660,10 @@ MonoBehaviour:
       m_TypeName: VRTK.VRTK_Control+ValueChangedEvent, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
   interactWithoutGrab: 1
-  connectedTo: {fileID: 0}
+  connectedTo: {fileID: 1726534457}
   direction: 6
   activationDistance: 0.01
-  buttonStrength: 5
+  buttonStrength: 1
   events:
     OnPush:
       m_PersistentCalls:
@@ -37141,6 +37146,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1726534458}
+  - component: {fileID: 1726534459}
   m_Layer: 0
   m_Name: Buttons
   m_TagString: Untagged
@@ -37154,8 +37160,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1726534457}
-  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0.54882234, z: 0.46610743}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.0308, y: 0.4387, z: 1.8222}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 733090752}
@@ -37172,6 +37178,21 @@ Transform:
   m_Father: {fileID: 1199108209}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &1726534459
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1726534457}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &1736004503
 Prefab:
   m_ObjectHideFlags: 0
@@ -39920,11 +39941,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1327513084}
-  - {fileID: 74539306}
   - {fileID: 635511067}
   - {fileID: 1032157885}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1831595905
 GameObject:
@@ -41364,9 +41384,9 @@ Transform:
   m_PrefabParentObject: {fileID: 400012, guid: 42098ca4db09f8942814ff8a033403d2, type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1932554344}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0.044, y: 1.3409454, z: 0.15727367}
-  m_LocalScale: {x: 1.4049258, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.013199899, y: -0.047151238, z: -0.015144229}
+  m_LocalScale: {x: 1.4049387, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1726534458}
   m_RootOrder: 4
@@ -41389,10 +41409,10 @@ MonoBehaviour:
       m_TypeName: VRTK.VRTK_Control+ValueChangedEvent, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
   interactWithoutGrab: 1
-  connectedTo: {fileID: 0}
+  connectedTo: {fileID: 1726534457}
   direction: 6
   activationDistance: 0.01
-  buttonStrength: 5
+  buttonStrength: 1
   events:
     OnPush:
       m_PersistentCalls:
@@ -43960,9 +43980,9 @@ Transform:
   m_PrefabParentObject: {fileID: 400008, guid: 42098ca4db09f8942814ff8a033403d2, type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2041809617}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0.044, y: 1.3409454, z: 0.062981024}
-  m_LocalScale: {x: 1.4049258, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.013199907, y: 0.047143906, z: -0.015144229}
+  m_LocalScale: {x: 1.4049387, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1726534458}
   m_RootOrder: 6
@@ -43985,10 +44005,10 @@ MonoBehaviour:
       m_TypeName: VRTK.VRTK_Control+ValueChangedEvent, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
   interactWithoutGrab: 1
-  connectedTo: {fileID: 0}
+  connectedTo: {fileID: 1726534457}
   direction: 6
   activationDistance: 0.01
-  buttonStrength: 5
+  buttonStrength: 1
   events:
     OnPush:
       m_PersistentCalls:
@@ -44991,7 +45011,7 @@ Transform:
   - {fileID: 718122451}
   - {fileID: 152669992}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2088859872
 Prefab:
@@ -46507,7 +46527,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a8af2046b08c826408c44bf4a308c2fc, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: a8af2046b08c826408c44bf4a308c2fc, type: 3}
       propertyPath: m_Name
@@ -46753,9 +46773,9 @@ Transform:
   m_PrefabParentObject: {fileID: 400006, guid: 42098ca4db09f8942814ff8a033403d2, type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2139509298}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0.044, y: 1.2959305, z: 0.15727367}
-  m_LocalScale: {x: 1.4049258, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.013199899, y: -0.047151238, z: -0.060159087}
+  m_LocalScale: {x: 1.4049387, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1726534458}
   m_RootOrder: 7
@@ -46778,10 +46798,10 @@ MonoBehaviour:
       m_TypeName: VRTK.VRTK_Control+ValueChangedEvent, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
   interactWithoutGrab: 1
-  connectedTo: {fileID: 0}
+  connectedTo: {fileID: 1726534457}
   direction: 6
   activationDistance: 0.01
-  buttonStrength: 5
+  buttonStrength: 1
   events:
     OnPush:
       m_PersistentCalls:

@@ -397,7 +397,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 217558061}
-  m_LocalRotation: {x: 0.63867515, y: 0.30347013, z: 0.30347013, w: 0.63867515}
+  m_LocalRotation: {x: 0.6386751, y: 0.3034701, z: 0.3034701, w: 0.6386751}
   m_LocalPosition: {x: -8.21, y: 0.7, z: 0}
   m_LocalScale: {x: 4.1913147, y: 0.35326353, z: 0.3834252}
   m_Children: []
@@ -744,12 +744,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eba3cd5456cd79e49948f5ceb58544b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointerToggleButton: 10
-  pointerSetButton: 10
-  grabToggleButton: 7
-  useToggleButton: 3
-  uiClickButton: 3
-  menuToggleButton: 14
   axisFidelity: 2
   triggerClickThreshold: 1
   triggerForceZeroThreshold: 0.01
@@ -1491,6 +1485,11 @@ Prefab:
       value: 
       objectReference: {fileID: 1351006658, guid: 9fbefe3eb63d2cc45801e7df1b689e98,
         type: 3}
+    - target: {fileID: 114301046600159452, guid: 0b9f2bf8d62fd18498e3cbba3712277e,
+        type: 2}
+      propertyPath: controlChangeAudioId
+      value: ValveTurn
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0b9f2bf8d62fd18498e3cbba3712277e, type: 2}
   m_IsPrefabParent: 0
@@ -2283,12 +2282,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eba3cd5456cd79e49948f5ceb58544b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointerToggleButton: 10
-  pointerSetButton: 10
-  grabToggleButton: 7
-  useToggleButton: 3
-  uiClickButton: 3
-  menuToggleButton: 14
   axisFidelity: 2
   triggerClickThreshold: 1
   triggerForceZeroThreshold: 0.01
