@@ -548,7 +548,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4801350510931064}
   - component: {fileID: 95329447410203374}
-  - component: {fileID: 114704896675982516}
+  - component: {fileID: 114836098489834544}
   m_Layer: 0
   m_Name: LeftHand
   m_TagString: Untagged
@@ -1232,7 +1232,7 @@ MonoBehaviour:
   smoothsScale: 0
   maxAllowedPerFrameSizeDifference: 0.003
   _moment: 2
---- !u!114 &114704896675982516
+--- !u!114 &114836098489834544
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -1240,7 +1240,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1908003132533390}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c52b3a0d5f4fd744bbbd135b8d647b2, type: 3}
+  m_Script: {fileID: 11500000, guid: f1902b55479792b4e9a4beab2d0be18b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   controllerType: 0
@@ -1249,15 +1249,9 @@ MonoBehaviour:
   animationSnapSpeed: 0.1
   thumbButton: 9
   indexButton: 3
-  middleButton: 0
-  ringButton: 0
-  pinkyButton: 0
   threeFingerButton: 7
   thumbAxisButton: 7
   indexAxisButton: 5
-  middleAxisButton: 8
-  ringAxisButton: 9
-  pinkyAxisButton: 10
   threeFingerAxisButton: 2
   thumbState: 0
   indexState: 0
@@ -1265,49 +1259,7 @@ MonoBehaviour:
   ringState: 0
   pinkyState: 0
   threeFingerState: 0
-  touchOverrides:
-    ignoreAllOverrides: 1
-    stateValue: -1
-    applyThumbOverride: 1
-    thumbOverride: 0
-    applyIndexOverride: 1
-    indexOverride: 0
-    applyMiddleOverride: 1
-    middleOverride: 0
-    applyRingOverride: 1
-    ringOverride: 0
-    applyPinkyOverride: 1
-    pinkyOverride: 0
-  grabOverrides:
-    ignoreAllOverrides: 1
-    stateValue: -1
-    applyThumbOverride: 1
-    thumbOverride: 0
-    applyIndexOverride: 1
-    indexOverride: 0
-    applyMiddleOverride: 1
-    middleOverride: 0
-    applyRingOverride: 1
-    ringOverride: 0
-    applyPinkyOverride: 1
-    pinkyOverride: 0
-  useOverrides:
-    ignoreAllOverrides: 1
-    stateValue: -1
-    applyThumbOverride: 1
-    thumbOverride: 0
-    applyIndexOverride: 1
-    indexOverride: 0
-    applyMiddleOverride: 1
-    middleOverride: 0
-    applyRingOverride: 1
-    ringOverride: 0
-    applyPinkyOverride: 1
-    pinkyOverride: 0
   controllerEvents: {fileID: 0}
-  interactTouch: {fileID: 0}
-  interactGrab: {fileID: 0}
-  interactUse: {fileID: 0}
 --- !u!136 &136419585346120714
 CapsuleCollider:
   m_ObjectHideFlags: 1
