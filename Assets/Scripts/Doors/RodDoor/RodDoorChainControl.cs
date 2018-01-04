@@ -22,10 +22,10 @@ public class RodDoorChainControl : MonoBehaviour
             pullControl.ValueChanged += (sender, args) => forceDisplay.SetNormalizedRotation(args.normalizedValue);
 
         if(lockBolts != null)
-            pullControl.ActivationPulled += (sender, args) => lockBolts.ToggleLock();
+            pullControl.ActivationPulled += (sender, args) => lockBolts.SetOpen(true);
 
         if(door != null)
-            pullControl.ActivationPulled += (sender, args) => door.SetLock(false);
+            pullControl.ActivationPulled += (sender, args) => door.SetOpen(true);
     }
 
 }

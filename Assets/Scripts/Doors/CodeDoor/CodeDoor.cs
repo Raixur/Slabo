@@ -22,7 +22,7 @@ public class CodeDoor : MonoBehaviour
     {
         if (doorCode == args.Value)
         {
-            door.SetLock(false);
+            door.SetOpen(true);
             panel.Display.InputFinished -= TryOpen;
             bolts.ToggleLock();
         }

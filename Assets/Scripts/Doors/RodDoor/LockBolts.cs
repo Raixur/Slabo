@@ -19,4 +19,14 @@ public class LockBolts : MonoBehaviour
         isOpened = !isOpened;
         animator.SetBool("Open", isOpened);
     }
+
+    public void SetOpen(bool isOpening)
+    {
+        if (isOpened != isOpening)
+        {
+            isOpened = isOpening;
+            animator.SetBool("Open", isOpened);
+        }
+        
+    }
 }

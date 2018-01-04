@@ -36,7 +36,7 @@ public class Crusher : MonoBehaviour
     {
         if (currentScore > requiredScore)
         {
-            door.SetLock(false);
+            door.SetOpen(true);
             lockBolts.ToggleLock();
             GetComponent<Collider>().enabled = false;
         }

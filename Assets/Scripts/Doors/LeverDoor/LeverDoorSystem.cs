@@ -50,11 +50,11 @@ public class LeverDoorSystem : MonoBehaviour
     {
         doorStates[index] = !doorStates[index];
 
-        if(lockableDoor.IsLocked && IsOpened()) 
-            lockableDoor.SetLock(false);
+        if(!lockableDoor.IsOpened && IsOpened()) 
+            lockableDoor.SetOpen(true);
 
-        if(!lockableDoor.IsLocked && !IsOpened())
-            lockableDoor.SetLock(true);
+        if(lockableDoor.IsOpened && !IsOpened())
+            lockableDoor.SetOpen(false);
     }
 
     private bool IsOpened()
