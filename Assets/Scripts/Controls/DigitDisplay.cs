@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using JetBrains.Annotations;
 using TMPro;
@@ -24,9 +23,9 @@ public class DigitDisplay : MonoBehaviour
     private void Start()
     {
         display = GetComponent<TextMeshPro>();
-        display.text = "";
-
-	    digits = new List<int>(requiredDigits);	
+        digits = new List<int>(requiredDigits);
+        
+        ResetDisplay();
 	}
 
     public event DisplayPanelEventHandler InputFinished;
@@ -40,10 +39,9 @@ public class DigitDisplay : MonoBehaviour
             digits.Add(digit);
             display.text = digits.Aggregate("", (c, d) => c + d);
         }
+
         if (digits.Count == requiredDigits)
-        {
             OnInputFinished(new DisplayPanelEventArgs{ Value = display.text });
-        }
     }
 
     public void ResetDisplay()

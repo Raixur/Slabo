@@ -1,4 +1,4 @@
-﻿using System.Linq;
+﻿using System;
 using JetBrains.Annotations;
 using UnityEngine;
 using VRTK;
@@ -6,25 +6,20 @@ using VRTK;
 public class ButtonAttacher : MonoBehaviour
 {
     [SerializeField] private DigitInputPanel panel = null;
-    private string doorCode;
 
     [UsedImplicitly]
     private void Start()
     {
-        doorCode = CodeGenerator.Instance.DoorCode.Aggregate("", (s, d) => s + d);
-        panel.Display.InputFinished += TryAttach;
+        panel.Activated += Attach;
     }
 
-    private void TryAttach(object sender, DisplayPanelEventArgs args)
+    private void Attach(object sender, EventArgs args)
     {
-        if (doorCode == args.Value)
+        var buttons = GetComponentsInChildren<VRTK_Button>();
+        foreach (var button in buttons)
         {
-            var buttons = GetComponentsInChildren<VRTK_Button>();
-            foreach (var button in buttons)
-            {
-                var joint = button.gameObject.GetComponent<Joint>();
-                joint.connectedBody = gameObject.GetComponent<Rigidbody>();
-            }
+            var joint = button.gameObject.GetComponent<Joint>();
+            joint.connectedBody = gameObject.GetComponent<Rigidbody>();
         }
     }
 }

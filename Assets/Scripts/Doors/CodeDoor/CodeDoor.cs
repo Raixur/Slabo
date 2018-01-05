@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using JetBrains.Annotations;
 using UnityEngine;
 
@@ -8,23 +9,15 @@ public class CodeDoor : MonoBehaviour
     [SerializeField] private LockableDoor door = null;
     [SerializeField] private LockBolts bolts = null;
 
-    private string doorCode;
-
     [UsedImplicitly]
     private void Start ()
 	{
-	    doorCode = CodeGenerator.Instance.DoorCode.Aggregate("", (s, d) => s + d);
-        Debug.Log(doorCode);
-        panel.Display.InputFinished += TryOpen;
+        panel.Activated += Open;
 	}
 
-    private void TryOpen(object sender, DisplayPanelEventArgs args)
+    private void Open(object sender, EventArgs args)
     {
-        if (doorCode == args.Value)
-        {
-            door.SetOpen(true);
-            panel.Display.InputFinished -= TryOpen;
-            bolts.ToggleLock();
-        }
+        door.SetOpen(true);
+        bolts.SetOpen(true);
     }
 }
