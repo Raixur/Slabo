@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Ring
+  m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: Armature
+    m_Weight: 0
+  - m_Path: Armature/HandBoneForearm
+    m_Weight: 0
+  - m_Path: Armature/HandBoneForearm/HandBoneWrist
+    m_Weight: 0
+  - m_Path: Armature/HandBoneForearm/HandBoneWrist/HandBonePalm
+    m_Weight: 0
+  - m_Path: Armature/HandBoneForearm/HandBoneWrist/HandBonePalm/HandBoneIndex1
+    m_Weight: 0
+  - m_Path: Armature/HandBoneForearm/HandBoneWrist/HandBonePalm/HandBoneIndex1/HandBoneIndex2
+    m_Weight: 0
+  - m_Path: Armature/HandBoneForearm/HandBoneWrist/HandBonePalm/HandBoneIndex1/HandBoneIndex2/HandBoneIndex3
+    m_Weight: 0
+  - m_Path: Armature/HandBoneForearm/HandBoneWrist/HandBonePalm/HandBoneIndex1/HandBoneIndex2/HandBoneIndex3/HandBoneIndex4
+    m_Weight: 0
+  - m_Path: Armature/HandBoneForearm/HandBoneWrist/HandBonePalm/HandBoneIndex1/HandBoneIndex2/HandBoneIndex3/HandBoneIndex4/HandBoneIndex5
+    m_Weight: 0
+  - m_Path: Armature/HandBoneForearm/HandBoneWrist/HandBonePalm/HandBoneIndex1/HandBoneIndex2/HandBoneIndex3/HandBoneIndex4/HandBoneIndex5/HandBoneIndex5end
+    m_Weight: 0
+  - m_Path: Armature/HandBoneForearm/HandBoneWrist/HandBonePalm/HandBoneMiddle1
+    m_Weight: 0
+  - m_Path: Armature/HandBoneForearm/HandBoneWrist/HandBonePalm/HandBoneMiddle1/HandBoneMiddle2
+    m_Weight: 0
+  - m_Path: Armature/HandBoneForearm/HandBoneWrist/HandBonePalm/HandBoneMiddle1/HandBoneMiddle2/HandBoneMiddle3
+    m_Weight: 0
+  - m_Path: Armature/HandBoneForearm/HandBoneWrist/HandBonePalm/HandBoneMiddle1/HandBoneMiddle2/HandBoneMiddle3/HandBoneMiddle4
+    m_Weight: 0
+  - m_Path: Armature/HandBoneForearm/HandBoneWrist/HandBonePalm/HandBoneMiddle1/HandBoneMiddle2/HandBoneMiddle3/HandBoneMiddle4/HandBoneMiddle5
+    m_Weight: 0
+  - m_Path: Armature/HandBoneForearm/HandBoneWrist/HandBonePalm/HandBoneMiddle1/HandBoneMiddle2/HandBoneMiddle3/HandBoneMiddle4/HandBoneMiddle5/HandBoneMiddle5end
+    m_Weight: 0
+  - m_Path: Armature/HandBoneForearm/HandBoneWrist/HandBonePalm/HandBonePinkie1
+    m_Weight: 0
+  - m_Path: Armature/HandBoneForearm/HandBoneWrist/HandBonePalm/HandBonePinkie1/HandBonePinkie2
+    m_Weight: 0
+  - m_Path: Armature/HandBoneForearm/HandBoneWrist/HandBonePalm/HandBonePinkie1/HandBonePinkie2/HandBonePinkie3
+    m_Weight: 0
+  - m_Path: Armature/HandBoneForearm/HandBoneWrist/HandBonePalm/HandBonePinkie1/HandBonePinkie2/HandBonePinkie3/HandBonePinkie4
+    m_Weight: 0
+  - m_Path: Armature/HandBoneForearm/HandBoneWrist/HandBonePalm/HandBonePinkie1/HandBonePinkie2/HandBonePinkie3/HandBonePinkie4/HandBonePinkie5
+    m_Weight: 0
+  - m_Path: Armature/HandBoneForearm/HandBoneWrist/HandBonePalm/HandBonePinkie1/HandBonePinkie2/HandBonePinkie3/HandBonePinkie4/HandBonePinkie5/HandBonePinkie5end
+    m_Weight: 0
+  - m_Path: Armature/HandBoneForearm/HandBoneWrist/HandBonePalm/HandBoneRing1
+    m_Weight: 1
+  - m_Path: Armature/HandBoneForearm/HandBoneWrist/HandBonePalm/HandBoneRing1/HandBoneRing2
+    m_Weight: 1
+  - m_Path: Armature/HandBoneForearm/HandBoneWrist/HandBonePalm/HandBoneRing1/HandBoneRing2/HandBoneRing3
+    m_Weight: 1
+  - m_Path: Armature/HandBoneForearm/HandBoneWrist/HandBonePalm/HandBoneRing1/HandBoneRing2/HandBoneRing3/HandBoneRing4
+    m_Weight: 1
+  - m_Path: Armature/HandBoneForearm/HandBoneWrist/HandBonePalm/HandBoneRing1/HandBoneRing2/HandBoneRing3/HandBoneRing4/HandBoneRing5
+    m_Weight: 1
+  - m_Path: Armature/HandBoneForearm/HandBoneWrist/HandBonePalm/HandBoneRing1/HandBoneRing2/HandBoneRing3/HandBoneRing4/HandBoneRing5/HandBoneRing5end
+    m_Weight: 1
+  - m_Path: Armature/HandBoneForearm/HandBoneWrist/HandBonePalm/HandBoneThumb1
+    m_Weight: 0
+  - m_Path: Armature/HandBoneForearm/HandBoneWrist/HandBonePalm/HandBoneThumb1/HandBoneThumb2
+    m_Weight: 0
+  - m_Path: Armature/HandBoneForearm/HandBoneWrist/HandBonePalm/HandBoneThumb1/HandBoneThumb2/HandBoneThumb3
+    m_Weight: 0
+  - m_Path: Armature/HandBoneForearm/HandBoneWrist/HandBonePalm/HandBoneThumb1/HandBoneThumb2/HandBoneThumb3/HandBoneThumb4
+    m_Weight: 0
+  - m_Path: Armature/HandBoneForearm/HandBoneWrist/HandBonePalm/HandBoneThumb1/HandBoneThumb2/HandBoneThumb3/HandBoneThumb4/HandBoneThumb4end
+    m_Weight: 0
+  - m_Path: Hand
+    m_Weight: 1

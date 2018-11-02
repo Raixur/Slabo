@@ -1,57 +1,49 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using AudioSDK;
 using UnityEngine;
 using VRTK;
 
 public class Phone : MonoBehaviour
 {
-    private const int RequiredDigits = 4;
+    public const string NumbersPlaylistName = "Numbers";
 
-    [SerializeField] private TextMesh display = null;
-    [SerializeField] private List<VRTK_Button> buttons = null;
-    [SerializeField] private VRTK_Button resetButton = null;
+    [SerializeField] private DigitInputPanel panel = null;
     [SerializeField] private VRTK_Button callButton = null;
 
-    private List<int> digits = new List<int>(RequiredDigits);
+    [SerializeField] private AudioObject phoneAudio = null;
+    [SerializeField] private AudioObject buttonAudio = null;
+    [SerializeField] private string buttonClickAudio = "";
+    [SerializeField] private float delay = 1.2f;
+
+    private string phoneNumber;
+    private int[] doorCode;
 
     public void Start()
     {
-        display.text = "";
-        for (int i = 0; i < buttons.Count; i++)
-        {
-            var number = i;
-            buttons[i].Pushed += (sender, args) => InputNumber(number);
-        }
-
-        if(resetButton != null) resetButton.Pushed += (sender, args) => ResetNumbers();
-        if(callButton != null) callButton.Pushed += (sender, args) => StartCall();
-    }
-
-    public void InputNumber(int number)
-    {
-        Debug.Log("pressed");
-        if (digits.Count < RequiredDigits)
-        {
-            digits.Add(number);
-            UpdateDisplay();
-        }
-    }
-
-    public void ResetNumbers()
-    {
-        digits.Clear();
-        display.text = "";
+        var codeGen = CodeGenerator.Instance;
+        phoneNumber = codeGen.PhoneNumber.Aggregate("", (c, d) => c + d);
+        doorCode = codeGen.DoorCode;
+;
+        if(callButton != null)
+            callButton.Pushed += (sender, args) => StartCall();
     }
 
     public void StartCall()
     {
-        Debug.Log("Start calling");
+        buttonAudio.PlayAfter(buttonClickAudio);
+        if (panel.Value == phoneNumber)
+            StartCoroutine(PlayNumberCoroutine());
     }
 
-    public void UpdateDisplay()
+    public IEnumerator PlayNumberCoroutine()
     {
-        var displayText = string.Join("", digits.Select(d => d.ToString()).ToArray());
-        display.text = displayText;
+        var delayWait = new WaitForSeconds(delay);
+        foreach (var number in doorCode)
+        {
+            phoneAudio.PlayAfter(number.ToString());
+            yield return delayWait;
+        }
     }
 }

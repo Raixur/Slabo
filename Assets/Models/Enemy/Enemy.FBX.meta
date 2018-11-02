@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 6c51ed257312e3c45ac28217b4b8dd71
-timeCreated: 1510590592
+guid: 08221723230deb94c9bc582cf77fb6c3
+timeCreated: 1512988537
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -274,32 +274,32 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Body
-    second: {fileID: 2100000, guid: 35666915d7a7e99448be8669106fe144, type: 2}
+    second: {fileID: 2100000, guid: 89cb2649a1b02bf4583a0a7cfffca4bb, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Eye Spec
-    second: {fileID: 2100000, guid: 35666915d7a7e99448be8669106fe144, type: 2}
+    second: {fileID: 2100000, guid: 89cb2649a1b02bf4583a0a7cfffca4bb, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Eyes
-    second: {fileID: 2100000, guid: 35666915d7a7e99448be8669106fe144, type: 2}
+    second: {fileID: 2100000, guid: 89cb2649a1b02bf4583a0a7cfffca4bb, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Gown
-    second: {fileID: 2100000, guid: 35666915d7a7e99448be8669106fe144, type: 2}
+    second: {fileID: 2100000, guid: 89cb2649a1b02bf4583a0a7cfffca4bb, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Hair
-    second: {fileID: 2100000, guid: 35666915d7a7e99448be8669106fe144, type: 2}
+    second: {fileID: 2100000, guid: 89cb2649a1b02bf4583a0a7cfffca4bb, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Teeth
-    second: {fileID: 2100000, guid: 35666915d7a7e99448be8669106fe144, type: 2}
+    second: {fileID: 2100000, guid: 89cb2649a1b02bf4583a0a7cfffca4bb, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -352,7 +352,7 @@ ModelImporter:
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
-  importAnimation: 1
+  importAnimation: 0
   copyAvatar: 0
   humanDescription:
     serializedVersion: 2
@@ -370,7 +370,8 @@ ModelImporter:
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
-  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 6c51ed257312e3c45ac28217b4b8dd71,
+    type: 3}
   animationType: 2
   humanoidOversampling: 1
   additionalBone: 0

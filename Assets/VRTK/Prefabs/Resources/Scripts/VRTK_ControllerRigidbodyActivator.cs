@@ -73,11 +73,14 @@ namespace VRTK
 
         protected virtual void ToggleRigidbody(Collider collider, bool state)
         {
-            VRTK_InteractTouch touch = collider.GetComponentInParent<VRTK_InteractTouch>();
-            if (touch != null && (isEnabled || !state))
+            var touch = collider.GetComponentsInParent<VRTK_InteractTouch>();
+            if (touch.Length > 0 && (isEnabled || !state))
             {
-                touch.ToggleControllerRigidBody(state, state);
-                EmitEvent(state, touch);
+                foreach (var t in touch)
+                {
+                    t.ToggleControllerRigidBody(state, state);
+                    EmitEvent(state, t);
+                }
             }
         }
 

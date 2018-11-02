@@ -1,4 +1,7 @@
 ﻿// Shared Methods|Utilities|90030
+
+using TMPro;
+
 namespace VRTK
 {
     using UnityEngine;
@@ -39,7 +42,8 @@ namespace VRTK
             Renderer[] renderers = transform.GetComponentsInChildren<Renderer>();
             foreach (Renderer renderer in renderers)
             {
-                if (excludeTransform != null && renderer.transform.IsChildOf(excludeTransform))
+               
+                if (excludeTransform != null && renderer.transform.IsChildOf(excludeTransform) || renderer.GetComponent<TextMeshPro>() != null)
                 {
                     continue;
                 }

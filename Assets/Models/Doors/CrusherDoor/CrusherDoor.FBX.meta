@@ -1,0 +1,172 @@
+fileFormatVersion: 2
+guid: c6c2e7dd423fe224099349924428f226
+timeCreated: 1512489188
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Cage
+    100002: Crusher
+    100004: //RootNode
+    100006: LeftDoor
+    100008: LeftHinge
+    100010: LeftLock
+    100012: LockBolts
+    100014: RightDoor
+    100016: RightHinge
+    100018: RightLock
+    100020: Tube
+    400000: Cage
+    400002: Crusher
+    400004: //RootNode
+    400006: LeftDoor
+    400008: LeftHinge
+    400010: LeftLock
+    400012: LockBolts
+    400014: RightDoor
+    400016: RightHinge
+    400018: RightLock
+    400020: Tube
+    2300000: Cage
+    2300002: Crusher
+    2300004: LeftDoor
+    2300006: LeftHinge
+    2300008: LeftLock
+    2300010: LockBolts
+    2300012: RightDoor
+    2300014: RightHinge
+    2300016: RightLock
+    2300018: Tube
+    3300000: Cage
+    3300002: Crusher
+    3300004: LeftDoor
+    3300006: LeftHinge
+    3300008: LeftLock
+    3300010: LockBolts
+    3300012: RightDoor
+    3300014: RightHinge
+    3300016: RightLock
+    3300018: Tube
+    4300000: Crusher
+    4300002: Cage
+    4300004: Tube
+    4300006: LockBolts
+    4300008: RightDoor
+    4300010: LeftDoor
+    4300012: LeftHinge
+    4300014: RightHinge
+    4300016: RightLock
+    4300018: LeftLock
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cage
+    second: {fileID: -75410753, guid: 9fbefe3eb63d2cc45801e7df1b689e98, type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CodeDoorButtonHolder
+    second: {fileID: 2100000, guid: f6ba9e112a2aeae47a4d823116085d19, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Crusher
+    second: {fileID: 726546520, guid: 9fbefe3eb63d2cc45801e7df1b689e98, type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LockBolts
+    second: {fileID: 2100000, guid: ddfe5f5cc96977940952812ef51ba6c5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rods
+    second: {fileID: 2100000, guid: 2c9e8fff7bcfb754ab72ec80bc8ac8da, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rust
+    second: {fileID: 2100000, guid: f6ba9e112a2aeae47a4d823116085d19, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tube
+    second: {fileID: -75410753, guid: 9fbefe3eb63d2cc45801e7df1b689e98, type: 3}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

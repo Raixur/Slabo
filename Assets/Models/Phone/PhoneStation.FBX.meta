@@ -154,12 +154,12 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Metal Panel
-    second: {fileID: 2100000, guid: af320f4805e1e3c478c43d6bec9293f5, type: 2}
+    second: {fileID: -1147217522, guid: 9fbefe3eb63d2cc45801e7df1b689e98, type: 3}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Phone Base
-    second: {fileID: 2100000, guid: 495e6c6fbc106b34586bc0b8e3678f3d, type: 2}
+    second: {fileID: -850065767, guid: 9fbefe3eb63d2cc45801e7df1b689e98, type: 3}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
